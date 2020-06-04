@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HanaCryptoBank
+Comment=HanaCryptoBank P2P Cryptocurrency
+Comment[fr]=HanaCryptoBank, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=HanaCryptoBank, eşten eşe kriptografik sanal para birimi
+Exec=hanacryptobank-qt %u
+Terminal=false
+Type=Application
+Icon=hanacryptobank128
+MimeType=x-scheme-handler/hanacryptobank;
+Categories=Office;Finance;

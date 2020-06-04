@@ -1,0 +1,11 @@
+[Protocol]
+exec=hanacryptobank-qt '%u'
+protocol=hanacryptobank
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

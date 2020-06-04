@@ -1,0 +1,26 @@
+# /etc/conf.d/hanacryptobankd: config file for /etc/init.d/hanacryptobankd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/hanacryptobank/hanacryptobank.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/hanacryptobankd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/hanacryptobankd.pid"
+
+# Where to write hanacryptobankd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/hanacryptobankd"
+
+# User and group to own hanacryptobankd process
+#BITCOIND_USER="hanacryptobank"
+#BITCOIND_GROUP="hanacryptobank"
+
+# Path to hanacryptobankd executable
+#BITCOIND_BIN="/usr/bin/hanacryptobankd"
+
+# Nice value to run hanacryptobankd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
