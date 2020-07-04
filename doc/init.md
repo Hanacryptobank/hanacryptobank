@@ -1,4 +1,5 @@
-# Sample init scripts and service configuration for hanacryptobankd
+Sample init scripts and service configuration for hanacryptobankd
+==========================================================
 
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
@@ -9,12 +10,15 @@ can be found in the contrib/init folder.
     contrib/init/hanacryptobankd.conf:       Upstart service configuration file
     contrib/init/hanacryptobankd.init:       CentOS compatible SysV style init script
 
-# Service User
+Service User
+---------------------------------
 
-All three startup configurations assume the existence of a "hanacryptobank" user
+All three Linux startup configurations assume the existence of a "hanacryptobank" user
 and group.  They must be created before attempting to use these scripts.
+The macOS configuration assumes hanacryptobankd will be set up for the current user.
 
-# Configuration
+Configuration
+---------------------------------
 
 At a bare minimum, hanacryptobankd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
@@ -26,70 +30,116 @@ file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If hanacryptobankd is run with `-daemon` flag, and no rpcpassword is set, it will
-print a randomly generated suitable password to stderr.  You can also
-generate one from the shell yourself like this:
+If hanacryptobankd is run with the "-server" flag (set by default), and no rpcpassword is set,
+it will use a special cookie file for authentication. The cookie is generated with random
+content when the daemon starts, and deleted when it exits. Read access to this file
+controls who can access it through RPC.
 
-```bash
-bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
-```
+By default the cookie is stored in the data directory, but it's location can be overridden
+with the option '-rpccookiefile'.
 
-Once you have a password in hand, set `rpcpassword=` in `/etc/hanacryptobank/hanacryptobank.conf`
+This allows for running hanacryptobankd without having to do any manual configuration.
+
+`conf`, `pid`, and `wallet` accept relative paths which are interpreted as
+relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see `contrib/debian/examples/hanacryptobank.conf`.
+see contrib/debian/examples/hanacryptobank.conf.
 
-# Paths
+Paths
+---------------------------------
+
+### Linux
 
 All three configurations assume several paths that might need to be adjusted.
-```
+
 Binary:              /usr/bin/hanacryptobankd
 Configuration file:  /etc/hanacryptobank/hanacryptobank.conf
 Data directory:      /var/lib/hanacryptobankd
-PID file:            /var/run/hanacryptobankd/hanacryptobankd.pid (OpenRC and Upstart)
-                     /var/lib/hanacryptobankd/hanacryptobankd.pid (systemd)
-```
+PID file:            `/var/run/hanacryptobankd/hanacryptobankd.pid` (OpenRC and Upstart) or `/run/hanacryptobankd/hanacryptobankd.pid` (systemd)
+Lock file:           `/var/lock/subsys/hanacryptobankd` (CentOS)
+
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the hanacryptobank user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
 hanacryptobank user and group.  Access to hanacryptobank-cli and other hanacryptobankd rpc clients
 can then be controlled by group membership.
 
-# Installing Service Configuration
+NOTE: When using the systemd .service file, the creation of the aforementioned
+directories and the setting of their permissions is automatically handled by
+systemd. Directories are given a permission of 710, giving the hanacryptobank group
+access to files under it _if_ the files themselves give permission to the
+hanacryptobank group to do so (e.g. when `-sysperms` is specified). This does not allow
+for the listing of files under the directory.
 
-## systemd
+NOTE: It is not currently possible to override `datadir` in
+`/etc/hanacryptobank/hanacryptobank.conf` with the current systemd, OpenRC, and Upstart init
+files out-of-the-box. This is because the command line options specified in the
+init files take precedence over the configurations in
+`/etc/hanacryptobank/hanacryptobank.conf`. However, some init systems have their own
+configuration mechanisms that would allow for overriding the command line
+options specified in the init files (e.g. setting `BITCOIND_DATADIR` for
+OpenRC).
 
-Installing this .service file consists on just copying it to
-`/usr/lib/systemd/system` directory, followed by the command
+### macOS
+
+Binary:              `/usr/local/bin/hanacryptobankd`
+Configuration file:  `~/Library/Application Support/HanaCryptoBank/hanacryptobank.conf`
+Data directory:      `~/Library/Application Support/HanaCryptoBank`
+Lock file:           `~/Library/Application Support/HanaCryptoBank/.lock`
+
+Installing Service Configuration
+-----------------------------------
+
+### systemd
+
+Installing this .service file consists of just copying it to
+/usr/lib/systemd/system directory, followed by the command
 `systemctl daemon-reload` in order to update running systemd configuration.
 
-To test, run "systemctl start hanacryptobankd" and to enable for system startup run
+To test, run `systemctl start hanacryptobankd` and to enable for system startup run
 `systemctl enable hanacryptobankd`
 
-## OpenRC
+NOTE: When installing for systemd in Debian/Ubuntu the .service file needs to be copied to the /lib/systemd/system directory instead.
 
-Rename hanacryptobankd.openrc to hanacryptobankd and drop it in `/etc/init.d`.  Double
+### OpenRC
+
+Rename hanacryptobankd.openrc to hanacryptobankd and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
 `/etc/init.d/hanacryptobankd start` and configure it to run on startup with
 `rc-update add hanacryptobankd`
 
-## Upstart (for Debian/Ubuntu based distributions)
+### Upstart (for Debian/Ubuntu based distributions)
 
-Drop hanacryptobankd.conf in `/etc/init`.  Test by running "service hanacryptobankd start"
+Upstart is the default init system for Debian/Ubuntu versions older than 15.04. If you are using version 15.04 or newer and haven't manually configured upstart you should follow the systemd instructions instead.
+
+Drop hanacryptobankd.conf in /etc/init.  Test by running `service hanacryptobankd start`
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
-use old versions of Upstart and do not supply the start-stop-daemon uitility.
+use old versions of Upstart and do not supply the start-stop-daemon utility.
 
-## CentOS
+### CentOS
 
-Copy hanacryptobankd.init to `/etc/init.d/hanacryptobankd`. Test by running "service hanacryptobankd start".
+Copy hanacryptobankd.init to /etc/init.d/hanacryptobankd. Test by running `service hanacryptobankd start`.
 
 Using this script, you can adjust the path and flags to the hanacryptobankd program by
-setting the HANACRYPTOBANKD and FLAGS environment variables in the file
-`/etc/sysconfig/hanacryptobankd`. You can also use the DAEMONOPTS environment variable here.
+setting the HanaCryptoBankD and FLAGS environment variables in the file
+/etc/sysconfig/hanacryptobankd. You can also use the DAEMONOPTS environment variable here.
 
-# Auto-respawn
+### macOS
+
+Copy org.hanacryptobank.hanacryptobankd.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.hanacryptobank.hanacryptobankd.plist`.
+
+This Launch Agent will cause hanacryptobankd to start whenever the user logs in.
+
+NOTE: This approach is intended for those wanting to run hanacryptobankd as the current user.
+You will need to modify org.hanacryptobank.hanacryptobankd.plist if you intend to use it as a
+Launch Daemon with a dedicated hanacryptobank user.
+
+Auto-respawn
+-----------------------------------
 
 Auto respawning is currently only configured for Upstart and systemd.
 Reasonable defaults have been chosen but YMMV.

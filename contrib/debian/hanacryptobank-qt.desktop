@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=HanaCryptoBank Core
+Comment=HanaCryptoBank P2P Cryptocurrency
+Exec=hanacryptobank-qt %u
+Terminal=false
+Type=Application
+Icon=hanacryptobank128
+MimeType=x-scheme-handler/hanacryptobank;
+Categories=Office;Finance;
+StartupWMClass=HanaCryptoBank-qt
+Name[en_US]=hanacryptobank-qt.desktop

@@ -1,9 +1,77 @@
 <TS language="es" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>Mi Dirección</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>Editar Contacto</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Etiqueta la dirección seleccionada</translation>
+    </message>
+    <message>
+        <source>Enter a name for the address (e.g Exchange)</source>
+        <translation>Introduce un nombre para la dirección (p.e. Exchange)</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Editar etiqueta para la dirección seleccionada:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Click derecho para editar dirección o etiqueta</translation>
+        <translation>Click derecho para editar la dirección o etiqueta</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -47,7 +115,7 @@
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Escoja la dirección con las cual recibirá las monedas</translation>
+        <translation>Escoja la dirección en la cual recibirá las monedas</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -63,7 +131,7 @@
     </message>
     <message>
         <source>These are your HanaCryptoBank addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones HanaCryptoBank para realizar pagos. Verifique siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
+        <translation>Estas son tus direcciones HanaCryptoBank para realizar pagos. Verifica siempre la cantidad y la dirección de recepción antes de enviar monedas.</translation>
     </message>
     <message>
         <source>These are your HanaCryptoBank addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -99,6 +167,21 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -109,8 +192,119 @@
         <translation>Dirección</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Fecha</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Enviar</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Nombre de contacto</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ingresa la dirección</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Contactos</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>Puede agregar uno nuevo en las opciones del menú.</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Aún no hay contactos</translation>
+    </message>
+    <message>
+        <source>e.g. John Doe</source>
+        <translation>p.ej. John Doe</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Dirección de contacto inválida</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>No es posible almacenar tu propia dirección como contacto</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Dirección ya almacenada, etiqueta: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nuevo contacto almacenado</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Error al almacenar el contacto</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Contacto editado</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>La edición del contacto falló</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>Borrar Contacto</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>Está a punto de eliminar el contacto:
+
+%1
+
+¿Está seguro?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Contacto Eliminado</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Error al eliminar un contacto</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Dirección copiada</translation>
     </message>
 </context>
 <context>
@@ -120,28 +314,16 @@
         <translation>Diálogo de contraseña</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Introduzca la contraseña</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Nueva contraseña</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Repetir nueva contraseña</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Sirve para desactivar el envío de dinero cuando la cuenta del SO está comprometida. No provee de una seguridad real</translation>
-    </message>
-    <message>
-        <source>For anonymization and staking only</source>
-        <translation>Desbloquear solo para anonimización y staking</translation>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Escriba la nueva contraseña para la Wallet. &lt;br/&gt;Por favor utilice una contraseña de &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt; ocho o más palabras&lt;/b&gt;</translation>
+        <translation>Escriba la nueva contraseña para el monedero. &lt;br/&gt;Por favor utilice una contraseña de &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt; ocho o más palabras&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -150,6 +332,12 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Esta operación requiere su contraseña para desbloquear el monedero</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Desbloquear hanacryptobankera
+para staking</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -176,8 +364,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>HanaCryptoBank will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
-        <translation>HanaCryptoBank se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus RUPs no sean robados mediante malware de su ordenador.</translation>
+        <source>ENCRYPT</source>
+        <translation>ENCRIPTAR</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCBs from being stolen by malware infecting your computer.</source>
+        <translation>HanaCryptoBank se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus HCBs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -198,6 +394,10 @@
     <message>
         <source>Wallet encryption failed</source>
         <translation>El cifrado del monedero ha fallado</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -229,608 +429,21 @@
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>BanTableModel</name>
     <message>
-        <source>BIP 38 Tool</source>
-        <translation>Herramienta BIP 38</translation>
+        <source>IP/Netmask</source>
+        <translation>IP/Máscara de Red</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;Cifrado BIP 38</translation>
-    </message>
-    <message>
-        <source>Enter a HanaCryptoBank Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Introduzca la dirección HanaCryptoBank que querría cifrar usando BIP 38. Introduzca una contraseña en el campo central. Haga clic en cifrar para generar la clave privada cifrada.</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Dirección:</translation>
-    </message>
-    <message>
-        <source>The HanaCryptoBank address to sign the message with</source>
-        <translation>La dirección HanaCryptoBank con la que desee firmar el mensaje</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Escoja una dirección usada previamente</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt + A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar dirección desde el portapapeles</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt + P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Contraseña:</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Clave cifrada:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Copiar la firma actual al portapapeles del sistema</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this HanaCryptoBank address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Cifrar &amp;Clave</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Limpiar todos los campos de firma de mensaje</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Limpiar &amp;Todo</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;Descifrado BIP 38</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Introduzca la clave cifrada privada BIP 38. Introduzca la contraseña en el campo central. Haga clic en descifrar clave para generar la clave privada. Después de que la clave sea descifrada, pulsando en 'Importar dirección' añadirá esta clave privada al monedero.</translation>
-    </message>
-    <message>
-        <source>The HanaCryptoBank address the message was signed with</source>
-        <translation>La dirección HanaCryptoBank con la que se firmó el mensaje</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified HanaCryptoBank address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección HanaCryptoBank especificada</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Descifrar &amp;Clave</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Limpiar todos los campos de verificación de mensaje</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Clave descifrada:</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Importar dirección</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Haga clic en "Descifrar clave" para generar la clave</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>La contraseña introducida es inválida</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Permitido: 0-9,a.z,A-Z,</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>La dirección introducida es inválida</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Por favor compruebe la dirección e inténtelo de nuevo.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>La dirección introducida no se refiere a ninguna clave.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>El desbloqueo del monedero fue cancelado.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>La clave privada para la dirección introducida no está disponible.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Falló el descifrado</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Por favor compruebe la clave y la contraseña e inténtelo de nuevo.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Datos no válidos.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Por favor inténtelo de nuevo.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Por favor espere mientras la clave es importada</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Llave Ya Presente En El Monedero</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Error Añadiendo la Clave en la Wallet</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>Clave privada añadida a la wallet con éxito</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>Wallet</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Nodo</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Visión general</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Mostrar visión general de la wallet</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Enviar</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Recibir</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transacciones</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Navegar por el historial de transacciones</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>S&amp;alir</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Cerrar aplicación</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Sobre &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Mostrar información sobre Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opciones...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Mostrar / Esconder</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Mostrar o esconder la ventana principal</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encriptar wallet...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encriptar las claves privadas que pertenecen a tu wallet</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Copia de seguridad de la wallet...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Copia de seguridad de la wallet a otra ubicación</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Cambiar contraseña...</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Cambiar contraseña usada para la encriptación de la wallet</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Desbloquear wallet...</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Desbloquear monedero</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Bloquear Wallet</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Firmar &amp;mensaje..</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verificar mensaje...</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Información</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Mostrar información de diagnóstico</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Consola de depuración</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Abrir consola de depuración</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Monitor de red</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Mostrar monitor de red</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Lista de Peers</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Mostrar información de peers</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>&amp;Reparación de la wallet</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Mostrar opciones de reparación de la wallet</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Abrir archivo configuración</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Mostrar &amp;copias de seguridad automatizadas</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Mostrar las copias de seguridad creadas automáticamente</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Direcciones de envío...</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Mostrar la lista y etiquetas de direcciones de envío usadas</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Dirección receptora</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Mostrar la lista de las direcciones y etiquetas usadas</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Abrir &amp;URI...</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Opciones de linea de comandos</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Procesado %n bloque del historial de transacciones.</numerusform><numerusform>Procesados %n bloques del historial de transacciones.</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Sincronizando datos adicionales: %p%</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Archivo</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Ajustes</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Herramientas</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Ayuda</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Herramienta de pestañas</translation>
-    </message>
-    <message>
-        <source>HanaCryptoBank Core</source>
-        <translation>Núcleo HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Send coins to a HanaCryptoBank address</source>
-        <translation>Enviar coins a una dirección HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and hanacryptobank: URIs)</source>
-        <translation>Solicitud de pago (genera un código QR y URIs)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Privacidad</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zHCB and Obfuscation</source>
-        <translation>Privacidad con zHCB y Ofuscación</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>Nodos &amp;Maestros</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Explorar nodos maestros</translation>
-    </message>
-    <message>
-        <source>&amp;About HanaCryptoBank Core</source>
-        <translation>&amp;Sobre el núcleo de HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Show information about HanaCryptoBank Core</source>
-        <translation>Mostrar información sobre el núcleo de HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for HanaCryptoBank</source>
-        <translation>Modificar las opciones de configuración de HanaCryptoBank</translation>
-    </message>
-    <message>
-        <source>Sign messages with your HanaCryptoBank addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones HanaCryptoBank para demostrar que le pertenecen</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified HanaCryptoBank addresses</source>
-        <translation>Verificar mensajes para asegurar que están firmados con la dirección HanaCryptoBank especificada</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;Herramienta BIP38</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Encriptar y desencriptar las llaves privadas usando una contraseña</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiEnvío</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>Configuración de MultiEnvío</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Abrir Fichero de &amp;Configuración del Monedero</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Abrir Fichero de Configuración de Nodos &amp;Maestros</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Abrir Fichero de Configuración de Nodos Maestros</translation>
-    </message>
-    <message>
-        <source>Open a HanaCryptoBank: URI or payment request</source>
-        <translation>Abrir un HanaCryptoBank: URI o solicitud de pago</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>Explorador de &amp;Bloques</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Ventana del explorador de bloques</translation>
-    </message>
-    <message>
-        <source>Show the HanaCryptoBank Core help message to get a list with possible HanaCryptoBank command-line options</source>
-        <translation>Mostrar la ayuda de HanaCryptoBank Core para obtener una lista de posibles opciones en línea de comandos</translation>
-    </message>
-    <message>
-        <source>HanaCryptoBank Core client</source>
-        <translation>Cliente HanaCryptoBank Core</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to HanaCryptoBank network</source>
-        <translation><numerusform>%n conexión(es) activa a la red HanaCryptoBank</numerusform><numerusform>%n conexion(es) activas a la red HanaCryptoBank</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Sincronizando con la red...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Importando bloques de disco...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Reindexando bloques en el disco...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Fuente de bloques no disponible...</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Actualizado</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n día</numerusform><numerusform>%n días</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 y %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n año</numerusform><numerusform>%n años</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 detrás</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Recogiendo...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>El último bloque recibido se generó hace %1.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Las transacciones posteriores todavía no son visibles.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Advertencia</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Información</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Transacción enviada</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Transacción entrante</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Transacción MultiEnvío emitida</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Fecha: %1
-Cantidad: %2
-Tipo: %3
-Dirección: %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>La recompensa de participación está activa
-MultiEnvío: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Activo</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Inactivo</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Staking inactiva
-MultiEnvío: %1</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>El monedero está &lt;b&gt;encriptado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>El monedero está &lt;b&gt;encriptado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt; sólo para anonimato y prueba de participación.</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>El monedero está &lt;b&gt;encriptado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
+        <source>Banned Until</source>
+        <translation>Suspendido hasta</translation>
     </message>
 </context>
 <context>
     <name>BlockExplorer</name>
     <message>
         <source>Blockchain Explorer</source>
-        <translation>Explorador de Cadena de Bloques</translation>
+        <translation>Explorador del blockchain</translation>
     </message>
     <message>
         <source>Back</source>
@@ -858,6 +471,33 @@ MultiEnvío: %1</translation>
     </message>
 </context>
 <context>
+    <name>CSRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Savings</source>
+        <translation>Ahorros</translation>
+    </message>
+    <message>
+        <source>0,00 HCB</source>
+        <translation>0,00 HCB</translation>
+    </message>
+    <message>
+        <source>address</source>
+        <translation>Dirección </translation>
+    </message>
+    <message>
+        <source>Not Staking</source>
+        <translation>Sin Stake </translation>
+    </message>
+    <message>
+        <source>Own delegation</source>
+        <translation>Delegación propia </translation>
+    </message>
+</context>
+<context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
@@ -876,15 +516,7 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octetos:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Cantidad:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioridad:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -899,20 +531,8 @@ MultiEnvío: %1</translation>
         <translation>Calderilla:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Con Comisión:</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>Cambio:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>(de)seleccionar todos</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>cambiar estado de bloqueo</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -931,12 +551,44 @@ MultiEnvío: %1</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
+    </message>
+    <message>
+        <source>0.00 HCB</source>
+        <translation>0.00 HCB</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Seleccionar todo</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Cambiar estado de bloqueo</translation>
+    </message>
+    <message>
         <source>Received with label</source>
         <translation>Recibido con etiqueta</translation>
     </message>
     <message>
         <source>Received with address</source>
         <translation>Recibido con dirección</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Después de Comisión:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Date</source>
@@ -949,10 +601,6 @@ MultiEnvío: %1</translation>
     <message>
         <source>Confirmed</source>
         <translation>Confirmado</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>Prioridad</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -972,11 +620,11 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>Lock unspent</source>
-        <translation>Bloquear no gastados</translation>
+        <translation>Bloquear no gastado</translation>
     </message>
     <message>
         <source>Unlock unspent</source>
-        <translation>Desbloquear no gastados</translation>
+        <translation>Desbloquear no gastado</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -1007,6 +655,10 @@ MultiEnvío: %1</translation>
         <translation>Copiar cambio</translation>
     </message>
     <message>
+        <source>Unselect all</source>
+        <translation>Deseleccionar todo</translation>
+    </message>
+    <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Por favor cambie a "Modo de Lista" para utilizar esta función.</translation>
     </message>
@@ -1025,10 +677,6 @@ MultiEnvío: %1</translation>
     <message>
         <source>medium-high</source>
         <translation>medio-alta</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Puede variar +/- %1 duff(s) por entrada.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1091,6 +739,10 @@ MultiEnvío: %1</translation>
         <translation>Esta etiqueta se vuelve roja, si algún destinatario recibe una cantidad menor que %1.</translation>
     </message>
     <message>
+        <source>Can vary +/- %1 upiv per input.</source>
+        <translation>Puede variar +/- %1 upiv por entrada.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
     </message>
@@ -1101,6 +753,531 @@ MultiEnvío: %1</translation>
     <message>
         <source>(change)</source>
         <translation>(cambio)</translation>
+    </message>
+</context>
+<context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
+    </message>
+    <message>
+        <source>HCB:</source>
+        <translation>HCB:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Cantidad:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Comisión:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Cantidad</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Fecha</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Confirmaciones</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Calderilla:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Cambio:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Después de Comisión:</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Título</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>List of delegated balance by address</source>
+        <translation>Lista de saldos delegados por dirección</translation>
+    </message>
+    <message>
+        <source>No balance delegated</source>
+        <translation>Sin saldo delegado</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Colocar Cold Staking</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>Inversor de Stake</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>Delegación </translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>Delegado</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Borrar todo</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>Historial de saldo delegado</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>Aún no hay delegaciones</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>Total en Stake: %1</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>Error al cargar las delegaciones:%1</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Sin contactos disponibles, ¡puedes ir a la pantalla de contactos y añadir alguno allí!</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>El Cold Stake está desactivado en la red </translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Entrada inválida</translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>Dirección del propietario inválida</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>ALERTA!</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>¡Delegar en una dirección de propietario externa!
+
+Las monedas delegadas NO se podrán gastar en esta hanacryptobankera.
+El gasto de estas monedas tendrá que hacerse desde la hanacryptobankera o
+el dispositivo que contiene la dirección del propietario.
+
+¿Deseas continuar?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>La dirección de Stake corresponde a esta cartera, cámbiala a un nodo externo.</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>No se puede crear la transacción.</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>Monedas delegadas </translation>
+    </message>
+    <message>
+        <source>You don't have any HCB to select.</source>
+        <translation>Tú no tienes ningún HCB para seleccionar</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URL copiado al portapapeles</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Dirección copiada al portapapeles</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Editar</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>Stake</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>Lista negra</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Editar etiqueta</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>Copiar dirección 
+del propietario </translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Dirección copiada</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>Editar la Etiqueta de la Dirección Cold </translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>La lista blanca falló, por favor revisa los registros.</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>¡Haciendo Stake! </translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>La lista negra falló, por favor revisa los registros.</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>Lista negra de hacer Stake</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>Dirección del propietario copiada </translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>Editar la Etiqueta de Dirección del Propietario </translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Dirección de etiqueta guardada</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Error al almacenar la etiqueta de dirección</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Transacciones</translation>
+    </message>
+    <message>
+        <source>You can see here the history of your account</source>
+        <translation>Puedes ver aquí el historial de tu cuenta</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Advertencia</translation>
+    </message>
+    <message>
+        <source>No transactions</source>
+        <translation>Sin transacciones</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Recompensas de Staking</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Estadísticas de Staking</translation>
+    </message>
+    <message>
+        <source>HCB</source>
+        <translation>HCB</translation>
+    </message>
+    <message>
+        <source>zHCB</source>
+        <translation>zHCB</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Ordenar por</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Dias</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Meses</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>Años</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filtrar por</translation>
+    </message>
+    <message>
+        <source>LabelText</source>
+        <translation>LabelText</translation>
+    </message>
+    <message>
+        <source>You can view your account's history</source>
+        <translation>Puedes ver el historial de tu cuenta</translation>
+    </message>
+    <message>
+        <source>Amount of HCB and zHCB staked.</source>
+        <translation>Cantidad de HCB y zHCB por stake.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Todos</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Recibidos</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Enviados</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Minado</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Creación de moneda</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>Recompensa de MN</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A usted mismo</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Stake en frío</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Stake en caliente</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Delegado </translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Delegaciones </translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Espere hasta que la hanacryptobankera esté completamente sincronizada para ver su saldo correcto</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Aún no hay transacciones</translation>
+    </message>
+    <message>
+        <source>How to get HCB or zHCB</source>
+        <translation>Cómo obtener HCB o zHCB</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>Puedes verificar la actividad de tu Stake en la barra de estado en la parte superior derecha de la hanacryptobankera. Se iniciará automáticamente tan pronto como la hanacryptobankera se haya sincronizado y  tenga suficientes confirmaciones sobre cualquier saldo disponible. </translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>No tienes recompensas de staking</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Aún no hay estadísticas</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Cargando estadísticas..</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Error al cargar las estadísticas, opción no válida</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>Error cargando gráfico, datos inválidos </translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Error al cargar las estadísticas: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>Text Label</source>
+        <translation>Text Label</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Esto desbloqueará su hanacryptobankera completamente, para que cualquier persona con acceso a ella pueda utilizarla hasta que la hanacryptobankera esté cerrada o bloqueada de nuevo.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Deseleccionar Todo</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
     </message>
 </context>
 <context>
@@ -1159,6 +1336,13 @@ MultiEnvío: %1</translation>
     </message>
 </context>
 <context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+</context>
+<context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
@@ -1182,6 +1366,49 @@ MultiEnvío: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>GOBERNANZA</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Actualizar Propuestas</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Próximo superbloque:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Bloques para el próximo superbloque:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Días para el pago del presupuesto (estimado):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Presupuesto asignado:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Presupuesto restante:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Conteo de Masternodes:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1189,7 +1416,7 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>Núcleo HanaCryptoBank</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1235,6 +1462,10 @@ MultiEnvío: %1</translation>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Elegir certificado raíz SSL para solicitud de pago (por defecto: -sistema-)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1259,12 +1490,20 @@ MultiEnvío: %1</translation>
         <translation>Usar la carpeta de datos por defecto</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Usar una carpeta de datos personalizada:</translation>
+        <source>Use a custom data directory</source>
+        <translation>Usar una carpeta de datos personalizada</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>Núcleo HanaCryptoBank</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1284,312 +1523,353 @@ MultiEnvío: %1</translation>
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Mis Nodos Maestros</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Nota: El estado de tus nodos maestros en el monedero local podría ser incorrecto.&lt;br /&gt;Siempre espere a que el monedero sincronice la información adicional y entonces compruébelo desde otro nodo&lt;br /&gt;si su nodo debería estar funcionando pero aún vee el mensaje "FALTA" en el campo "Estado".</translation>
+        <source>Loading</source>
+        <translation>Cargando</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>Apodo</translation>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>Desbloquear monedero</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>Bloquear monedero</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Solo Staking</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>usuario_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Dirección: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>19 de enero, 2019</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>Introducción</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Dirección</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Protocolo</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a HanaCryptoBank Masternode you must dedicate 10.000 HCB (the unit of HanaCryptoBank) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Para crear un Masternode de HanaCryptoBank debes desponer 10.000 HanaCryptoBank (la unidad de HanaCryptoBank) a la red (sin embargo, estas monedas siguen siendo tuyas y nunca saldrán de tu posesión). Puedes desactivar el nodo y desbloquear las monedas en cualquier momento.</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Estado</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Asegúrate de tener esta cantidad de monedas.</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Activo</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 HCB will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Una transacción de 10,000 HCB se hará a una nueva dirección vacía en tu hanacryptobankera.  La dirección está etiquetada bajo el nombre de masternode. </translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Visto por última vez (UTC)</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>Dirección del nodo que siempre se debe estar en línea ejecutando el masternode actual. </translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Llave pública</translation>
+        <source>Enter IP address</source>
+        <translation>Ingresa la dirección IP</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>&amp;Iniciar apodo</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>Iniciar &amp;todo</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Iniciar &amp;FALTAN</translation>
+        <source>e.g user_masternode</source>
+        <translation>por ejemplo usuario_masternode</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>Estado de &amp;Actualización</translation>
+        <source>NEXT</source>
+        <translation>SIGUIENTE </translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>El estado se actualizará automáticamente en (seg):</translation>
+        <source>BACK</source>
+        <translation>ATRÁS</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>address label cannot be empty</source>
+        <translation>la etiqueta de la dirección no puede quedar vacía </translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Iniciar apodo</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP o puerto no puede quedar vacío</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Confirmar inicio del nodo maestro</translation>
+        <source>Invalid port number</source>
+        <translation>Número de puerto inválido</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>¿Está seguro de que quiere arrancar el nodo maestro %1?</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Archivo masternode.conf no válido</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Confirmar el arranque de todos los nodos maestros</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Error al analizar el archivo masternode.conf</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>¿Estás seguro de querer arrancar TODOS los nodos maestros?</translation>
+        <source>Master node created!</source>
+        <translation>¡Masternodo creado!</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>El comando no está disponible en este momento</translation>
-    </message>
-    <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>No se puede utilizar este comando hasta que la lista de nodos maestros esté sincronizada</translation>
-    </message>
-    <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Confirmar arranque de nodos maestros no encontrados</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>¿Estás seguro de querer arrancar los nodos maestros NO ENCONTRADOS?</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>El archivo masternode.conf no existe</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>MultiEnvío</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Introduzca números enteros 1 - 100</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Enter % to Give (1-100)</source>
-        <translation>Introduzca % a Dar (1-100)</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Introduzca Dirección a la cual Enviar</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HanaCryptoBank addresses after it matures.
-To Add: enter percentage to give and HanaCryptoBank address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiEnvío le permite enviar automáticamente hasta el 100% de recompensa de participación o de nodo maestro a una lista de otras direcciones HanaCryptoBank después de su maduración.
-Para Añadir: introduzca porcentaje a enviar y las direcciones HanaCryptoBank a añadir al vector MultiEnvío.
-Para Eliminar: Introduzca la dirección a eliminar y pulse la tecla delete.
-MultiEnvío no se activará a menos que haga usted click en Activar</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Nodos completos que incentivan a los operadores de nodos a realizar las funciones básicas de consenso y votar sobre el sistema de tesorería recibiendo una recompensa periódica.</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Añadir al vector MultiSend</translation>
+        <source>Create Masternode Controller</source>
+        <translation>Crear Controlador de Masternode </translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Añadir</translation>
+        <source>No active Masternode yet</source>
+        <translation>Aún no hay Masternode activo</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Desactivar MultiEnvío</translation>
-    </message>
-    <message>
-        <source>Deactivate</source>
-        <translation>Desactivar</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Seleccione una dirección de la libreta de direcciones</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt + A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Porcentaje de capital a enviar</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Porcentaje:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Dirección a enviar porción de la recompensa</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Dirección:</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Borrar Dirección De Vector MultiEnvío</translation>
+        <source>Start</source>
+        <translation>Iniciar</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Borrar</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Activar MultiEnvío</translation>
+        <source>Info</source>
+        <translation>Información</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Activar</translation>
+        <source>Start Masternode</source>
+        <translation>Iniciar Masternode </translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Ver Vector MultiEnvío</translation>
-    </message>
-    <message>
-        <source>View MultiSend</source>
-        <translation>Ver MultiEnvío</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>Enviar Para Participaciones</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Enviar Para Recomensas De Nodos Maestros</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>La dirección introducida:
+        <translation>¿Estas seguro de que deseas iniciar el masternode al %1?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>es inválida.
-Por favor compruebe la dirección e inténtelo de nuevo.</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>No se puede iniciar el masternode, la operación de garantía no ha sido aceptada por la red.
+Por favor, espera unos minutos más. </translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Remote Masternode Data</source>
+        <translation>Datos Remotos del Masternode </translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the hanacryptobank.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>La cantidad total de su vector MultiEnvío es superior al 100% de su recompensa
+        <translation>Estás a punto de exportar los datos necesarios para ejecutar un Masternode de un servidor remoto a tu portapapeles.
+
+
+Sólo tendrás que pegar los datos en el archivo hanacryptobank.conf de tu servidor remoto e iniciarlo, luego inicia el Masternode usando esta cartera de controladores (selecciona el Masternode en la lista y presione "start").
 </translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Por favor Introduzca 1 - 100 por ciento.</translation>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode exportado, comprueba tu portapapeles</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiEnvío
-</translation>
+        <source>Delete Masternode</source>
+        <translation>Eliminar Masternode</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Borrado</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Está a punto de eliminar el Masternode:
+ %1
+
+¿Estás seguro?</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>No se pudo localizar la dirección
-</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Archivo masternode.conf inválido </translation>
+    </message>
+    <message>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Error al analizar el archivo masternode.conf </translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>El archivo masternode.conf no existe</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 HCB required.</source>
+        <translation>No hay suficiente saldo para crear un masternode, se necesitan 10.000 HCB.</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Error al crear masternode</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configurar Ofuscación</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Privacidad Básica</translation>
+        <source>Public Key:</source>
+        <translation>Clave Pública: </translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Alta Privacidad</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>Máxima Privacidad</translation>
+        <source>Address: </source>
+        <translation>Dirección:</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>Por favor selecciones un nivel de privacidad.</translation>
+        <source>127.0.0.2:43223</source>
+        <translation>127.0.0.2:43223</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HCB</source>
-        <translation>Use 2 nodos maestros diferentes para mezclar los fondos hasta los 10000 HCB</translation>
+        <source>Collaterall tx id:</source>
+        <translation>Colateral ID TX:</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HCB</source>
-        <translation>Use 8 nodos maestros diferentes para mezclar fondos hasta los 10000 HCB</translation>
+        <source>Output index:</source>
+        <translation>Índice de salida:</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Use 16 nodos maestros diferentes</translation>
+        <source>1 Inputs</source>
+        <translation>1 Entrada</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HCB to anonymize 10000 HCB</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 HCB para anonimizar 10000 HCB</translation>
+        <source>Status:</source>
+        <translation>Estado:</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HCB to anonymize 10000 HCB</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 HCB para anonimizar 10000 HCB.</translation>
+        <source>MISSING</source>
+        <translation>FALTAN</translation>
+    </message>
+    </context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
+        <source>Savings</source>
+        <translation>Ahorros</translation>
     </message>
     <message>
-        <source>0.1 HCB per 10000 HCB you anonymize.</source>
-        <translation>0.1 HCB por 10000 HCB que anonimizas.</translation>
+        <source>Jan. 19, 2019</source>
+        <translation>19 de enero de 2019</translation>
     </message>
     <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Configuración de Ofuscación</translation>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de HanaCryptoBank.</translation>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de HanaCryptoBank.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de HanaCryptoBank.</translation>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1603,8 +1883,16 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
         <translation>Abrir solicitud de pago de URI o archivo</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1613,6 +1901,29 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     <message>
         <source>Select payment request file to open</source>
         <translation>Seleccione el fichero de solicitud de pago que desea abrir</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>Archivo no encontrado </translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>Los datos analizados son demasiado grandes</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "hanacryptobank" prefix</source>
+        <translation>URI inválido, no empezar con el prefijo "hanacryptobank"</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
 </context>
 <context>
@@ -1643,7 +1954,7 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
-        <translation>&amp;Monedero</translation>
+        <translation>M&amp;onedero</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
@@ -1671,7 +1982,7 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Automatically start HanaCryptoBank after logging in to the system.</source>
-        <translation>Arrancar HanaCryptoBank automáticamente después de identificarse en Windows.</translation>
+        <translation>Arrancar HanaCryptoBank automáticamente después de identificarse en el sistema.</translation>
     </message>
     <message>
         <source>&amp;Start HanaCryptoBank on system login</source>
@@ -1679,19 +1990,19 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Mostrar las características de control de monedas individuales, o no</translation>
+        <translation>Mostrar las características de control de monedas, o no</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Activar funciones de control de &amp;monedas</translation>
+        <translation>Activar funciones de &amp;control de monedas</translation>
     </message>
     <message>
         <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Mostrar pestaña adicional listando todos sus nodos maestros en la primera sub-pestaña&lt;br/&gt;y todos los nodos maestros de la red en la segunda sub-pestaña.</translation>
+        <translation>Mostrar pestaña adicional listando todos sus masternodes en la primera sub-pestaña&lt;br/&gt;y todos los masternodes de la red en la segunda sub-pestaña.</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
-        <translation>Mostrar la pestaña de Nodos Maestros</translation>
+        <translation>Mostrar la pestaña de masternodes</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -1716,8 +2027,24 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
+        <source>Enable automatic minting of HCB units to zHCB</source>
+        <translation>Activar el minting automática de unidades HCB a zHCB</translation>
+    </message>
+    <message>
+        <source>Enable zHCB Automint</source>
+        <translation>Activar zHCB Automint</translation>
+    </message>
+    <message>
+        <source>Enable automatic zHCB minting from specific addresses</source>
+        <translation>Habilita el acuñado automático de zHCB desde direcciones específicas</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Habilitar direcciones de Auto-acuñamiento</translation>
+    </message>
+    <message>
         <source>Percentage of incoming HCB which get automatically converted to zHCB via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de RUPs entrantes que serán automáticamente convertidos a zHCB a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <translation>Porcentaje de HCB entrantes que serán automáticamente convertidos a zHCB a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zHCB</source>
@@ -1725,11 +2052,15 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough HCB for this denomination is available</source>
-        <translation>Retrasar la conversión automática a Zerocoin hasta que hayan suficientes HCB disponibles para este tamaño de billete</translation>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes HCB disponibles para este tamaño de hanacryptobanke</translation>
     </message>
     <message>
         <source>Preferred Automint zHCB Denomination</source>
-        <translation>Tamaño de billete zHCB preferido en la creación automática de dinero</translation>
+        <translation>Tamaño de hanacryptobanke zHCB preferido en la creación automática de dinero</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Parte limite de stake:</translation>
     </message>
     <message>
         <source>Connect to the HanaCryptoBank network through a SOCKS5 proxy.</source>
@@ -1784,8 +2115,8 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>Tema de la Interface de Usuario:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unidad para mostrar cantidades:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Unidad en la que se muestran las cantidades:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1794,6 +2125,18 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     <message>
         <source>Decimal digits</source>
         <translation>Dígitos decimales</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Ocultar saldos vazios</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Ocultar los Stake huérfanos de las listas de transacciones </translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Ocultar los Stakes en estado de huérfanos</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1824,8 +2167,8 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <source>I don't care</source>
-        <translation>No me preocupa</translation>
+        <source>Any</source>
+        <translation>Qualquer</translation>
     </message>
     <message>
         <source>default</source>
@@ -1855,104 +2198,99 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <source>The supplied proxy address is invalid.</source>
         <translation>La dirección proxy indicada es inválida.</translation>
     </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>El puerto proxy suministrado no es válido.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>La configuración del proxy suministrado no es válida.</translation>
+    </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>HanaCryptoBankGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Formulario</translation>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
-        <source>HCB Balances</source>
-        <translation>Balances HCB</translation>
+        <source>Wallet</source>
+        <translation>Monedero</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Disponible:</translation>
+        <source>Node</source>
+        <translation>Nodo</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Tu balance actualmente disponible</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Mostrar / Esconder</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>Pendiente:</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Mostrar o esconder la ventana principal</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total de transacciones que aún deben ser confirmadas, y todavía no cuentan en el balance disponible</translation>
+        <source>E&amp;xit</source>
+        <translation>S&amp;alir</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Inmaduro:</translation>
+        <source>Quit application</source>
+        <translation>Cerrar aplicación</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Recompensa de participación o de nodo maestro que aún no ha madurado</translation>
+        <source>HanaCryptoBank Core client</source>
+        <translation>Cliente HanaCryptoBank Core</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HanaCryptoBank network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red HanaCryptoBank después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Transacciones no confirmadas a direcciones sólo de lectura</translation>
+        <source>Warning</source>
+        <translation>Advertencia</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Recompensa de participación o de nodo maestro en direcciones de sólo lectura que todavía no han madurado</translation>
+        <source>Information</source>
+        <translation>Información</translation>
     </message>
     <message>
-        <source>Total:</source>
-        <translation>Total:</translation>
+        <source>System Message</source>
+        <translation>Mensaje de Sistema</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>Su balance total actual</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Transacción MultiEnvío emitida</translation>
     </message>
     <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Balance total actual en direcciones de sólo lectura</translation>
+        <source>Sent transaction</source>
+        <translation>Transacción enviada</translation>
     </message>
     <message>
-        <source>Watch-only:</source>
-        <translation>Sólo-lectura:</translation>
+        <source>Incoming transaction</source>
+        <translation>Transacción entrante</translation>
     </message>
     <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Su balance actual en direcciones de sólo lectura</translation>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>Fecha: %1
+Cantidad: %2
+Tipo: %3
+Dirección: %4
+</translation>
     </message>
     <message>
-        <source>Spendable:</source>
-        <translation>Disponible:</translation>
+        <source>A fatal error occurred. HanaCryptoBank can no longer continue safely and will quit.</source>
+        <translation>Se produjo un error fatal. HanaCryptoBank ya no puede continuar de forma segura y dejará de funcionar.   </translation>
     </message>
+</context>
+<context>
+    <name>PWidget</name>
     <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>Balances Combinados (incluyendo monedas inmaduras)</translation>
-    </message>
-    <message>
-        <source>HCB:</source>
-        <translation>HCB:</translation>
-    </message>
-    <message>
-        <source>zHCB:</source>
-        <translation>zHCB:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>Balance Zerocoin</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Transacciones recientes</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>desincronizado</translation>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>HanaCryptoBankera bloqueada, es necesario desbloquearla para realizar esta acción</translation>
     </message>
 </context>
 <context>
@@ -2062,460 +2400,188 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
+    <name>PrivacyWidget</name>
     <message>
-        <source>HCB which were anonymized via Zerocin Protocol</source>
-        <translation>HCB que fueron anonimizados mediante Protocolo Zerocoin</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Zerocoin HCB (zHCB)</source>
-        <translation>Zerocoin HCB (zHCB)</translation>
+        <source>Title</source>
+        <translation>Título</translation>
     </message>
     <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Acciones Zerocoin:</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HanaCryptoBank network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red HanaCryptoBank después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Introduzca la cantidad de Phr que desea convertir a zPhr</translation>
+        <source>N/A</source>
+        <translation>N/A</translation>
     </message>
     <message>
-        <source>Mint Zerocoin</source>
-        <translation>Creación de moneda Zerocoin</translation>
+        <source>Privacy</source>
+        <translation>Privacidad</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>Convert</source>
+        <translation>Convertir</translation>
     </message>
     <message>
-        <source>zHCB</source>
-        <translation>zHCB</translation>
+        <source>Mint</source>
+        <translation>Acuñar</translation>
     </message>
     <message>
-        <source>Available for Minting:</source>
-        <translation>Disponible para Creación de moneda:</translation>
+        <source>Minting zHCB anonymizes your HCB by removing any
+transaction history, making transactions untraceable </source>
+        <translation>Acuñando zHCB, haz anónimo tu HCB removiendo cualquier historial de transacción, haciendo transacciones imposibles de rastrear.</translation>
     </message>
     <message>
-        <source>0.000 000 00 HCB</source>
-        <translation>0.000 000 00 HCB</translation>
+        <source>Mint new zHCB or convert back to HCB</source>
+        <translation>Acuñar nuevo zHCB o convertir de nuevo a HCB</translation>
     </message>
     <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Resetear la base de datos del monedero Zerocoin. Esta opción borra transacciones que no consiguieron salir publicadas en la cadena de bloques.</translation>
+        <source>No transactions yet</source>
+        <translation>Aún no hay transacciones</translation>
     </message>
     <message>
-        <source>Reset</source>
-        <translation>Reiniciar</translation>
+        <source>Mint zHCB</source>
+        <translation>Acuñar zHCB</translation>
     </message>
     <message>
-        <source>Coin Control...</source>
-        <translation>Control de Monedas...</translation>
+        <source>Enter amount of HCB to mint into zHCB</source>
+        <translation>Ingresa un monto de HCB para acuñar a zHCB</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Cantidad:</translation>
+        <source>Convert back to HCB</source>
+        <translation>Volver a convertir a HCB</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <source>Enter amount of zHCB to convert back into HCB</source>
+        <translation>Introduce la cantidad de zHCB para volver a convertirla en HCB</translation>
     </message>
     <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Reescanear la cadena de bloques entera buscando creación de moneda Zerocoin y otros meta-datos.</translation>
+        <source>Zerocoin</source>
+        <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>ReScan</source>
-        <translation>ReeScanear</translation>
+        <source>zHCB is currently undergoing maintenance</source>
+        <translation>zHCB actualmente está sometiéndose a mantenimiento</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Estado y/o Mensajes de la última Acción de Creación de moneda.</translation>
+        <source>You need to unlock the wallet to be able to %1 zHCB</source>
+        <translation>Necesitas desbloquear la hanacryptobankera para poder alcanzar el %1 zHCB</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>Control zPhr</translation>
+        <source>convert</source>
+        <translation>convertir</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr Seleccionados:</translation>
+        <source>mint</source>
+        <translation>acuñar</translation>
     </message>
     <message>
-        <source>Quantity Selected:</source>
-        <translation>Cantidad Seleccionada:</translation>
+        <source>Invalid value</source>
+        <translation>Valor inválido</translation>
     </message>
     <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Gastar Zerocoin. Sin direcciones "Pagar a:", esto creará pagos a usted mismo.</translation>
+        <source>zHCB minted successfully</source>
+        <translation>zHCB acuñado éxitosamente</translation>
     </message>
     <message>
-        <source>Spend Zerocoin</source>
-        <translation>Gastar Zerocoin</translation>
+        <source>zHCB converted back to HCB</source>
+        <translation>zHCB reconvertido a HCB </translation>
     </message>
     <message>
-        <source>Available Balance:</source>
-        <translation>Balance disponible:</translation>
+        <source>You don't have any HCB to select.</source>
+        <translation>Tú no tienes ningún HCB para seleccionar</translation>
     </message>
     <message>
-        <source>0 zHCB</source>
-        <translation>0 zHCB</translation>
+        <source>Rescan Mints</source>
+        <translation>Re-escanear acuñamientos</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Nivel de Seguridad para Transacciones Zerocoin. Cuanto más mejor, pero necesitará más tiempo y recursos.</translation>
+        <source>Your zerocoin mints are going to be scanned from the blockchain from scratch</source>
+        <translation>Tus acuñamientos de zerocoins van a ser escaneados desde cero en la blockchain</translation>
     </message>
     <message>
-        <source>Security Level:</source>
-        <translation>Nivel de Seguridad:</translation>
+        <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
+        <translation>Tus zerocoins usados van a ser escaneados desde cero en la blockchain</translation>
     </message>
     <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Nivel de Seguridad 1 - 100 (por defecto: 42)</translation>
+        <source>Total %1</source>
+        <translation>Total %1</translation>
     </message>
+</context>
+<context>
+    <name>ProposalFrame</name>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Pagar &amp;A:</translation>
+        <source>Open proposal page in browser</source>
+        <translation>Abrir la página de propuesta en el navegador</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>La dirección HanaCryptoBank a la que enviar el pago. Si se deja en blanco, crea un pago a usted mismo.</translation>
+        <source> remaining payment(s).</source>
+        <translation>Pago(s) pendiente(s).</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Escoja una dirección usada previamente</translation>
+        <source>Yes:</source>
+        <translation>Si:</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <source>Abstain:</source>
+        <translation>Abstenciones:</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar dirección desde el portapapeles</translation>
+        <source>No:</source>
+        <translation>No:</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt + P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiqueta:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Introduzca una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Ca&amp;ntidad:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Convertir el Cambio a Zerocoin (puede costar alguna tasa adicional)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Si está marcado, el monedero intenta minimizar el cambio de vuelta en lugar de minimizar el número de billetes necesarios.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimizar Cambio</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Información sobre los fondos Zerocoin disponibles.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Estadísticas Zerocoin:</translation>
-    </message>
-    <message>
-        <source>Available Funds</source>
-        <translation>Fondos Disponibles</translation>
-    </message>
-    <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>Balance Zerocoin Disponible:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Billetes con valor 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Billetes con valor 1:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Billetes con valor 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Billetes con valor 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Billetes con valor 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Billetes con valor 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Billetes con valor 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Billetes con valor 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Billetes con valor 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Billetes con valor 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Billetes con valor 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Billetes con valor 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Billetes con valor 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Billetes con valor 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Billetes con valor 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Billetes con valor 5000:</translation>
-    </message>
-    <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Nota: Estos objetos ocultos se usan para comunicación entre el diálogo "Control de Monedas' y sus objetos ascendientes. No queremos cambiar/reimplementar el Control de Moneda existente, así que dejamos aquí estos objetos, aunque no los utilicemos. Mejoraremos este planteamiento en el futuro.</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioridad:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Comisión:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Calderilla:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>no</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Octetos:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>¡Fondos insuficientes!</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Monedas seleccionadas automáticamente</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>media</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Funciones de Control de Monedas</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si esto está activado, pero la dirección de cambio está vacía o es inválida, el cambio será mandado a una nueva dirección generada.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Dirección de cambio personalizada</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Cantidad Después de Tasas:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Cambio:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>desincronizado</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Estado de Creación de Moneda: Ok</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
-        <source>Zerocoin functionality is not enabled on the HanaCryptoBank network yet.</source>
-        <translation>La funcionalidad Zerocoin todavía no está habilitada en la red HanaCryptoBank.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Error: Tu monedero está bloqueado. Por favor, primero introduzca la clave de desbloqueo.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Mensaje: Introduzca una cantidad &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Creando moneda</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Monedas creadas correctamente</translation>
-    </message>
-    <message>
-        <source> zHCB in </source>
-        <translation>zHCB en</translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
 </source>
-        <translation>seg. Billetes usados:
+        <translation>Una dirección URL propuesta puede ser usada para suplantación de identidad, estafas y virus informáticos. Abre este enlace solo si confías en la siguiente URL. 
 </translation>
     </message>
     <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>Ejecutando ResetMintZerocoin: reescaneando la cadena de bloques entera, esto necesitará hasta media hora dependiendo de su hardware.
-Por favor espere...</translation>
+        <source>Open link</source>
+        <translation>Abrir enlace</translation>
     </message>
     <message>
-        <source>Duration: </source>
-        <translation>Duración:</translation>
+        <source>Copy link</source>
+        <translation>Copiar enlace</translation>
     </message>
     <message>
-        <source> sec.
-</source>
-        <translation>seg.
-</translation>
+        <source>Wallet Locked</source>
+        <translation>HanaCryptoBankera desbloqueada</translation>
     </message>
     <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Iniciando ResetSpentZerocoin:</translation>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Debes desbloquear tu hanacryptobankera para votar. </translation>
     </message>
     <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>No se especificó drección 'Pagar A', por lo que asumimos un pago local</translation>
+        <source>Do you want to vote %1 on</source>
+        <translation>Quieres votar %1 en </translation>
     </message>
     <message>
-        <source>Invalid HanaCryptoBank Address</source>
-        <translation>Dirección HanaCryptoBank Inválida</translation>
+        <source>using all your masternodes?</source>
+        <translation>usando todos tus masternodes?</translation>
     </message>
     <message>
-        <source>Invalid Send Amount</source>
-        <translation>Cantidad a Enviar Inválida</translation>
+        <source>Proposal Hash:</source>
+        <translation>Propuesta de Hash:</translation>
     </message>
     <message>
-        <source>Confirm additional Fees</source>
-        <translation>Confirmar Tasas adicionales</translation>
+        <source>Proposal URL:</source>
+        <translation>Propuesta de URL:</translation>
     </message>
     <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>¿Está seguro que desea enviar?&lt;br /&gt;&lt;br /&gt;</translation>
+        <source>Confirm Vote</source>
+        <translation>Confirmar Voto</translation>
     </message>
     <message>
-        <source> to address </source>
-        <translation>a la dirección</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
-        <translation> a una dirección local recién generada (sin usar todavía y por lo tanto, anónima) &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>con Nivel de Seguridad</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Confirmar enviar monedas</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation>Gastando Zerocoin.
-Esto es computacionalmente intensivo, puede necesitar varios minutos dependiendo del Nivel de Seguridad elegido y el hardware de su máquina.
-Por favor tenga paciencia...</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Gastar Zerocoin falló con estado =</translation>
-    </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>Gastar zPhr #:</translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>billete:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>serial:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Gasto 1 de :</translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>valor salida:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>dirección:</translation>
-    </message>
-    <message>
-        <source>zPhr Mint</source>
-        <translation>Creación de zPhr</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Envío correcto, código devuelto: </translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid:</translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>tasa:</translation>
+        <source>Vote Results</source>
+        <translation>Resultados de la Votación</translation>
     </message>
 </context>
 <context>
@@ -2523,10 +2589,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>Enter a HanaCryptoBank address (e.g. %1)</source>
-        <translation>Introduzca una dirección HanaCryptoBank (p.e. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2553,6 +2615,10 @@ Por favor tenga paciencia...</translation>
         <translation>BLOOM</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>DESCONOCIDO</translation>
     </message>
@@ -2568,24 +2634,29 @@ Por favor tenga paciencia...</translation>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Guardar Imagen...</translation>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Copiar Imagen</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Error: El directorio de datos especificado "%1" no existe.</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>Guardar Código QR</translation>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Error: No se puede analizar el archivo de configuración: %1. Utilice sólo la sintaxis key=value.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>Imagen PNG (*.png)</translation>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Error: Combinación no válida de -regtest y -testnet.</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Error al leer el archivo de configuración de masternode: %1</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank Core didn't yet exit safely...</source>
+        <translation>El núcleo HanaCryptoBank aún no ha salido de forma segura...</translation>
     </message>
 </context>
 <context>
@@ -2639,10 +2710,6 @@ Por favor tenga paciencia...</translation>
         <translation>Fichero de depuración</translation>
     </message>
     <message>
-        <source>Using OpenSSL version</source>
-        <translation>Usando la versión OpenSSL</translation>
-    </message>
-    <message>
         <source>Build date</source>
         <translation>Fecha de compilación</translation>
     </message>
@@ -2660,7 +2727,7 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Cadena de bloques</translation>
+        <translation>Blockchain</translation>
     </message>
     <message>
         <source>Open the HanaCryptoBank debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2668,7 +2735,15 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Número de Nodos Maestros</translation>
+        <translation>Número de masternodes</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>Directorio de Datos</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation> Hash del bloque pasado </translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2700,11 +2775,19 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>&amp;Peers</source>
-        <translation>&amp;Nodos conectados</translation>
+        <translation>&amp;Peers</translation>
+    </message>
+    <message>
+        <source>Banned peers</source>
+        <translation>Peers proibidos</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
-        <translation>Seleccione un nodo conectado para ver información detallada.</translation>
+        <translation>Seleccione un peer conectado para ver información detallada.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>En lista blance</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2721,14 +2804,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Services</source>
         <translation>Servicios</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>Altura de inicio</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Altura de sincronía</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2763,8 +2838,48 @@ Por favor tenga paciencia...</translation>
         <translation>Reparar &amp;Monedero</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Eliminar directorios locales de Blockchain</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>Monedero En Uso:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>Bloque de empiezo</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>Encabezados sincronizados</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>Bloques sincronizados</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>La duración de un ping actualmente pendiente.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>Espera de Ping</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Desplazamiento de tiempo</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>Ruta personalizada de la copia de seguridad:</translation>
+    </message>
+    <message>
+        <source>Custom zHCB Backup Path:</source>
+        <translation>Ruta personalizada de la copia de seguridad zHCB:</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>Límite de copias de seguridad personalizadas:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2776,11 +2891,11 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Rescan blockchain files</source>
-        <translation>Reescanear ficheros de cadena de bloques</translation>
+        <translation>Reescanear ficheros del blockchain</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions.</source>
-        <translation>Reescanear la cadena de bloques buscando transacciones que faltan en el monedero.</translation>
+        <translation>Reescanear el blockchain buscando transacciones que faltan en el monedero.</translation>
     </message>
     <message>
         <source>Recover transactions 1</source>
@@ -2788,7 +2903,7 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>Recuperar transacciones desde la cadena de bloques (mantener meta-datos, p.e. propietario de la cuenta,etc).</translation>
+        <translation>Recuperar transacciones del blockchain (mantener meta-datos, p.e. propietario de la cuenta,etc).</translation>
     </message>
     <message>
         <source>Recover transactions 2</source>
@@ -2796,7 +2911,7 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Recover transactions from blockchain (drop meta-data).</source>
-        <translation>Recuperar transacciones desde la cadena de bloques (ignorar meta-datos).</translation>
+        <translation>Recuperar transacciones del blockchain (ignorar meta-datos).</translation>
     </message>
     <message>
         <source>Upgrade wallet format</source>
@@ -2804,7 +2919,15 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>Reconstruir el índice de la cadena de bloques desde los archivos blk000??.dat actuales.</translation>
+        <translation>Reconstruir el índice del blockchain desde los archivos blk000??.dat actuales.</translation>
+    </message>
+    <message>
+        <source>-resync:</source>
+        <translation>resincronizando:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Eliminar todos los directorios locales del blockchain y sincronizar el monedero desde el principio</translation>
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
@@ -2835,12 +2958,64 @@ Por favor tenga paciencia...</translation>
         <translation>Bienvenido a la consola RPC de HanaCryptoBank.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use las teclas arriba y abajo para navegar por la historia, y &lt;b&gt;Ctrl-L&lt;/b&gt; para limpiar la pantalla.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp;Desconectar nodo</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>Prohibir nodo por </translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;hora</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;día</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;semana</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;año</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp;  No prohibir nodo</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Esto eliminará las carpetas de blockchain locales y el monedero sincronizará la cadena de bloques completa desde cero.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Esto requiere bastante tiempo y la descarga una gran cantidad de datos.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Sus transacciones y fondos serán visibles nuevamente después de que se haya completado la descarga.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>¿Desea continuar?.&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Confirmar resincronización del Blockchain</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Utiliza las flechas arriba y abajo para navegar por el historial, y %1 para limpiar la pantalla.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Escriba &lt;b&gt;help&lt;/b&gt; para ver una lista de posibles comandos.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ADVERTENCIA: Los estafadores han estado activos, diciendo a los usuarios que escriban comandos aquí, robando el contenido de su hanacryptobankera. No uses esta consola sin entender completamente las consecuencias de un comando.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2859,8 +3034,12 @@ Por favor tenga paciencia...</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(node id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
-        <translation>via %1</translation>
+        <translation>vía %1</translation>
     </message>
     <message>
         <source>never</source>
@@ -2875,154 +3054,118 @@ Por favor tenga paciencia...</translation>
         <translation>Salientes</translation>
     </message>
     <message>
+        <source>Yes</source>
+        <translation>Sí</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>No</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Desconocido</translation>
     </message>
+</context>
+<context>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Fetching...</source>
-        <translation>Descargando...</translation>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reutilizar una de las direcciones de recepción anteriores.&lt;br&gt;Reutilizar direcciones de recepción tiene implicaciones de seguridad y privacidad.&lt;br&gt;No la utilizar al menos que esté re-generando una solicitud de pago anterior.</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;eutilizar una dirección de recepción existente (no recomendado)</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Mensaje:</translation>
+        <source>No address</source>
+        <translation>Sin dirección </translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
+        <source>Add Label</source>
+        <translation>Añadir etiqueta </translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HanaCryptoBank network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red HanaCryptoBank.</translation>
+        <source>Generate Address</source>
+        <translation>Generar Dirección</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HanaCryptoBank network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red HanaCryptoBank.</translation>
+        <source>Copy</source>
+        <translation>Copiar</translation>
     </message>
     <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Use este formulario para solicitar pagos. Todos los campos &lt;b&gt;opcionales&lt;/b&gt;.</translation>
+        <source>Receive</source>
+        <translation>Recibir</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiqueta:</translation>
+        <source>Scan the QR code or copy the address to receive HCB.</source>
+        <translation>Escanear el código QR o copiar la dirección para recibir HCB.</translation>
     </message>
     <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Una cantidad opcional a solicitar. Deje esto vacío o en cero para no pedir una cantidad específica.</translation>
+        <source>No address </source>
+        <translation>Sin dirección </translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Cantidad:</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>Sin dirección disponible, intenta desbloquear la hanacryptobankera</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Solicitud de pago</translation>
+        <source>Error generating address</source>
+        <translation>Error al generar la dirección</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Limpiar todos los campos del formulario.</translation>
+        <source>Edit Label</source>
+        <translation>Editar etiqueta</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>Limpiar</translation>
+        <source>Edit Address Label</source>
+        <translation>Editar la Etiqueta de Dirección</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation>Historial de peticiones de pago</translation>
+        <source>Address label saved</source>
+        <translation>Dirección de etiqueta guardada</translation>
     </message>
     <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Mostrar la solicitud seleccionada (lo mismo que hacer doble click en una entrada)</translation>
+        <source>Error storing address label</source>
+        <translation>Error al almacenar la etiqueta de dirección</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Mostrar</translation>
+        <source>New address created</source>
+        <translation>Nueva dirección creada</translation>
     </message>
     <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Quitar las entradas seleccionadas de la lista</translation>
+        <source>Address copied</source>
+        <translation>Dirección copiada</translation>
     </message>
     <message>
-        <source>Remove</source>
-        <translation>Quitar</translation>
+        <source>URI copied to clipboard</source>
+        <translation>URL copiado al portapapeles</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Copiar etiqueta</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Copiar mensaje</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>QR Code</source>
-        <translation>Código QR</translation>
-    </message>
-    <message>
-        <source>Copy &amp;URI</source>
-        <translation>Copiar &amp;Identificador</translation>
-    </message>
-    <message>
-        <source>Copy &amp;Address</source>
-        <translation>Copiar &amp;Dirección</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Guardar Imagen...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Solicitar pago a %1</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Información de pago</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI (identificador de recurso)</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiqueta</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Mensaje</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>El identificador de recurso es demasiado largo, intente reducir el texto para la etiqueta / mensaje.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Error codificando el identificador de recurso dentro del código QR.</translation>
+        <source>Address copied to clipboard</source>
+        <translation>Dirección copiada al portapapeles</translation>
     </message>
 </context>
 <context>
@@ -3038,6 +3181,10 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Message</source>
         <translation>Mensaje</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3057,519 +3204,1410 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Enviar Monedas</translation>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Funciones de Control de Monedas</translation>
+        <source>New Request Payment</source>
+        <translation>Nueva Solicitud de Pago</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>¡Fondos insuficientes!</translation>
+        <source>Lorem ipsum dolor sit amet, consectur cling elit, sed do </source>
+        <translation>Lorem ipsum dolor sit amet, consectur cling elit, sed do</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Cantidad:</translation>
+        <source>Amount</source>
+        <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Octetos:</translation>
+        <source>HCB</source>
+        <translation>HCB</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Prioridad:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>media</translation>
+        <source>COPY ADDRESS</source>
+        <translation>COPIAR DIRECCIÓN</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Comisión:</translation>
+        <source>COPY URL</source>
+        <translation>COPIAR URL</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Calderilla:</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>no</translation>
+        <source>REQUEST</source>
+        <translation>SOLICITUD</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Con Comisión:</translation>
+        <source>Label</source>
+        <translation>Etiqueta</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Cambio:</translation>
+        <source>Description (optional)</source>
+        <translation>Descripción (opcional)</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Si esto está activado, pero la dirección de cambio está vacía o es inválida, el cambio será mandado a una nueva dirección generada.</translation>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Dirección de cambio personalizada</translation>
+        <source>GENERATE</source>
+        <translation>GENERAR</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>Partir UTXO</translation>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation>Crea una dirección para recibir delegaciones de monedas y poder hacer stake con ellas. </translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation># de salidas</translation>
+        <source>New Cold Staking Address</source>
+        <translation>Nueva dirección de Cold Staking</translation>
+    </message>
+    </context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>Tamaño de UTXO:</translation>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
     </message>
     <message>
-        <source>0 HCB</source>
-        <translation>0 HCB</translation>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Comisión de transacción:</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>Elegir...</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>minimizar los ajustes de comisión</translation>
+        <source>Custom Change Address</source>
+        <translation>Cambio de dirección personalizado</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Minimizar</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" HanaCryptoBank address</source>
+        <translation>El resto del valor resultante de las entradas menos el valor de las salidas va al "cambio" de dirección de HanaCryptoBank</translation>
+    </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>por kilobyte</translation>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>total por lo menos</translation>
+        <source>Customize the transaction fee at your to your liking, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personaliza la tarifa de transacción a tu gusto, dependiendo del valor de la tarifa, tu transacción será incluida o no en la blockchain.</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(leer el consejo)</translation>
+        <source>Recomended</source>
+        <translation>Recomendado</translation>
     </message>
     <message>
-        <source>Custom:</source>
+        <source>0.00 KB</source>
+        <translation>0.00 KB</translation>
+    </message>
+    <message>
+        <source>Custom</source>
         <translation>Personalizado:</translation>
     </message>
     <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(La comisión automática no se ha inicializado todavía. Esto normalmente necesita unos cuantos bloques...)</translation>
+        <source>Per kilobyte</source>
+        <translation>Por kilobyte</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Tiempo de confirmación:</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Open Coin Control...</source>
-        <translation>Abrir Control de Monedas...</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Coins automatically selected</source>
-        <translation>Monedas seleccionadas automáticamente</translation>
+        <source>Customize Fee</source>
+        <translation>Tarifa Personalizada</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uRUPs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uRUPs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uRUPs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Personaliza la comisión de la transacción, dependiendo del valor de la comisión tu transacción será incluida o no en la Blockchain. </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uRUPs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uRUPs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uRUPs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>Normal</source>
+        <translation>Normal</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HanaCryptoBank transactions than the network can process.</source>
-        <translation>Pagar sólo la comisión mínima está bien mientras haya menos volumen de transacciones que espacio en los bloques.&lt;br/&gt;Pero tenga en cuenta que esto podría acabar en una transacción que nunca se confirme si hay más demanda de transacciones HanaCryptoBank de las que la red puede procesar.</translation>
+        <source>Slow</source>
+        <translation>Lento</translation>
     </message>
     <message>
-        <source>normal</source>
-        <translation>normal</translation>
+        <source>Fast</source>
+        <translation>Rápido</translation>
     </message>
     <message>
-        <source>fast</source>
-        <translation>rápido</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
-        <translation>Recomendada</translation>
-    </message>
-    <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Enviar como transacción sin comisiones si es posible</translation>
-    </message>
-    <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(la primera confirmación puede tardar más)</translation>
-    </message>
-    <message>
-        <source>Confirm the send action</source>
-        <translation>Confirmar la acción de enviar</translation>
-    </message>
-    <message>
-        <source>S&amp;end</source>
-        <translation>&amp;Enviar</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Limpiar todos los campos del formulario.</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Limpiar &amp;Todo</translation>
-    </message>
-    <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Enviar a varios destinatarios al mismo tiempo</translation>
-    </message>
-    <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Añadir Destinata&amp;rio</translation>
-    </message>
-    <message>
-        <source>Anonymized HCB</source>
-        <translation>HCB anonimizados</translation>
-    </message>
-    <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
-    </message>
-    <message>
-        <source>Balance:</source>
-        <translation>Saldo:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Copiar comisión</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Copiar después de comisión</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Copiar octetos</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Copiar prioridad</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Copiar calderilla</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Copiar cambio</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>La herramienta de separación de bloques no funciona cuando se envía a direcciones exteriores. Inténtelo otra vez.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>La herramienta de división de bloques no funciona con varias direcciones. Inténtelo otra vez.</translation>
-    </message>
-    <message>
-        <source>using</source>
-        <translation>usando</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>fondos anónimos</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid HanaCryptoBank address</source>
-        <translation>Advertencia: Direcciones HanaCryptoBank inválidas</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>cualquier fondo disponible (no recomendado)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>y SwiftTX</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 a %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>¿Está seguro de querer enviar?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>son añadidos como comisión de transacción</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Cantidad total = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Confirmar enviar monedas</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Una comisión %1 veces más alta que %2 por kB se considera exageradamente alta.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Estimamos que la confirmación empezará dentro de %n bloque.</numerusform><numerusform>Estimamos que la confirmación empezará dentro de %n bloques.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>La dirección de destino no es válida, por favor compruébelo de nuevo.</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>separado en %1 salidas usando el separador UTXO.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 de %2 entradas mostradas)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>La cantidad a pagar debe ser mayor de 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>La cantidad excede su saldo.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>El total excede su saldo si contamos la comisión de %1 .</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Hemos encontrado una dirección duplicada, sólo podemos enviar a cada dirección una vez por envío.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>¡Fallo al crear la transacción!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡La transacción fue rechazada! Esto puede ocurrir si alguna de sus monedas ya se gastó con anterioridad, por ejemplo, si estuvo usted usando una copia de su monedero wallet.dat y gastó allí monedas pero no las marcó como gastadas aquí.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Error: El monedero se desbloqueó sólo para anonimizar monedas.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Error: El monedero ya fue desbloqueado para anonimizar monedas. El desbloqueo total se ha cancelado.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Pagar sólo la comisión mínima de %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Advertencia: Dirección de cambio desconocida</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(sin etiqueta)</translation>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Esto es un pago normal.</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Pagar &amp;A:</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to send the payment to</source>
-        <translation>La dirección HanaCryptoBank a la cual enviar el pago</translation>
+        <source>Enter address</source>
+        <translation>Ingresa la dirección</translation>
+    </message>
+    </context>
+<context>
+    <name>SendWidget</name>
+    <message>
+        <source>Send</source>
+        <translation>Enviar</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Escoja una dirección usada previamente</translation>
+        <source>You can transfer public coins (HCB) or private coins (zHCB)</source>
+        <translation>Puedes transferir monedas públicas (HCB) o monedas privadas (zHCB)</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <source>Select coin type to spend</source>
+        <translation>Selecciona el tipo de moneda a usar</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar dirección desde el portapapeles</translation>
+        <source>Amount</source>
+        <translation>Cantidad</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <source>Customize fee</source>
+        <translation>Tarifa personalizada</translation>
     </message>
     <message>
-        <source>Remove this entry</source>
-        <translation>Quitar esta entrada</translation>
+        <source>Clear all</source>
+        <translation>Borrar todo</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiqueta:</translation>
+        <source>Add recipient</source>
+        <translation>Añadir destinatario</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Introduzca una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
+        <source>Reset to default</source>
+        <translation>Reestablecer los valores predeterminados</translation>
     </message>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>Ca&amp;ntidad:</translation>
+        <source>Total to send</source>
+        <translation>Total a enviar</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation>Mensaje:</translation>
+        <source>Send HCB</source>
+        <translation>Enviar HCB</translation>
     </message>
     <message>
-        <source>A message that was attached to the HanaCryptoBank: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HanaCryptoBank network.</source>
-        <translation>Un mensaje adjunto al HanaCryptoBank: En recurso web especificado será guardado junto a la transacción para su referencia. Nota: Este mensaje no se enviará por la red HanaCryptoBank.</translation>
+        <source>Send zHCB</source>
+        <translation>Enviar zHCB</translation>
     </message>
     <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Esta es una solicitud de pago no verificada.</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>Total restante del UTXO seleccionado</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagar A:</translation>
+        <source>Total remaining</source>
+        <translation>Total restante</translation>
     </message>
     <message>
-        <source>Memo:</source>
-        <translation>Texto libre:</translation>
+        <source>Customize Fee</source>
+        <translation>Tarifa Personalizada</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Esta es una solicitud de pago verificada.</translation>
+        <source>Maximum amount of outputs reached</source>
+        <translation>Cantidad máxima de salidas alcanzadas</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Introduzca una etiqueta para esta dirección para añadirla a su libreta de direcciones</translation>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation>Entrada inválida, las entradas anteriores deben ser válidas antes de añadir una nueva</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Entrada inválida</translation>
+    </message>
+    <message>
+        <source>No set recipients</source>
+        <translation>Sin destinatarios establecidos</translation>
+    </message>
+    <message>
+        <source>Cannot send, wallet locked</source>
+        <translation>No se puede enviar, la wallet está bloqueada</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>No se puede crear la transacción.</translation>
+    </message>
+    <message>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>ADVERTENCIA:
+La transacción gasta una comisión del Cold-Stake,  y se anula.
+Estas monedas ya no serán puestas en Cold-Staked</translation>
+    </message>
+    <message>
+        <source>Transaction sent</source>
+        <translation>Transacción enviada</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin</source>
+        <translation>Gastar Zerocoin</translation>
+    </message>
+    <message>
+        <source>zHCB is currently undergoing maintenance.</source>
+        <translation>zHCB se encuentra actualmente en mantenimiento.</translation>
+    </message>
+    <message>
+        <source>Coin control mint not found</source>
+        <translation>No se ha encontrado el control de monedas acuñadas</translation>
+    </message>
+    <message>
+        <source>Sending %1 to address %2
+</source>
+        <translation>Enviando %1 a la dirección %2
+</translation>
+    </message>
+    <message>
+        <source>Sending %1 to addresses:
+%2</source>
+        <translation>Enviando %1 a las direcciones:
+%2</translation>
+    </message>
+    <message>
+        <source>zHCB transaction sent!</source>
+        <translation>¡Transacción de zHCB enviada!</translation>
+    </message>
+    <message>
+        <source>Version 1 zHCB require a security level of 100 to successfully spend.</source>
+        <translation>La versión 1 zHCB requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
+    </message>
+    <message>
+        <source>Too much inputs (</source>
+        <translation>Demasiadas entradas (</translation>
+    </message>
+    <message>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) necesario.
+Máximo permitido:</translation>
+    </message>
+    <message>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o reduzca la cantidad a gastar.</translation>
+    </message>
+    <message>
+        <source>Address label update failed for address: %1</source>
+        <translation>La actualización de la etiqueta de dirección ha fallado para la dirección: %1</translation>
+    </message>
+    <message>
+        <source>Invalid change address</source>
+        <translation>Cambio de dirección inválida</translation>
+    </message>
+    <message>
+        <source>Invalid URI</source>
+        <translation>URI inválido </translation>
+    </message>
+    <message>
+        <source>Invalid address in URI</source>
+        <translation>Dirección inválida en la URI</translation>
+    </message>
+    <message>
+        <source>Custom Fee %1</source>
+        <translation>Tarifa personalizada %1</translation>
+    </message>
+    <message>
+        <source>You don't have any HCB to select.</source>
+        <translation>Tú no tienes ningún HCB para seleccionar</translation>
+    </message>
+    <message>
+        <source>You don't have any zHCB in your balance to select.</source>
+        <translation>No tienes ningún zHCB en tu saldo para seleccionar.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Sin contactos disponibles, ¡puedes ir a la pantalla de contactos y añadir alguno allí!</translation>
+    </message>
+    <message>
+        <source>Save contact</source>
+        <translation>Guardar contacto</translation>
+    </message>
+    <message>
+        <source>Address field is empty</source>
+        <translation>El área de dirección está vacío</translation>
+    </message>
+    <message>
+        <source>Invalid address</source>
+        <translation>Dirección inválida</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>No es posible almacenar tu propia dirección como contacto</translation>
+    </message>
+    <message>
+        <source>Update Contact</source>
+        <translation>Actualizar Contacto </translation>
+    </message>
+    <message>
+        <source>Create New Contact</source>
+        <translation>Crear Nuevo Contacto</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nuevo contacto almacenado</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Error al almacenar el contacto</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>HanaCryptoBank Core is shutting down...</source>
-        <translation>El programa HanaCryptoBank se está cerrando...</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>No apague el equipo hasta que esta ventana desaparezca.</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Backup Wallet </source>
+        <translation>HanaCryptoBankera de Respaldo</translation>
+    </message>
+    <message>
+        <source>Change Wallet Passphrase</source>
+        <translation>Cambiar la Frase de la Contraseña de la HanaCryptoBankera</translation>
+    </message>
+    <message>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds.</source>
+        <translation>Esto descifrará todos los datos de la hanacryptobankera y los encriptará con la nueva frase de contraseña.
+Recuerda anotarla y guardarla de forma segura, de lo contrario podrías perder el acceso a tus fondos.</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>Donde</translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation>Respaldo</translation>
+    </message>
+    <message>
+        <source>Change Passphrase</source>
+        <translation>Cambiar la Frase de Contraseña</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Copia del Monedero</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Datos del Monedero (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Respaldo creado</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Creación de Respaldo fallida</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>Por favor selecciona una carpeta para exportar el respaldo primero.</translation>
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBitToolWidget</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Firmas - Firmar / Verificar un Mensaje</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Firmar Mensaje</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to sign the message with</source>
-        <translation>La dirección HanaCryptoBank con la que desee firmar el mensaje</translation>
+        <source>Decrypt Address Result</source>
+        <translation>Resultado de la Dirección Descifrada</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Escoja una dirección usada previamente</translation>
+        <source>Import Address</source>
+        <translation>Importar dirección</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <source>Clear</source>
+        <translation>Limpiar</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar dirección desde el portapapeles</translation>
+        <source>BIP38 Tool</source>
+        <translation>Herramienta BIP38</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <source>Encrypt</source>
+        <translation>Encriptar</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Introduzca el mensaje que quiere firmar aquí</translation>
+        <source>Decrypt</source>
+        <translation>Descifrar</translation>
+    </message>
+    <message>
+        <source>Encrypted key</source>
+        <translation>Clave Encriptada</translation>
+    </message>
+    <message>
+        <source>Enter a encrypted key</source>
+        <translation>Introduce una clave encriptada</translation>
+    </message>
+    <message>
+        <source>Passphrase</source>
+        <translation>Frase de Contraseña</translation>
+    </message>
+    <message>
+        <source>Enter a passphrase </source>
+        <translation>Introduce una frase de contraseña</translation>
+    </message>
+    <message>
+        <source>Decrypted address result</source>
+        <translation>Resultado de la dirección descifrada</translation>
+    </message>
+    <message>
+        <source>Decrypted Address</source>
+        <translation>Dirección Descifrada</translation>
+    </message>
+    <message>
+        <source>DECRYPT KEY</source>
+        <translation>CLAVE DESCIFRADA</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ingresa la dirección</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>Introduzca la contraseña</translation>
+    </message>
+    <message>
+        <source>Encrypted Key</source>
+        <translation>Clave Encriptada</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>ENCRIPTAR</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>BORRAR TODO</translation>
+    </message>
+    <message>
+        <source>CLEAR</source>
+        <translation>BORRAR</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>La contraseña introducida es inválida</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Permitido: 0-9,a.z,A-Z,</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>La dirección introducida es inválida</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Por favor compruebe la dirección e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>La dirección introducida no se refiere a ninguna clave.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>El desbloqueo del monedero fue cancelado.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>La clave privada para la dirección introducida no está disponible.</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>Dirección encriptada.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>No hay direcciones disponibles, puedes ir a la pantalla de recepción y añadir algunas allí!</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Falló el descifrado</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Por favor compruebe la clave y la contraseña e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Datos no válidos.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Por favor inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Por favor espere mientras la clave es importada</translation>
+    </message>
+    <message>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation>No se puede importar la dirección, la clave ya está en la hanacryptobankera </translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>Error al añadir la clave a la hanacryptobankera</translation>
+    </message>
+    <message>
+        <source>Successfully added pivate key to the wallet</source>
+        <translation>La clave fue agregada éxitosamente a la hanacryptobankera</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Consola</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>Entrada de consola</translation>
+    </message>
+    <message>
+        <source>Command Line Options </source>
+        <translation>Opciones de Línea de Comandos</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>Abrir Archivo de Depuración</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>No se puede abrir el archivo de depuración
+Verifica que tengas instalado un editor de texto predeterminado.</translation>
+    </message>
+    <message>
+        <source>Welcome to the HanaCryptoBank RPC console.</source>
+        <translation>Bienvenido a la consola RPC de HanaCryptoBank.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Utiliza las flechas arriba y abajo para navegar por el historial, y %1 para limpiar la pantalla.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Escriba &lt;b&gt;help&lt;/b&gt; para ver una lista de posibles comandos.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ADVERTENCIA: Los estafadores han estado activos, diciendo a los usuarios que escriban comandos aquí, robando el contenido de su hanacryptobankera. No uses esta consola sin entender completamente las consecuencias de un comando.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Reestablecer a valores predeterminados</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Descartar los cambios</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Visualización de la pantalla</translation>
+    </message>
+    <message>
+        <source>Customize the display view options</source>
+        <translation>Personalizar las opciones de la vista de pantalla</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Idioma</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>Unidad para mostrar la cantidad</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Dígitos decimales</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>URLs de transacciones de terceros</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Ocultar saldos vazios</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>por defecto</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>El restablecimiento de las opciones se ha realizado correctamente</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
+    </message>
+    <message>
+        <source>1) What is HanaCryptoBank?</source>
+        <translation>1) ¿Qué es HanaCryptoBank?</translation>
+    </message>
+    <message>
+        <source>2) Why are my HCB unspendable?</source>
+        <translation>2) ¿Por qué mis HCB no se pueden gastar?</translation>
+    </message>
+    <message>
+        <source>3) HanaCryptoBank privacy? What is Zerocoin (zHCB)?</source>
+        <translation>3) ¿Cómo es la privacidad de HanaCryptoBank? ¿Qué es Zerocoin (zHCB)?</translation>
+    </message>
+    <message>
+        <source>4) Why are my zHCB unspendable?</source>
+        <translation>4) ¿Por qué no se pueden gastar mis zHCB?</translation>
+    </message>
+    <message>
+        <source>5) Why did my wallet convert the balance
+    into zHCB automatically?</source>
+        <translation>5) ¿Por qué mi hanacryptobankera convirtió el saldo en zHCB automáticamente?</translation>
+    </message>
+    <message>
+        <source>6) How do I receive HCB/zHCB?</source>
+        <translation>6) ¿Cómo recibo HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>7) How do I stake HCB/zHCB?</source>
+        <translation>7) ¿Cómo puedo hacer Stake de HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>8) Where I should go if I need support?</source>
+        <translation>8) ¿A dónde debo ir si necesito apoyo?</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>What is HanaCryptoBank?</source>
+        <translation>¿Qué es HanaCryptoBank?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  HanaCryptoBank incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zHCB) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of HanaCryptoBank to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+HanaCryptoBank es una forma de dinero digital en línea que utiliza la tecnología blockchain que se puede transferir a nivel global, de forma instantánea  y con tarifas casi nulas. HanaCryptoBank incorpora un sistema de seguridad y privacidad líder en el mercado y es también la primera criptomoneda PoS (Proof of Stake) que implementa el sistema de Stake de ZeroCoin(zHCB) y Zerocoin. 
+&lt;/p&gt;&lt;p align="justify"&gt;
+ HanaCryptoBank utiliza un algoritmo de consenso de Prueba de Stake (PoS), que permite a todos los propietarios de HanaCryptoBank participar en la obtención de recompensas de los nuevos bloques generados mientras aseguran la red con hanacryptobankeras de nodo completo , así como también ejecutan Masternodos para crear y votar las propuestas.
+. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>Why are my HCB unspendable?</source>
+        <translation>¿Por qué mi HCB no se pueden gastar?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Newly received HanaCryptoBank requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Your HanaCryptoBank wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Los HanaCryptoBank recién recibidos requieren 6 confirmaciones en la red para ser elegibles para gastos que pueden tomar ~6 minutos.  
+&lt;/p&gt;&lt;p align="justify"&gt;
+Tu cartera HanaCryptoBank también necesita estar completamente sincronizada para que pueda  ver y gastar el saldos en la red.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank privacy? What is Zerocoin (zHCB)?</source>
+        <translation>¿Cómo es la privacidad de HanaCryptoBank? ¿Qué es Zerocoin (zHCB)?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB is an optional privacy-centric method of coin mixing on the
+                           HanaCryptoBank blockchain. Basically all your transactions cannot be tracked
+                           on to any block explorer. You can read more about the technicals in the
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt;
+                           "HanaCryptoBank Zerocoin (zHCB) Technical Paper"&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
+zHCB es un método opcional centrado en la privacidad de monedas en la Blockchain HanaCryptoBank. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
+ &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt;
+"Documentación Técnica de HanaCryptoBank Zerocoin (zHCB) ". &lt;/a&gt;. 
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Why are my zHCB unspendable?</source>
+        <translation>¿Por qué mis zHCB se encuentran inutilizables?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           After minting, zHCB will require 20 confirmations as well as 1
+                           additional mint of the same denomination on the network to
+                           become eligible for spending.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Después de la acuñación, el zHCB requerirá 20 confirmaciones así como 1 acuñación adicional de la misma denominación en la red para ser elegible para el gasto.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>Why did my wallet convert the balance into zHCB automatically?</source>
+        <translation>¿Por qué mi hanacryptobankera convierte el balance automáticamente en zHCB?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           By default the HanaCryptoBank wallet will convert 10% of your entire HCB
+                           balance to zHCB to assist the network. If you do not wish to
+                           stake zHCB or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your HanaCryptoBank wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zHCB Automint”.
+                           If you are not making use of the HanaCryptoBank-QT or GUI you can simply open
+                           your hanacryptobank.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           marks and restart your wallet to disable automint.&lt;/p&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           You can read more about zHCB in the
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt; "HanaCryptoBank Zerocoin (zHCB) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zHCB, please read the "How do I stake"
+                           section of the FAQ below.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Por defecto, la hanacryptobankera HanaCryptoBank convierte el 10% de tu saldo HCB completo
+a zHCB para ayudar a la red. Si no deseas hacer
+stake por zHCB o aprovechar el beneficio de privacidad que te brinda,
+puedes desactivar la acuñación automática en tu hanacryptobankera HanaCryptoBank yendo
+a Ajustes-&gt;Opciones y deseleccionando "Activar zHCB Automint".
+Si no estás haciendo uso de la HanaCryptoBank-QT o GUI puedes simplemente abrir
+tu archivo hanacryptobank.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las comillas
+luego reinicia tu hanacryptobankera para deshabilitar la impresión automática.&lt;/p&gt;
+&lt;/p&gt;&lt;p align="justify"&gt;
+Puedes leer más sobre zHCB en el
+&lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt; "Documentación Técnica de HanaCryptoBank Zerocoin (zHCB)" &lt;/a&gt;.
+Si deseas conservar y hacer stake tu zHCB, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <source>How do I receive HCB/zHCB?</source>
+        <translation>¿Cómo recibo HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB can be spent and sent to any HanaCryptoBank address. The receiver will
+                           receive standard HanaCryptoBank but the origin of the HanaCryptoBank is anonymized by the zHCB Protocol.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           If you want more zHCB you will need to mint your balance in the “Privacy” tab.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+El zHCB se puede gastar y enviar a cualquier dirección HanaCryptoBank. El receptor recibirá
+el HanaCryptoBank estándar, pero el origen del HanaCryptoBank es anonimizado por el protocolo zHCB.
+&lt;/p&gt;&lt;p align="justify"&gt;
+Si quieres más zHCB necesitarás acuñar tu saldo en la pestaña "Privacidad".
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>7</source>
+        <translation>7</translation>
+    </message>
+    <message>
+        <source>How do I stake HCB/zHCB?</source>
+        <translation>¿Cómo hago stake HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>¿Qué es un Masternode?</translation>
+    </message>
+    <message>
+        <source>8</source>
+        <translation>8</translation>
+    </message>
+    <message>
+        <source>9</source>
+        <translation>9</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           A masternode is a computer running a full node HanaCryptoBank core wallet with a
+                           requirement of 10,000 HCB secured collateral to provide extra services
+                           to the network and in return, receive a portion of the block reward
+                           regularly.  These services include:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
+                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
+                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           For providing such services, masternodes are also paid a certain portion
+                           of reward for each block. This can serve as a passive income to the
+                           masternode owners minus their running cost.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Masternode Perks:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Participate in HanaCryptoBank Governance&lt;/li&gt;
+                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
+                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
+                           &lt;li&gt;Help secure the HanaCryptoBank network&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Requirements:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;10,000 HCB per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
+                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
+                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Un Masternode es un ordenador que ejecuta una hanacryptobankera central HanaCryptoBank de nodo
+completo con un requisito de 10.000 HCB de garantía asegurados para prestar servicios
+adicionales a la red y a cambio, recibir una parte de la recompensa del bloque
+regularmente. Estos servicios incluyen:
+&lt;/p&gt;&lt;p align="justify"&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Transacciones instantáneas (SwiftX)&lt;/li&gt;
+&lt;li&gt;Una gobernanza descentralizada (Propuesta de Votación)&lt;/li&gt;
+&lt;li&gt;Un sistema de presupuestación descentralizado (Tesorería)&lt;/li&gt;
+&lt;li&gt;Validación de transacciones dentro de cada bloque&lt;/li&gt;
+&lt;li&gt;Actuar como un nodo completo adicional en la red&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/p&gt;&lt;p align="justify"&gt;
+Por la prestación de estos servicios, a los Masternodes también se les paga una cierta parte de recompensa por cada bloque. Esto puede servir como un ingreso pasivo para los
+propietarios de Masternodes menos sus costes de funcionamiento.
+&lt;/p&gt;&lt;p align="justify"&gt;
+
+Ventajas de los Masternodes: 
+&lt;/p&gt;&lt;p align="justify"&gt;
+&lt;ul&gt;
+&lt;li&gt;Participar en el gobierno de HanaCryptoBank&lt;/li&gt;
+&lt;li&gt;Gana Recompensas Masternode&lt;/li&gt;
+&lt;li&gt;Opción de productos para venta futura&lt;/li&gt;
+&lt;/li&gt;Ayudar a proteger la red HanaCryptoBank&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;p align="justify"&gt;
+
+Requisitos: 
+&lt;/p&gt;
+&lt;p align="justify"&gt;&lt;ul&gt;
+&lt;li&gt;10.000 HCB por cada instancia de Masternode&lt;/li&gt;
+&lt;li&gt;Debe guardarse en una hanacryptobankera principal&lt;/li&gt;
+&lt;li&gt;Necesita una dirección IP dedicada&lt;/li&gt;
+&lt;li&gt;La hanacryptobankera Masternode permanecerá en línea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>Preguntas Frecuentes</translation>
+    </message>
+    <message>
+        <source>You can read more here</source>
+        <translation>Puedes leer más aquí</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Salida</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>Monitor de Red</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Información</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>General</translation>
+    </message>
+    <message>
+        <source>Client Version: </source>
+        <translation>Versión del Cliente:</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>Agente de Usuario:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nombre:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>Blockchain</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>Pool de Memoria</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Wallet Conf</source>
+        <translation>Configurar HanaCryptoBankera </translation>
+    </message>
+    <message>
+        <source>Backups</source>
+        <translation>Respaldos</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Sin información</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>No se puede abrir la carpeta de copias de seguridad</translation>
+    </message>
+    <message>
+        <source>Unable to open hanacryptobank.conf with default application</source>
+        <translation>No se puede abrir hanacryptobank.conf con la aplicación predeterminada</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>Dentro:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Fuera:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>Ventana</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>Personalizar las opciones de la ventana de la aplicación</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Reestablecer a valores predeterminados</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Descartar los cambios</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>Tamaño del caché de la base de datos</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>Números de hilos de verificación del Scrip </translation>
+    </message>
+    <message>
+        <source>Start HanaCryptoBank on system login</source>
+        <translation>Iniciar HanaCryptoBank al iniciar sesión en el sistema</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Minimizar a la bandeja en lugar de a la barra de tareas</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>Minimizar al cerrar</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>Reestablecer Opciones</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>Estás a punto de reestablecer las opciones de la aplicación a los valores predeterminados.
+
+¿Estás seguro?
+</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>El restablecimiento de las opciones se ha realizado correctamente</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>Nuevo destinatario para multisend</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>Porcentaje</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HanaCryptoBank addresses after it matures.</source>
+        <translation>MultiSend le permite enviar automáticamente hasta el 100% de tus stakes o recompensas masternode a una lista de otras direcciones HanaCryptoBank después de que madurar.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Activo</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Deshabilitar</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>Ningún destinatario activo todavía</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>Enviar stakes</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>Enviar recompensas de masternode</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>AÑADIR DESTINATARIO</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>BORRAR TODO</translation>
+    </message>
+    <message>
+        <source>Clear succeed</source>
+        <translation>Borrado con éxito</translation>
+    </message>
+    <message>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation>Borrar todos los errores, no se pudo localizar la dirección en el archivo de la hanacryptobankera</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>La dirección introducida: %1 es inválida.
+Por favor comprueba la dirección e inténtalo nuevamente.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>Porcentaje inválido, por favor ingresa valores desde 1 hasta 100.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>La cantidad total de tu vector de MultiEnvío es superior al 100% de tu recompensa de Stake</translation>
+    </message>
+    <message>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation>Error al guardar MultiSend, ha fallado el guardado de las propiedades en la base de datos.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>No se puede activar MultiSend, no hay destinatarios disponibles</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation>No se puede activar MultiSend
+Marque una o ambas casillas de verificación para enviar recompensas de stake y/o masternode</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend activado pero la configuración de escritura en la DB falló</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend activado</translation>
+    </message>
+    <message>
+        <source>First multiSend address invalid</source>
+        <translation>La primera dirección de envío múltiple no es válida</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend desactivado pero la configuración de escritura en la BD falló</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend desactivado</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Limpiar</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Firmar/Verificar Mensaje</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>Firmar</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>Verificar</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>Seleccionar una modalidad</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Mensaje</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ingresa la dirección</translation>
     </message>
     <message>
         <source>Signature</source>
         <translation>Firma</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Copiar la firma actual al portapapeles del sistema</translation>
+        <source>SIGN</source>
+        <translation>FIRMAR</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HanaCryptoBank address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección HanaCryptoBank</translation>
+        <source>CLEAR ALL</source>
+        <translation>BORRAR TODO</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address the message was signed with</source>
-        <translation>La dirección HanaCryptoBank con la que se firmó el mensaje</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified HanaCryptoBank address</source>
-        <translation>Verifica el mensaje para asegurar que fue firmado con la dirección HanaCryptoBank especificada</translation>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation>Firmar &amp;Mensaje</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Limpiar todos los campos de firma de mensaje</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Limpiar &amp;Todo</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verificar Mensaje</translation>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Usted puede firmar mensajes con su dirección para probar que son auténticos. Tenga cuidado con firmar algo corto o vago como "hola", pues los ataques de phising pueden engañarle para que firme su identidad para ellos. Sólo firme textos detallados con los que esté de acuerdo.</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
         <translation>Introduzca la dirección de firma, mensaje (asegúrese de que copia los puntos y aparte, espacios, tabuladores, etc. exactamente) y la firma debajo para verificar el mensaje. Vaya con cuidado de no leer más en la firma de loque está en el mensaje firmado propiamente dicho, para evitar ser engañado por un ataque "hombre en el medio".</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verificar &amp;Mensaje</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Limpiar todos los campos de verificación de mensaje</translation>
-    </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Haga click en "Firmar Mensaje" para generar la firma</translation>
+        <source>VERIFY</source>
+        <translation>VERIFICAR</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3619,12 +4657,366 @@ Por favor tenga paciencia...</translation>
         <source>Message verified.</source>
         <translation>Mensaje verificado.</translation>
     </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>No hay direcciones disponibles, puedes ir a la pantalla de recepción y añadir algunas allí!</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>CheckBox</translation>
+    </message>
+    <message>
+        <source>RadioButton</source>
+        <translation>RadioButton</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Reestablecer a valores predeterminados</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Descartar los cambios</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Monedero</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>Personaliza las opciones de la hanacryptobankera interna</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Parte limite de stake:</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>Gastar cambio no confirmado</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Red</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>Personalizar las opciones de la red de nodos</translation>
+    </message>
+    <message>
+        <source>Proxy IP:</source>
+        <translation>IP del proxy:</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>Introduce la IP del proxy</translation>
+    </message>
+    <message>
+        <source>Port:</source>
+        <translation>Puerto:</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>Asignar puerto utilizando UPnP</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Permitir conexiones entrantes</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>Conectarse a través del proxy SOCKS5 (proxy por defecto): </translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>GUARDAR</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>El restablecimiento de las opciones se ha realizado correctamente</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Reparación de hanacryptobankeras</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions.</source>
+        <translation>Los botones de abajo reiniciarán la hanacryptobankera con opciones de línea de comandos para reparar esta hanacryptobankera, solucionar problemas con archivos corruptos de blockchain o transacciones perdidas u obsoletas.</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Intentar recuperar las llaves privadas de un archivo wallet.dat corrupto.</translation>
+    </message>
+    <message>
+        <source>Rescan the blockchain for missing wallet transactions.</source>
+        <translation>Vuelve a escanear la blockchain en busca de transacciones de hanacryptobankera perdidas.</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner).</source>
+        <translation>Recuperar transacciones de la blockchain (guardar-meta-datos, por ejemplo, propietario de la cuenta).</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Recuperar transacciones del blockchain (ignorar meta-datos).</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>Actualiza tu hanacryptobankera al último formato al iniciarse. (Nota: esto NO es una actualización de la hanacryptobankera en sí)</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000???.dat files.</source>
+        <translation>Reconstruir el índice de la cadena de bloques desde los archivos blk000??.dat actuales.</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Eliminar todos los directorios locales del blockchain y sincronizar el monedero desde el principio</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Salvar monedero</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>Volver a escanear el archivo de la blockchain</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Recuperar transacciones 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Recuperar transacciones 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Actualizar formato del monedero</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Reconstruir índice</translation>
+    </message>
+    <message>
+        <source>Delete local blockchain </source>
+        <translation>Eliminar la blockchain local </translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Esto eliminará las carpetas de blockchain locales y el monedero sincronizará la cadena de bloques completa desde cero.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Esto requiere bastante tiempo y la descarga una gran cantidad de datos.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Sus transacciones y fondos serán visibles nuevamente después de que se haya completado la descarga.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>¿Desea continuar?.&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Confirmar resincronización del Blockchain</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>Datos de la HanaCryptoBankera</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Monedero</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>Multisend</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Herramientas</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Firmar/Verificar Mensaje</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>Herramienta BIP38</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Opciones</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Principal</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Visualización de la pantalla</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Depurar </translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Información</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Consola</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Reparación de hanacryptobankera </translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Ayuda </translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>Preguntas Frecuentes </translation>
+    </message>
+    <message>
+        <source>About HanaCryptoBank</source>
+        <translation>Acerca de HanaCryptoBank</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Ajustes</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Confirmar reinicio de las opciones</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Se requiere un reinicio del cliente para activar los cambios.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>El cliente se cerrará, ¿procedemos?</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>Se requiere reiniciar</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>Tu hanacryptobankera necesita ser reiniciada para aplicar los cambios.
+</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>Reiniciar Ahora</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>Reiniciar más tarde</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>Las opciones se aplicarán en el próximo reinicio de la hanacryptobankera</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>Opciones guardadas</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>Fallo al guardar las opciones</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>Descartar los cambios no guardados</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>Estás a punto de descartar todas las opciones que no has guardado.
+
+¿Estás seguro de eso?
+</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>HanaCryptoBank Core is shutting down...</source>
+        <translation>El programa HanaCryptoBank se está cerrando...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>No apague el equipo hasta que esta ventana desaparezca.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>Contacto Guardado</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>Cargando....</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
+    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>Núcleo HanaCryptoBank</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3648,6 +5040,108 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Editar</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Borrar</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>Último</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>480.0685 HCB</source>
+        <translation>480.0685 HCB</translation>
+    </message>
+    <message>
+        <source>1,000 zHCB</source>
+        <translation>1,000 zHCB</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>Disponible </translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>Pendiente</translation>
+    </message>
+    <message>
+        <source>6.943 HCB</source>
+        <translation>6.943 HCB</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>No está completamente desarrollado </translation>
+    </message>
+    <message>
+        <source>10 HCB</source>
+        <translation>10 HCB</translation>
+    </message>
+    <message>
+        <source>60 zHCB</source>
+        <translation>60 zHCB</translation>
+    </message>
+    <message>
+        <source>10 zHCB</source>
+        <translation>10 zHCB</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>HanaCryptoBankera desbloqueada para hacer Stake</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>Error al generar la dirección</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>Dirección Copiada</translation>
+    </message>
+    <message>
+        <source>Automint enabled</source>
+        <translation>Auto-acuñamiento habilitado </translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Auto-acuñamiento inválido </translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>Stake activo  </translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>Stake inactivo </translation>
+    </message>
+    <message>
+        <source>Synchronized</source>
+        <translation>Sincronizado</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 y %2</translation>
+    </message>
+    </context>
+<context>
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
@@ -3656,10 +5150,6 @@ Por favor tenga paciencia...</translation>
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para %n bloque más</numerusform><numerusform>Abierto para %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
@@ -3667,18 +5157,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>conflicted</source>
         <translation>conflictivo (bloque huérfano?)</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verificado via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmado (verificado via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmaciones (verificado via swifttx)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3693,23 +5171,35 @@ Por favor tenga paciencia...</translation>
         <translation>%1 confirmaciones</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (verificado via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/confirmado (verificado via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 confirmaciones (verificado via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1/offline (verificación SwiftTX en marcha - %2 de %3 firmas)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
         <translation>%1/confirmado (verificación SwiftTX en marcha - %2 de %3 firmas)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1 confirmaciones (verificación SwiftTX en marcha - %2 de %3 firmas)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation>%1/offline (falló la verificación SwiftTX)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation>%1/confirmado (falló la verificación SwiftTX)</translation>
     </message>
     <message>
@@ -3719,10 +5209,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>, has not been successfully broadcast yet</source>
         <translation>, no ha sido correctamente transmitida todavía</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, retransmitido a través de %n nodo</numerusform><numerusform>, retransmitido a través de %n nodos</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3763,10 +5249,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Credit</source>
         <translation>Crédito</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>madurará dentro de %n bloque</numerusform><numerusform>madurará dentro de %n bloques</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3813,10 +5295,6 @@ Por favor tenga paciencia...</translation>
         <translation>Comerciante</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Las monedas generadas deben madurarse %1 bloques hasta que puedan ser gastadas de nuevo. Cuando generaste este bloque, se retransmitió a la red para añadirse a la cadena de bloques. Si falla en unirse a la cadena, su estado cambiará a "no aceptado" y no se podrá gastar de nuevo (bloque huérfano). Esto puede ocurrir ocasionalmente si otro nodo genera un bloque casi al mismo tiempo que el tuyo.</translation>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>Información de depuración</translation>
     </message>
@@ -3842,17 +5320,6 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Detalles de transacción</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Este panel muestra una descripción detallada de la transacción</translation>
-    </message>
-</context>
-<context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
@@ -3865,10 +5332,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Address</source>
         <translation>Dirección</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para %n bloque más</numerusform><numerusform>Abierto por %n bloques más</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3919,6 +5382,22 @@ Por favor tenga paciencia...</translation>
         <translation>Recibido por medio de Ofuscación</translation>
     </message>
     <message>
+        <source>HCB Stake</source>
+        <translation>Stake HCB</translation>
+    </message>
+    <message>
+        <source>zHCB Stake</source>
+        <translation>Stake zHCB</translation>
+    </message>
+    <message>
+        <source>HCB Cold Stake</source>
+        <translation>Cold Stake de HCB</translation>
+    </message>
+    <message>
+        <source>Stake delegation</source>
+        <translation>Delegación de Stake</translation>
+    </message>
+    <message>
         <source>Obfuscation Denominate</source>
         <translation>Ofuscación Denominada</translation>
     </message>
@@ -3932,7 +5411,27 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Obfuscation Create Denominations</source>
-        <translation>Ofuscación Crea Billetes</translation>
+        <translation>Ofuscación Crea HanaCryptoBankes</translation>
+    </message>
+    <message>
+        <source>Converted HCB to zHCB</source>
+        <translation>HCB convertidos a zHCB</translation>
+    </message>
+    <message>
+        <source>Spent zHCB</source>
+        <translation>Gastar zHCB</translation>
+    </message>
+    <message>
+        <source>Received HCB from zHCB</source>
+        <translation>HCB recibidos desde zHCB</translation>
+    </message>
+    <message>
+        <source>Minted Change as zHCB from zHCB Spend</source>
+        <translation>Cambio de acuñación en zHCB al Gastar zHCB</translation>
+    </message>
+    <message>
+        <source>Converted zHCB to HCB</source>
+        <translation>zHCB convertidos a HCB</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3947,10 +5446,6 @@ Por favor tenga paciencia...</translation>
         <translation>Pago a usted mismo</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Creación de moneda</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Minado</translation>
     </message>
@@ -3959,32 +5454,16 @@ Por favor tenga paciencia...</translation>
         <translation>Ofuscado</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Phr convertidos a zPhr</translation>
-    </message>
-    <message>
-        <source>Spent zPhr</source>
-        <translation>zPhr Gastados</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Phr recibidos desde zPhr</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Cambio Creado en zPhr por un Gasto zPhr</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>zPhr convertidos en Phr</translation>
-    </message>
-    <message>
         <source>watch-only</source>
         <translation>sólo-lectura</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>Acumulador zPhr</translation>
+        <source>Anonymous</source>
+        <translation>Anónimo</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Sin información</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4016,212 +5495,149 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>Todos</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Hoy</translation>
+        <source>Transaction Details</source>
+        <translation>Detalles de Transacción</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>Esta semana</translation>
+        <source>ID:</source>
+        <translation>ID:</translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>Este mes</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>Último mes</translation>
+        <source>Sending to: </source>
+        <translation>Enviando a:</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>Este año</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Range...</source>
-        <translation>Intervalo...</translation>
+        <source>Total amount</source>
+        <translation>Monto total</translation>
     </message>
     <message>
-        <source>Most Common</source>
-        <translation>Más Común</translation>
+        <source>2 HCB</source>
+        <translation>2 HCB</translation>
     </message>
     <message>
-        <source>Received with</source>
-        <translation>Recibido con</translation>
+        <source>Coin inputs:</source>
+        <translation>Ingreso de monedas:</translation>
     </message>
     <message>
-        <source>Sent to</source>
-        <translation>Enviado a</translation>
+        <source>1 Inputs</source>
+        <translation>1 Entrada</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Ofuscado</translation>
+        <source>Previous Transaction</source>
+        <translation>Transacción Previa</translation>
     </message>
     <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>La Ofuscación Crea Entradas Colaterales</translation>
+        <source>Output Index</source>
+        <translation>Índice de Salida</translation>
     </message>
     <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Ofuscación Crea Billetes</translation>
+        <source>Fee:</source>
+        <translation>Comisión:</translation>
     </message>
     <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Ofuscación Denominada</translation>
+        <source>0.0001 HCB</source>
+        <translation>0.0001 HCB</translation>
     </message>
     <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Pago Colateral de Ofuscación</translation>
+        <source>Change address:</source>
+        <translation>Cambiar dirección:</translation>
     </message>
     <message>
-        <source>To yourself</source>
-        <translation>A usted mismo</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Mined</source>
-        <translation>Minado</translation>
+        <source>Confirmations:</source>
+        <translation>Confirmaciones:</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Creación de moneda</translation>
+        <source>12</source>
+        <translation>12</translation>
     </message>
     <message>
-        <source>Masternode Reward</source>
-        <translation>Recompensa de Nodo Maestro</translation>
+        <source>Size:</source>
+        <translation>Tamaño:</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Phr recibidos desde zPhr</translation>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
     </message>
     <message>
-        <source>Zerocoin Mint</source>
-        <translation>Creación de moneda Zerocoin</translation>
+        <source>Date:</source>
+        <translation>Fecha:</translation>
     </message>
     <message>
-        <source>Zerocoin Spend</source>
-        <translation>Gasto de Zerocoin</translation>
+        <source>May 25, 2017</source>
+        <translation>Mayo 25, 2017</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Gasto de Zerocoin, Cambio en zPhr</translation>
+        <source>Status:</source>
+        <translation>Estado:</translation>
     </message>
     <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Pago Zerocoin a tí mismo</translation>
+        <source>Spendable</source>
+        <translation>Para gastar</translation>
     </message>
     <message>
-        <source>Other</source>
-        <translation>Otro</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Introduzca dirección o etiqueta para buscar</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Min amount</source>
-        <translation>Cantidad mínima</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Copiar dirección</translation>
+        <source>Confirm Your Transaction</source>
+        <translation>Confirma Tu Transacción</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Copiar etiqueta</translation>
+        <source>SEND</source>
+        <translation>ENVIAR</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Copiar cantidad</translation>
+        <source>ID copied</source>
+        <translation>ID copiado</translation>
     </message>
     <message>
-        <source>Copy transaction ID</source>
-        <translation>Copiar código de transacción</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Editar etiqueta</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Mostrar detalles de transacción</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Exportar Histórico de Transacciones</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Archivo separado por comas (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Confirmado</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Sólo-lectura</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Fecha</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Tipo</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiqueta</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Exportación fallida</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Hubo un error intentando guardar el historial de transacciones a %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation>Exportación Correcta</translation>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>El historial de transacción fue guardado satisfactoriamente a %1.</translation>
-    </message>
-    <message>
-        <source>Range:</source>
-        <translation>Rango:</translation>
-    </message>
-    <message>
-        <source>to</source>
-        <translation>a</translation>
+        <source>Unknown</source>
+        <translation>Desconocido</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Unidad en la que mostrar cantidades. Click para seleccionar otra unidad.</translation>
+        <source>Form</source>
+        <translation>Formulario</translation>
     </message>
-</context>
-<context>
-    <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation>No se ha cargado ningún monedero.</translation>
+        <source>Received from Bob</source>
+        <translation>Recibido de Bob</translation>
+    </message>
+    <message>
+        <source>18/05/18</source>
+        <translation>18/05/18</translation>
+    </message>
+    <message>
+        <source>+0.000585 HCB</source>
+        <translation>+0.000585 HCB</translation>
     </message>
 </context>
 <context>
@@ -4231,78 +5647,147 @@ Por favor tenga paciencia...</translation>
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 HCB.</source>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HCB.</source>
         <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 HCB.</translation>
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WalletPasswordDialog</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportar</translation>
+        <source>Dialog</source>
+        <translation>Diálogo</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exportar los datos de la pestaña actual a un archivo</translation>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Cantidad seleccionada:</translation>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Copia del Monedero</translation>
+        <source>CANCEL</source>
+        <translation>CANCELAR</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Datos del Monedero (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>La copia de seguridad Falló</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Hubo un error intentando guardar los datos del monedero a %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Copia de Seguridad Satisfactoria</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>Los datos del monedero se guardaron correctamente a %1.</translation>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Seleccione zPhr a Gastar</translation>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>Cantidad</translation>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Idioma</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation>Bienvenido/a</translation>
+    </message>
+    <message>
+        <source>Privacy</source>
+        <translation>Privacidad</translation>
+    </message>
+    <message>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
+    </message>
+    <message>
+        <source>Select your language</source>
+        <translation>Selecciona tu idioma</translation>
+    </message>
+    <message>
+        <source>Welcome to
+HanaCryptoBank Core Wallet</source>
+        <translation>Bienvenido a
+HanaCryptoBank Core Wallet</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>HanaCryptoBank es la tecnología blockchain de Prueba de Stake  más avanzada del mundo. Desarrollada por un equipo de desarrolladores y criptógrafos altamente experimentados.</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - HanaCryptoBank believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Como dice nuestro manifiesto: La privacidad es un derecho humano básico no negociable; concede a los usuarios la libertad de compartir sus datos cuando y con quien quieran - HanaCryptoBank cree en la auto-soberanía&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>The masternode network is HanaCryptoBank's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>La red masternode es la red de segunda capa de HanaCryptoBank en la parte superior de la blockchain que permite a nuestra DAO proporcionar un gobierno descentralizado y una tesorería.</translation>
+    </message>
+    <message>
+        <source>How HanaCryptoBank respects your privacy?</source>
+        <translation>¿Cómo HanaCryptoBank respeta tu privacidad?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>¿Qué es un Masternode?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>por defecto</translation>
+    </message>
+</context>
+<context>
+    <name>ZPivControlDialog</name>
+    <message>
+        <source>Select zHCB to Spend</source>
+        <translation>Selecciona zHCB para Gastar</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Control de moneda</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
+    </message>
+    <message>
+        <source>zPiv</source>
+        <translation>zPiv</translation>
+    </message>
+    <message>
+        <source>0.00 </source>
+        <translation>0.00 </translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Cantidad:</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>Es Gastable</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
-    </message>
-    <message>
         <source>Select/Deselect All</source>
         <translation>Seleccionar/Deseleccionar Todos</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>Es Gastable</translation>
+        <source>Select zHCB Denominations to Spend</source>
+        <translation>Selecciona la Denominación zHCB para gastar:</translation>
     </message>
 </context>
 <context>
-    <name>hanacryptobank-network</name>
+    <name>hanacryptobank-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
@@ -4310,10 +5795,6 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>Permitir conexiones JSON-RPC  desde la fuente especificada. Valido para &lt;ip&gt; sea una única IP (ej: 1.2.3.4), una red/mascara de red (ej: 1.2.3.4/255.255.255.0) o una red/CIDR (ej: 1.2.3.4/24). Esta opción puede ser especificada múltiples veces.</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Un error ocurrió mientras se ajustaba la dirección RPC %s puerto %u para escucha en: %s</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4352,20 +5833,36 @@ Por favor tenga paciencia...</translation>
         <translation>Borrar todas las transacciones del monedero y solo recuperar partes de la cadena de bloque a traves de -rescan al inicio.</translation>
     </message>
     <message>
-        <source>Disable all HanaCryptoBank specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar toda la funcionalidad especifica HanaCryptoBank (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Elimina todos registros de las transferencias y el acuñado de Zerocoin que se hayan registrado en la base de datos de Blockchain y vuelva a indexarlos (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribuido bajo licencia MIT software license, ver el archivo adjunto COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;</translation>
     </message>
     <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Activar la función de administración de sporks con la llave privada apropiada.</translation>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Habilitar acuñado automático de Zerocoin desde una dirección específica (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Activar swifttx, mostrar confirmaciones para transacciones bloqueadas (bool, predeterminado: %s)</translation>
+        <source>Enable automatic wallet backups triggered after each zHCB minting (0-1, default: %u)</source>
+        <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zHCB (0-1, predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation>Activar funcionalidad de cold staking (0-1, por defecto: %u). Desactivado si staking=0</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for HCB inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas HCB (0-1, predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zHCB inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas zHCB (0-1, predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Activar la función de administración de sporks con la llave privada apropiada.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4374,6 +5871,10 @@ Por favor tenga paciencia...</translation>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Error: La escucha para conexiones entrantes falló (la escucha retorno error %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Error: ¡La transacción es más grande que el tamaño máximo de transacción permitido!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -4404,16 +5905,16 @@ Por favor tenga paciencia...</translation>
         <translation>Trasladar la actividad de la base de datos en el pool de memoria al log de disco cada &lt;n&gt; megabytes (default: %u)</translation>
     </message>
     <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Se encontró salidas denominadas sin confirmar, se esperará hasta que se confirmen para continuar.</translation>
-    </message>
-    <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Si paytxfee no esta definido, incluir suficiente comisión de manera que la transacción se vuelva confirmada en promedio dentro de n bloques (predeterminado: %u)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation>En este modo -genproclimit controla cuantos bloques son generados inmediatamente.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Fondos insuficientes o fondos confirmados insuficientes, es posible que tenga que esperar unos minutos y volver a intentarlo.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
@@ -4425,19 +5926,27 @@ Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Prioridad del registro de transacciones por kB cuando se esta minando bloques (predeterminado: %u)</translation>
+        <translation>Prioridad y comisión del registro de transacciones por kB cuando se esta minando bloques (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
         <translation>Mantener un indice de transacción completo, utilizado por la llamada rpc getrawtransaction (predeterminado: %u)</translation>
     </message>
     <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>Tamaño promedio máximo de un indicador de ocurrencia en el filtro de spam del bloque (default: %u)</translation>
+    </message>
+    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Tamaño máximo de datos en transacciones de transmisiones de datos que pasamos y minamos (predeterminado: %u)</translation>
     </message>
     <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Tamaño máximo de la lista de indicadores en el filtro de spam del bloque (default: %u)</translation>
+    </message>
+    <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Comisión máxima total para usar en una única transacción de billetera, definirlo muy bajo puede abortar transacciones largas (predeterminado: %s)</translation>
+        <translation>Comisión máxima total para usar en una única transacción de monedero, definirlo muy bajo puede abortar transacciones largas (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
@@ -4488,36 +5997,16 @@ Por favor tenga paciencia...</translation>
         <translation>Soportar filtrado de bloques y transacciones con filtros bloom (por defecto: %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX requiere entradas con hasta 6 confirmaciones, es posible que debas esperar unos minutos e intentar nuevamente.</translation>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>La base de datos de bloques contiene un bloque que parece ser del futuro. Esto puede deberse a que la fecha y la hora de su ordenador están mal ajustadas. Sólo reconstruya la base de datos de bloques si está seguro de que la fecha y la hora de su ordenador son correctas.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use hanacryptobankd, or the -server option to hanacryptobank-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=hanacryptobankrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
-</source>
-        <translation>Para usar hanacryptobankd, o la opción -server de hanacryptobank-qt, debes definir un rpcpassword en el archivo de configuración:
-%s
-Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=hanacryptobank
-rpcrpcpassword=%s
-(No necesitas recordar esta contraseña)
-El nombre de usuario y contraseña NO DEBEN ser los mismos.
-Si el archivo no existe, crearlo con permisos de solo lectura para el propietario.
-También es recomendado definir alertnotify de manera que seas notificado de problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
-</translation>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>La longitud total de la cadena de la versión de red (%i) excede la longitud máxima (%i). Reducir el número o tamaño de los uacomments.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. HanaCryptoBank Core is probably already running.</source>
@@ -4546,6 +6035,10 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Advertencia: -paytxfee esta muy alta! Esta es la comisión de transacción que pagarás si envías una transacción.</translation>
+    </message>
+    <message>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong HanaCryptoBank Core will not work properly.</source>
+        <translation>Advertencia: Los pares están siendo desconectados debido a las diferencias horarias. Por favor, verifica que la fecha y la hora de tu computadora sean correctas! Si tu reloj está fuera de hora, HanaCryptoBank Core no funcionará correctamente.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong HanaCryptoBank Core will not work properly.</source>
@@ -4580,8 +6073,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(3310 could be used only on mainnet)</source>
-        <translation>(3310 puede ser utilizado solo en mainnet)</translation>
+        <source>(17070 could be used only on mainnet)</source>
+        <translation>(17070 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4592,8 +6085,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 3310 for mainnet)</source>
-        <translation>(debe ser 3310 para un mainnet)</translation>
+        <source>(must be 17070 for mainnet)</source>
+        <translation>(debe ser 17070 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4608,24 +6101,24 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Aceptar peticiones públicas REST (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Métodos de cifrado aceptables (predeterminado: %s)</translation>
-    </message>
-    <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Agregar un nodo a conectarse y intentar mantener abierta la conexión</translation>
+    </message>
+    <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Añadiendo el suministro de Seriales Envueltos...</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Permitir búsquedas DNS para -addnode, -seednode y -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Ya tiene esa entrada.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Siempre consultar por direcciones de pares vía búsqueda DNS (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Añadir un comentario a la cadena del agente de usuario</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -4644,20 +6137,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Calculando acumuladores pendientes...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>No se puede denominar: quedaron entradas no compatibles.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>No se puede encontrar un Masternode al azar.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>No se puede mezclar mientras la sincronización esta en progreso.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
-        <translation>No se puede volver a una versión anterior de la billetera</translation>
+        <translation>No se puede volver a una versión anterior del monedero</translation>
     </message>
     <message>
         <source>Cannot resolve -bind address: '%s'</source>
@@ -4672,12 +6153,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>No se puede resolver la dirección -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>Cannot write default address</source>
-        <translation>No se puede escribir la dirección predeterminada</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Colateral no válido.</translation>
+        <source>CoinSpend: failed check</source>
+        <translation>Gasto de Moneda: verificación fallida</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -4712,16 +6189,20 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Se detectó base de datos de bloques dañado</translation>
     </message>
     <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>El valor %s de -rpcbind no pudo ser leído como una dirección de red.</translation>
-    </message>
-    <message>
         <source>Could not parse masternode.conf</source>
         <translation>No se pudo analizar el contenido de masternode.conf </translation>
     </message>
     <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>No se pudo generar el testigo del acumulador </translation>
+    </message>
+    <message>
         <source>Debugging/Testing options:</source>
         <translation>Opciones de Depuración/Pruebas:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Eliminar directorios de Blockchain y resincronizar desde el principio</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
@@ -4737,7 +6218,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>No cargar la billetera y desactivar las llamadas RPC de billetera</translation>
+        <translation>No cargar la monedero y desactivar las llamadas RPC del monedero</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -4752,16 +6233,16 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Habilitar creación automática de Zerocoin (0-1, por defecto: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activar inclusión del hash de la transacción (fijada mediante SwiftTX) en &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activar inclusión de la transacción en bruto (fijada mediante SwiftTX) en &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Habilitar al cliente para actuar como un nodo maestro (0-1. predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Las entradas están llenas.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Error al conectar al Nodo Maestro</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4769,7 +6250,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Error initializing wallet database environment %s!</source>
-        <translation>Error al inicializar ambiente %s de base de datos de billetera!</translation>
+        <translation>Error al inicializar ambiente %s de base de datos del monedero!</translation>
     </message>
     <message>
         <source>Error loading block database</source>
@@ -4781,11 +6262,11 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error al cargar wallet.dat: Billetera dañada</translation>
+        <translation>Error al cargar wallet.dat: Monedero dañado</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of HanaCryptoBank Core</source>
-        <translation>Error al cargar wallet.dat: La Billetera requiere una nueva versión del Núcleo HanaCryptoBank</translation>
+        <translation>Error al cargar wallet.dat: El monedero requiere una nueva versión del HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4796,8 +6277,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Error al leer desde la base de datos, apagando.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Error al recuperar clave pública.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Error al escribir zerocoinDB en el disco</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4806,10 +6287,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Error: No se pudo seleccionar las entradas denominadas actuales</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -4821,15 +6298,19 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Billetera bloqueada, imposible crear transacción!</translation>
+        <translation>Error: ¡Monedero bloqueado, imposible crear transacción!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Error: Ya tienes entradas pendientes en el pool de Ofuscación</translation>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Error al calcular el punto de control del acumulador</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Falló la escucha en cualquiera de los puertos. Usar -listen=0 si quieres esto.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Error al analizar el host: cadena del puerto</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -4840,20 +6321,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Comisión (en HCB/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
-        <source>Finalizing transaction.</source>
-        <translation>Finalizando transacción.</translation>
-    </message>
-    <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Forzar modo seguro (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Se han encontrado suficientes usuarios, firmando ( esperando %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Se han encontrado suficientes usuarios, firmando ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -4880,14 +6349,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Incluir direcciones IP en salida de depuración (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Modo incompatible.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Versión imcompatible.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Bloque de génesis incorrecto o no encontrado. datadir equivocado para red?</translation>
     </message>
@@ -4900,10 +6361,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>La prueba de salud de inicialización ha fallado. HanaCryptoBank Core se cerrará.</translation>
     </message>
     <message>
-        <source>Input is not valid.</source>
-        <translation>La entrada no es válida.</translation>
-    </message>
-    <message>
         <source>Insufficient funds</source>
         <translation>Fondos insuficientes</translation>
     </message>
@@ -4914,10 +6371,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Dirección o nombre de equipo -onion inválido: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Dirección o nombre de equipo -proxy inválido: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -4960,12 +6413,44 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Puerto inválido ha sido detectado en masternode.conf</translation>
     </message>
     <message>
-        <source>Invalid private key.</source>
-        <translation>Clave pública inválida.</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Script inválido detectado.</translation>
+        <source>Recalculating HCB supply...</source>
+        <translation>Recalculando suministro HCB...</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZHCB...</source>
+        <translation>Recalculando acuñado ZHCB...</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZHCB...</source>
+        <translation>Recalculando gasto ZHCB...</translation>
+    </message>
+    <message>
+        <source>Reindex the HCB and zHCB money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro HCB e zHCB</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindexando la base de datos zerocoin...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>La reindexación zerocoin ha fallado</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>El valor de las monedas seleccionadas es menor que el monto a pagar</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Soporta el protocolo de nodo ligero zerocoin (default: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>Opciones SwiftX:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4988,6 +6473,14 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
 </translation>
     </message>
     <message>
+        <source>Disable all HanaCryptoBank specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar toda la funcionalidad especifica HanaCryptoBank (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Activar swifttx, mostrar confirmaciones para transacciones bloqueadas (bool, predeterminado: %s)</translation>
+    </message>
+    <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>¡La transacción fue rechazada! Esto puede ocurrir si alguna de sus monedas ya se gastó con anterioridad, por ejemplo, si estuvo usted usando una copia de su monedero wallet.dat y gastó allí monedas pero no las marcó como gastadas aquí.</translation>
     </message>
@@ -5000,8 +6493,32 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Error: Se ha especificado un argumento no soportado -checklevel. El Checklevel debe ser siempre 4. </translation>
     </message>
     <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Ejecute el comando cuando el mejor bloque cambie y su tamaño haya terminado (%s en cmd se reemplaza por el hash del bloque, %d con el tamaño de bloque)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>No se puede encontrar el conjunto de monedas necesarias entre las monedas disponibles con menos de maxNumber para poder gastarlas</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>En casos excepcionales, un envío con más de 7 monedas excede el tamaño máximo de transacción permitidas, intente gastar 6 monedas o menos.</translation>
+    </message>
+    <message>
         <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Tamaño de Billete Zerocoin Preferido para los Zerocoin creados automáticamente (1/5/10/50/100/500/1000/5000), poner 0 si no tiene preferencias. Por defecto: %u) </translation>
+        <translation>Denominación preferida para acuñado automatico de Zerocoin (1/5/10/50/100/500/1000/5000), 0 para ninguna preferencia. predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zHCB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zHCB automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Especifique una ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad de monedero. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad generada.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX requiere entradas con al menos 6 confirmaciones, es posible que deba esperar unos minutos e intente de nuevo.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -5010,6 +6527,14 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation>Intentar forzar la recuperación de la cadena de bloques corrupta</translation>
+    </message>
+    <message>
+        <source>Cannot create public spend input</source>
+        <translation>No puede crear insumos para el gasto público</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: El testigo del acumulador no verifica</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -5024,20 +6549,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Activar inclusión del hash del bloque en &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activar inclusión del hash de la transacción (fijada mediante SwiftTX) en &lt;address&gt;</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation>Activar inclusión del hash de la transacción en &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
         <translation>Activar inclusión del bloque en bruto en &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activar inclusión de la transacción en bruto (fijada mediante SwiftTX) en &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -5048,20 +6565,40 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Activar funcionalidad de recompensa por participación (0-1, por defecto: %u)</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: ¡utxo no válido!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Error al acuñar</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Error al encontrar Zerocoins en wallet.dat</translation>
+    </message>
+    <message>
+        <source>Failed to parse public spend</source>
+        <translation>No se analizó el gasto público</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Error al seleccionar una zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Error al borrar zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Error al escribir el número de serie de la moneda en el monedero</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Mantener como máximo &lt;n&gt; transacciones no conectables en memoria (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>La última Ofuscación fue demasiado reciente.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>La última acción de Ofuscación exitosa fue demasiado reciente.</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>Menos de 3 creaciones de moneda añadidas, no podemos generar pago</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5112,12 +6649,16 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Cargando monedero...</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Bloqueo esta en su lugar.</translation>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Ubicación de la cookie de autenticación (predeterminado: data dir)</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Bloquear nodos maestros desde el archivo de configuración de nodo maestro (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Inválido -dirección proxy o nombre de host '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -5128,14 +6669,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Opciones de Masternode:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>La cola del Nodo Maestro esta llena.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Nodo maestro:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Buffer de recepción máximo por conexión, &lt;n&gt;*1000 bytes (predeterminado: %u)</translation>
     </message>
@@ -5144,68 +6677,28 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Máximo buffer de envío por conexión, &lt;n&gt;*1000 bytes (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Información de transacciones de entrada perdidas.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mezcla en progreso...</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation>El Acuñado no se realizó en blockchain</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Necesita especificar un puerto con -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>No se han detectado Masternodes.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>No hay un Masternode compatible encontrado.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>No hay fondos detectados necesarios de denominación.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>No hemos encontrado billetes coincidentes para mezclado.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Opciones de transmisión del nodo:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Clave pública no-estandar ha sido detectada.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>No es compatible con las transacciones salientes.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>No hay suficientes descriptores de archivo disponibles.</translation>
     </message>
     <message>
-        <source>Not in the Masternode list.</source>
-        <translation>No en la lista Masternode.</translation>
-    </message>
-    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>Número de Copias de seguridad automáticas de monedero (predeterminado: 10)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>La Ofuscación está sin uso.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Pedido de Ofuscacion completado:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Pedido de Ofuscación incompleto:</translation>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Número de copias de seguridad personalizadas que se deben retener (predeterminado: %d)</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5224,8 +6717,28 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Contraseña para conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>No se ha podido encontrar la transacción que contiene acuñamiento %s </translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>No se ha podido encontrar la transacción que contiene acuñamiento, txHash: %s</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Usar el filtro de spam del bloque (default: %u)</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Inválido -dirección proxy o nombre de host '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Preparando para resincronizar...</translation>
+    </message>
+    <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>Necesitas un destino o cambiar de dirección porque el cambio no es exacto</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -5236,16 +6749,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Mostrar versión y salir</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opciones RPC SSL: (ver el Bitcoin Wiki para instrucciones de instalación SSL)</translation>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin no encontrado en acuñamiento tx</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>Opciones del servidor RPC:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>Soporte RPC para conexiones persistentes HTTP (predeterminado %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -5262,6 +6771,10 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation>Recibir y mostrar alertas de red P2P (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Reindexar la base de datos del acumulador</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -5300,18 +6813,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Enviar transacciones como transacciones cero-comisión si es posible (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Archivo certificado del servidor (predeterminado: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Clave privada del servidor (predeterminado: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sesión no completa!</translation>
-    </message>
-    <message>
         <source>Session timed out.</source>
         <translation>La sesión expiró.</translation>
     </message>
@@ -5336,6 +6837,10 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Ajustar el tamaño mínimo de bloque en bytes (predeterminado: %u)</translation>
     </message>
     <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Establezca la profundidad máxima de reorganización (valor predeterminado: %u)</translation>
+    </message>
+    <message>
         <source>Set the masternode private key</source>
         <translation>Ajustar la clave privada de masternode</translation>
     </message>
@@ -5345,7 +6850,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Definir la bandera DB_PRIVATE en la db de la billetera del ambiente (predeterminado: %u)</translation>
+        <translation>Definir la bandera DB_PRIVATE en la db de la monedero del ambiente (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
@@ -5354,10 +6859,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Encojer el archivo debug.log en el cliente al inicio (predeterminado: 1 cuando no hay -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>La firma falló.</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
@@ -5389,11 +6890,15 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
-        <translation>Especifique el archivo monedero (dentro del directorio de datos)</translation>
+        <translation>Especifique el archivo del monedero (dentro del directorio de datos)</translation>
     </message>
     <message>
         <source>Specify your own public address</source>
         <translation>Especifique su propia dirección pública</translation>
+    </message>
+    <message>
+        <source>Spend Valid</source>
+        <translation>Gastar Válido</translation>
     </message>
     <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
@@ -5406,22 +6911,6 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>Parar la ejecución después de importar bloques desde el disco (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Se enviaron las siguientes entradas a masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Enviado a masternode, esperando por mas entradas (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Enviado a masternode, quedando en espera %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>Opciones SwiftTX:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -5452,6 +6941,18 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Sincronizando con la red... </translation>
     </message>
     <message>
+        <source>Syncing zHCB wallet...</source>
+        <translation>Sincronizando el monedero zHCB...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>El gasto de moneda se ha usado</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>La transacción no se verificó</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>Este mensaje de ayuda</translation>
     </message>
@@ -5464,12 +6965,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Esto esta destinado para herramientas de prueba de regresión y desarrollo de aplicaciones.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Este no es un nodo maestro.</translation>
-    </message>
-    <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Limite para desconexión de peers de mal desempeño (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Demasiados gastos necesarios</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -5480,24 +6981,20 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Puerto de control Tor a utilizar si está activada la escucha Onion (por defecto: %s)</translation>
     </message>
     <message>
+        <source>Transaction Created</source>
+        <translation>Transacción creada</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Cotação de transação iniciada</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>El monto de la transacción es demasiado pequeño</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
         <translation>El monto de la transacción debe ser positivo</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transacción creada satisfactoriamente.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>La comision de transacción es demasiado alta.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>La transacción no es valida.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -5508,32 +7005,32 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>La transacción es demasiado grande</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Transmitiendo la transacción final.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Tentando gastar um número de série já gasto, tente novamente.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Imposible enlazar %s en esta computadora (enlace retorna error %s)</translation>
     </message>
     <message>
+        <source>Unable to generate initial key</source>
+        <translation>No se puede generar la clave inicial</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Imposible firmar el mensaje spork, ¿llave equivocada?</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>No se puede iniciar el servidor HTTP. Ver registro de depuración para más detalles.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Red especificada desconocida en -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Estado desconocido: id = %u</translation>
-    </message>
-    <message>
         <source>Upgrade wallet to latest format</source>
-        <translation>Actualizar el monedero al formato ultimo</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Usar OpenSSL (https) para conexiones JSON-RPC</translation>
+        <translation>Actualizar el monedero al último formato</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5544,16 +7041,24 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Usar UPnP para mapear el puerto de escucha (predeterminado: 1 cuando esta en escucha)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Utilice una profundidad de reorganización de cadena máxima personalizada (valor predeterminado: %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>Usar la red de prueba</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>El comentario del Agente de usuario (%s) contiene caracteres inseguros.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Nombre de usuario para conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Valor mayor al máximo pool de Ofuscación permitido.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zHCB</source>
+        <translation>El valor está por debajo de la denominación más pequeña disponible (= 1) de zHCB</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5565,15 +7070,11 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
-        <translation>La billetera %s esta ubicada fuera del directorio de datos %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Monedero bloqueado.</translation>
+        <translation>El monedero %s esta ubicada fuera del directorio de datos %s</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart HanaCryptoBank Core to complete</source>
-        <translation>Monedero necesita ser reescrito: reinicie HanaCryptoBank Core para completar</translation>
+        <translation>El Monedero necesita ser reescrito: reinicie HanaCryptoBank Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5600,20 +7101,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Advertencia: Argumento no soportado -debugnet ignorado, use -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Probando...</translation>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>No tienes suficientes Zerocoins en tu monedero</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Usted necesita reconstruir la base de datos usando -reindex para cambiar -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Su entrada a sido agregada satisfactoriamente.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Su transacción ha sido aceptada en el pool!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5628,16 +7121,31 @@ por ejemplo: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
         <translation>Opciones Zerocoin:</translation>
     </message>
     <message>
-        <source>failed to validate zerocoin</source>
-        <translation>fallo al validar zerocoin</translation>
-    </message>
-    <message>
         <source>on startup</source>
         <translation>al inicio</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat esta corrupto, guardado falló</translation>
+        <translation>wallet.dat esta corrupto, fallo al guardar</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Enviar</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeTexto</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Presionar el botón</translation>
     </message>
 </context>
 </TS>

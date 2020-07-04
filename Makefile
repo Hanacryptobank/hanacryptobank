@@ -19,6 +19,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
+
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -91,7 +92,8 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
-host_triplet = i686-w64-mingw32
+host_triplet = x86_64-w64-mingw32
+am__append_1 = doc/man
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/ax_boost_base.m4 \
@@ -110,6 +112,8 @@ am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/ax_boost_base.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_find_bdb48.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_qt.m4 \
 	$(top_srcdir)/build-aux/m4/bitcoin_subdir_to_include.m4 \
+	$(top_srcdir)/build-aux/m4/gmp.m4 \
+	$(top_srcdir)/build-aux/m4/l_atomic.m4 \
 	$(top_srcdir)/build-aux/m4/libtool.m4 \
 	$(top_srcdir)/build-aux/m4/ltoptions.m4 \
 	$(top_srcdir)/build-aux/m4/ltsugar.m4 \
@@ -125,10 +129,12 @@ am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = $(top_builddir)/src/config/hanacryptobank-config.h
-CONFIG_CLEAN_FILES = share/setup.nsi share/qt/Info.plist \
-	src/test/buildenv.py qa/pull-tester/run-bitcoind-for-test.sh \
-	qa/pull-tester/tests-config.sh contrib/devtools/split-debug.sh
-CONFIG_CLEAN_VPATH_FILES =
+CONFIG_CLEAN_FILES = libbitcoinconsensus.pc share/setup.nsi \
+	share/qt/Info.plist test/config.ini \
+	contrib/devtools/split-debug.sh doc/Doxyfile
+CONFIG_CLEAN_VPATH_FILES = contrib/filter-lcov.py \
+	test/functional/test_runner.py test/util/bitcoin-util-test.py \
+	test/util/rpcauth-test.py
 SCRIPTS = $(dist_noinst_SCRIPTS)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -157,6 +163,35 @@ am__can_run_installinfo = \
     n|no|NO) false;; \
     *) (install-info --version) >/dev/null 2>&1;; \
   esac
+am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
+am__vpath_adj = case $$p in \
+    $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
+    *) f=$$p;; \
+  esac;
+am__strip_dir = f=`echo $$p | sed -e 's|^.*/||'`;
+am__install_max = 40
+am__nobase_strip_setup = \
+  srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*|]/\\\\&/g'`
+am__nobase_strip = \
+  for p in $$list; do echo "$$p"; done | sed -e "s|$$srcdirstrip/||"
+am__nobase_list = $(am__nobase_strip_setup); \
+  for p in $$list; do echo "$$p $$p"; done | \
+  sed "s| $$srcdirstrip/| |;"' / .*\//!s/ .*/ ./; s,\( .*\)/[^/]*$$,\1,' | \
+  $(AWK) 'BEGIN { files["."] = "" } { files[$$2] = files[$$2] " " $$1; \
+    if (++n[$$2] == $(am__install_max)) \
+      { print $$2, files[$$2]; n[$$2] = 0; files[$$2] = "" } } \
+    END { for (dir in files) print dir, files[dir] }'
+am__base_list = \
+  sed '$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;$$!N;s/\n/ /g' | \
+  sed '$$!N;$$!N;$$!N;$$!N;s/\n/ /g'
+am__uninstall_files_from_dir = { \
+  test -z "$$files" \
+    || { test ! -d "$$dir" && test ! -f "$$dir" && test ! -r "$$dir"; } \
+    || { echo " ( cd '$$dir' && rm -f" $$files ")"; \
+         $(am__cd) "$$dir" && rm -f $$files; }; \
+  }
+am__installdirs = "$(DESTDIR)$(pkgconfigdir)"
+DATA = $(pkgconfig_DATA)
 RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
   distclean-recursive maintainer-clean-recursive
 am__recursive_targets = \
@@ -185,8 +220,9 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 CSCOPE = cscope
-DIST_SUBDIRS = $(SUBDIRS)
+DIST_SUBDIRS = src doc/man
 am__DIST_COMMON = $(srcdir)/Makefile.in \
+	$(srcdir)/libbitcoinconsensus.pc.in \
 	$(top_srcdir)/build-aux/compile \
 	$(top_srcdir)/build-aux/config.guess \
 	$(top_srcdir)/build-aux/config.sub \
@@ -194,12 +230,15 @@ am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(top_srcdir)/build-aux/ltmain.sh \
 	$(top_srcdir)/build-aux/missing \
 	$(top_srcdir)/contrib/devtools/split-debug.sh.in \
-	$(top_srcdir)/qa/pull-tester/run-bitcoind-for-test.sh.in \
-	$(top_srcdir)/qa/pull-tester/tests-config.sh.in \
+	$(top_srcdir)/contrib/filter-lcov.py \
+	$(top_srcdir)/doc/Doxyfile.in \
 	$(top_srcdir)/share/qt/Info.plist.in \
 	$(top_srcdir)/share/setup.nsi.in \
 	$(top_srcdir)/src/config/hanacryptobank-config.h.in \
-	$(top_srcdir)/src/test/buildenv.py.in COPYING INSTALL \
+	$(top_srcdir)/test/config.ini.in \
+	$(top_srcdir)/test/functional/test_runner.py \
+	$(top_srcdir)/test/util/bitcoin-util-test.py \
+	$(top_srcdir)/test/util/rpcauth-test.py COPYING INSTALL \
 	build-aux/compile build-aux/config.guess build-aux/config.sub \
 	build-aux/install-sh build-aux/ltmain.sh build-aux/missing
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -238,6 +277,7 @@ am__relativize = \
   done; \
   reldir="$$dir2"
 DIST_ARCHIVES = $(distdir).tar.gz
+GZIP_ENV = --best
 DIST_TARGETS = dist-gzip
 distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
@@ -246,11 +286,14 @@ distcleancheck_listfiles = find . -type f -print
 ACLOCAL = ${SHELL} /home/server18/hcb/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/i686-w64-mingw32-ar
+AR = /usr/bin/x86_64-w64-mingw32-ar
+ARFLAGS = cr
 AUTOCONF = ${SHELL} /home/server18/hcb/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /home/server18/hcb/build-aux/missing autoheader
 AUTOMAKE = ${SHELL} /home/server18/hcb/build-aux/missing automake-1.15
+AVX2_CXXFLAGS = -mavx -mavx2
 AWK = gawk
+BDB_CFLAGS = 
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
 BITCOIN_CLI_NAME = hanacryptobank-cli
@@ -258,59 +301,68 @@ BITCOIN_DAEMON_NAME = hanacryptobankd
 BITCOIN_GUI_NAME = hanacryptobank-qt
 BITCOIN_TX_NAME = hanacryptobank-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt-s
-BOOST_CPPFLAGS = -mthreads -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include
+BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s
-BOOST_LDFLAGS = -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib
-BOOST_LIBS = -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
+BOOST_LDFLAGS = -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib
+BOOST_LIBS = -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
 BOOST_SYSTEM_LIB = -lboost_system-mt-s
 BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
 BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
 BREW = 
-BUILD_QT = qt
-BUILD_TEST = test
-BUILD_TEST_QT = test
-CC = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-gcc
-CCACHE = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/ccache
+CC = x86_64-w64-mingw32-gcc
+CCACHE = 
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
-CLIENT_VERSION_BUILD = 1
+CHARTS_CFLAGS = 
+CHARTS_LIBS = -lQt5Charts
+CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 3
+CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
-COMPARISON_TOOL_REORG_TESTS = 0
-COPYRIGHT_YEAR = 2019
-CPP = i686-w64-mingw32-gcc -E
-CPPFILT = /usr/bin/i686-w64-mingw32-c++filt
-CPPFLAGS = -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+COMPAT_LDFLAGS = 
+COPYRIGHT_YEAR = 2020
+CPP = x86_64-w64-mingw32-gcc -E
+CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
+CPPFLAGS = -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64
 CRYPTO_CFLAGS = 
 CRYPTO_LIBS = -lcrypto
-CXX = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/ccache i686-w64-mingw32-g++
-CXXCPP = i686-w64-mingw32-g++ -E
+CXX = x86_64-w64-mingw32-g++ -std=c++11
+CXXCPP = x86_64-w64-mingw32-g++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fvisibility=hidden
+CXXFLAGS = -pipe -O2 
 CYGPATH_W = echo
+DEBUG_CPPFLAGS = 
+DEBUG_CXXFLAGS = 
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-DLLTOOL = i686-w64-mingw32-dlltool
+DLLTOOL = x86_64-w64-mingw32-dlltool
+DOXYGEN = 
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
+ERROR_CXXFLAGS = 
 EVENT_CFLAGS = 
 EVENT_LIBS = -levent
 EVENT_PTHREADS_CFLAGS = 
 EVENT_PTHREADS_LIBS = 
 EXEEXT = .exe
+EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/i686-w64-mingw32-gcov
+GCOV = /usr/bin/x86_64-w64-mingw32-gcov
 GENHTML = 
 GENISOIMAGE = 
 GIT = /usr/bin/git
+GPROF_CXXFLAGS = 
+GPROF_LDFLAGS = 
 GREP = /bin/grep
+HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
+HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
+HARDENED_LDFLAGS =  -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = 
@@ -320,104 +372,138 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-JAVA = 
-JAVA_COMPARISON_TOOL = 
 LCOV = 
-LD = /usr/bin/i686-w64-mingw32-ld
-LDFLAGS = -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib  -Wl,--large-address-aware  -Wl,--dynamicbase -Wl,--nxcompat
+LCOV_OPTS = 
+LD = /usr/bin/x86_64-w64-mingw32-ld
+LDFLAGS = -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib 
 LEVELDB_CPPFLAGS = 
-LEVELDB_TARGET_FLAGS = TARGET_OS=OS_WINDOWS_CROSSCOMPILE
+LEVELDB_TARGET_FLAGS = -DOS_WINDOWS
 LIBLEVELDB = 
 LIBMEMENV = 
 LIBOBJS = 
-LIBS = -lcrypto -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd 
+LIBS = -lQt5AccessibilitySupport -lQt5DeviceDiscoverySupport -lQt5FbSupport -lQt5ThemeSupport -lQt5EventDispatcherSupport -lQt5FontDatabaseSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  -lgmp
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS =  -all-static
 LIPO = 
 LN_S = ln -s
-LRELEASE = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = 
+LUPDATE = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/lupdate
 MAINT = 
 MAKEINFO = ${SHELL} /home/server18/hcb/build-aux/missing makeinfo
-MAKENSIS = none
+MAKENSIS = /usr/bin/makensis
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/moc
+MOC = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = i686-w64-mingw32-nm
+NM = x86_64-w64-mingw32-nm
 NMEDIT = 
-OBJCOPY = /usr/bin/i686-w64-mingw32-objcopy
-OBJCXX = i686-w64-mingw32-g++
+NOWARN_CXXFLAGS = 
+OBJCOPY = /usr/bin/x86_64-w64-mingw32-objcopy
+OBJCXX = x86_64-w64-mingw32-g++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all
-OBJDUMP = i686-w64-mingw32-objdump
+OBJCXXFLAGS = 
+OBJDUMP = x86_64-w64-mingw32-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
 PACKAGE = hanacryptobank
-PACKAGE_BUGREPORT = www.hanacryptobank.org
+PACKAGE_BUGREPORT = https://github.com/hanacryptobank-project/hanacryptobank/issues
 PACKAGE_NAME = HanaCryptoBank Core
-PACKAGE_STRING = HanaCryptoBank Core 3.0.0
+PACKAGE_STRING = HanaCryptoBank Core 1.0.0
 PACKAGE_TARNAME = hanacryptobank
-PACKAGE_URL = 
-PACKAGE_VERSION = 3.0.0
+PACKAGE_URL = https://hanacryptobank.org/
+PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
+PIC_FLAGS = 
+PIE_FLAGS = -fPIE
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /home/server18/hcb/depends/i686-w64-mingw32/share/../share/pkgconfig:/home/server18/hcb/depends/i686-w64-mingw32/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
 PORT = 
 PROTOBUF_CFLAGS = 
 PROTOBUF_LIBS = -lprotobuf
-PROTOC = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/protoc
-PTHREAD_CC = i686-w64-mingw32-gcc
+PROTOC = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/protoc
+PTHREAD_CC = x86_64-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
-PYTHON = /usr/bin/python3
-PYTHONPATH = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/lib/python/dist-packages:
+PYTHON = /usr/bin/python3.6
+PYTHONPATH = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/lib/python3/dist-packages:
 QR_CFLAGS = 
 QR_LIBS = -lqrencode
+QT5_CFLAGS = 
+QT5_LIBS = 
+QTACCESSIBILITY_CFLAGS = 
+QTACCESSIBILITY_LIBS = 
+QTCGL_CFLAGS = 
+QTCGL_LIBS = 
+QTCLIPBOARD_CFLAGS = 
+QTCLIPBOARD_LIBS = 
+QTDEVICEDISCOVERY_CFLAGS = 
+QTDEVICEDISCOVERY_LIBS = 
+QTEVENTDISPATCHER_CFLAGS = 
+QTEVENTDISPATCHER_LIBS = 
+QTFB_CFLAGS = 
+QTFB_LIBS = 
+QTFONTDATABASE_CFLAGS = 
+QTFONTDATABASE_LIBS = 
+QTGRAPHICS_CFLAGS = 
+QTGRAPHICS_LIBS = 
 QTPLATFORM_CFLAGS = 
 QTPLATFORM_LIBS = 
-QTPRINT_CFLAGS = 
-QTPRINT_LIBS = 
+QTTHEME_CFLAGS = 
+QTTHEME_LIBS = 
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CFLAGS = 
+QT_CONCURRENT_CFLAGS = 
+QT_CONCURRENT_LIBS = 
 QT_DBUS_CFLAGS = 
 QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib
-QT_INCLUDES = -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtCore -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtGui -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtWidgets -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtNetwork -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtTest -I/home/server18/hcb/depends/i686-w64-mingw32/share/../include/QtDBus
+QT_DBUS_LIBS = -lQt5DBus -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib
+QT_INCLUDES = -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtCore -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtGui -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtTest -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtConcurrent -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtSvg -I/home/server18/hcb/depends/x86_64-w64-mingw32/share/../include/QtCharts
 QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib -L/home/server18/hcb/depends/i686-w64-mingw32/share/../plugins/platforms
-QT_PIE_FLAGS = 
+QT_LIBS = -lqwindows -lqsvgicon -lqsvg -lqminimal -lQt5Concurrent -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzz -lqtpcre2 -lqtlibpng -lz  -limm32  -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib -lQt5Svg -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../plugins/platforms -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../plugins/imageformats -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../plugins/iconengines -lversion -ldwmapi -luxtheme
+QT_PIE_FLAGS = -fPIE
 QT_SELECT = qt5
+QT_SVG_CFLAGS = 
+QT_SVG_INCLUDES = 
+QT_SVG_LIBS = -lQt5Svg -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib
 QT_TEST_CFLAGS = 
 QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/home/server18/hcb/depends/i686-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /home/server18/hcb/depends/i686-w64-mingw32/share/../translations
-RANLIB = /usr/bin/i686-w64-mingw32-ranlib
-RCC = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/rcc
-READELF = /usr/bin/i686-w64-mingw32-readelf
-RELDFLAGS = -Wl,--exclude-libs,ALL
+QT_TEST_LIBS = -lQt5Test -L/home/server18/hcb/depends/x86_64-w64-mingw32/share/../lib
+QT_TRANSLATION_DIR = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../translations
+RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
+RCC = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/rcc
+READELF = /usr/bin/x86_64-w64-mingw32-readelf
+RELDFLAGS = 
 RSVG_CONVERT = 
+SANITIZER_CXXFLAGS = 
+SANITIZER_LDFLAGS = 
 SED = /bin/sed
 SET_MAKE = 
+SHANI_CXXFLAGS = -msse4 -msha
 SHELL = /bin/bash
+SSE41_CXXFLAGS = -msse4.1
+SSE42_CXXFLAGS = -msse4.2
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
-STRIP = /usr/bin/i686-w64-mingw32-strip
+STRIP = /usr/bin/x86_64-w64-mingw32-strip
 TESTDEFS = 
 TIFFCP = 
-UIC = /home/server18/hcb/depends/i686-w64-mingw32/share/../native/bin/uic
-USE_QRCODE = 
+UIC = /home/server18/hcb/depends/x86_64-w64-mingw32/share/../native/bin/uic
+UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
+UNIVALUE_LIBS = univalue/libunivalue.la
+USE_NUM_GMP = 
+USE_NUM_OPENSSL = 
+USE_QTCHARTS = 
 USE_UPNP = 
-VERSION = 3.0.0
-WINDOWS_BITS = 32
-WINDRES = /usr/bin/i686-w64-mingw32-windres
+VERSION = 1.0.0
+WARN_CXXFLAGS = 
+WINDOWS_BITS = 64
+WINDRES = /usr/bin/x86_64-w64-mingw32-windres
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
@@ -450,9 +536,9 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i686-w64-mingw32
-host_alias = i686-w64-mingw32
-host_cpu = i686
+host = x86_64-w64-mingw32
+host_alias = x86_64-w64-mingw32
+host_cpu = x86_64
 host_os = mingw32
 host_vendor = w64
 htmldir = ${docdir}
@@ -474,22 +560,23 @@ runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  src/secp256k1
+subdirs =  src/univalue src/secp256k1
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
 ACLOCAL_AMFLAGS = -I build-aux/m4
-SUBDIRS = src
-GZIP_ENV = "-9n"
+SUBDIRS = src $(am__append_1)
+#pkgconfigdir = $(libdir)/pkgconfig
+#pkgconfig_DATA = libbitcoinconsensus.pc
 BITCOIND_BIN = $(top_builddir)/src/$(BITCOIN_DAEMON_NAME)$(EXEEXT)
 BITCOIN_QT_BIN = $(top_builddir)/src/qt/$(BITCOIN_GUI_NAME)$(EXEEXT)
 BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = HANACRYPTOBANK-Qt.app
+OSX_APP = HanaCryptoBank-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -502,10 +589,27 @@ OSX_INSTALLER_ICONS = $(top_srcdir)/src/qt/res/icons/bitcoin.icns
 OSX_PLIST = $(top_builddir)/share/qt/Info.plist #not installed
 OSX_QT_TRANSLATIONS = da,de,es,hu,ru,uk,zh_CN,zh_TW
 DIST_DOCS = $(wildcard doc/*.md) $(wildcard doc/release-notes/*.md)
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/bitcoin.ico \
+DIST_CONTRIB = $(top_srcdir)/contrib/hanacryptobank-cli.bash-completion \
+	       $(top_srcdir)/contrib/hanacryptobank-tx.bash-completion \
+	       $(top_srcdir)/contrib/hanacryptobankd.bash-completion \
+           $(top_srcdir)/contrib/init \
+           $(top_srcdir)/contrib/install_db4.sh
+
+DIST_SHARE = \
+           $(top_srcdir)/share/genbuild.sh \
+           $(top_srcdir)/share/rpcauth
+
+BIN_CHECKS = $(top_srcdir)/contrib/devtools/symbol-check.py \
+           $(top_srcdir)/contrib/devtools/security-check.py
+
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/hanacryptobank.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
+
+LINUX_PACKAGING = $(top_srcdir)/share/pixmaps/hanacryptobank16.xpm \
+  $(top_srcdir)/share/pixmaps/hanacryptobank32.xpm \
+  $(top_srcdir)/share/pixmaps/hanacryptobank128.png
 
 OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/$(OSX_BACKGROUND_SVG) \
@@ -513,21 +617,40 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-apply.sh \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
-COVERAGE_INFO = baseline_filtered_combined.info baseline.info block_test.info \
-  leveldb_baseline.info test_hanacryptobank_filtered.info total_coverage.info \
-  baseline_filtered.info block_test_filtered.info \
-  leveldb_baseline_filtered.info test_hanacryptobank_coverage.info test_hanacryptobank.info
+COVERAGE_INFO = baseline.info \
+  test_hanacryptobank_filtered.info total_coverage.info \
+  baseline_filtered.info functional_test.info functional_test_filtered.info \
+  test_hanacryptobank_coverage.info test_hanacryptobank.info
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/HANACRYPTOBANK-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/HanaCryptoBank-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 APP_DIST_DIR = $(top_builddir)/dist
 APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
 OSX_BACKGROUND_IMAGE_DPIFILES := $(foreach dpi,$(OSX_BACKGROUND_IMAGE_DPIS),dpi$(dpi).$(OSX_BACKGROUND_IMAGE))
+#LCOV_FILTER_PATTERN = -p "/usr/include/" -p "/usr/lib/" -p "src/leveldb/" -p "src/univalue" -p "src/secp256k1"
 dist_noinst_SCRIPTS = autogen.sh
-EXTRA_DIST = $(top_srcdir)/share/genbuild.sh qa/pull-tester/rpc-tests.sh qa/pull-tester/run-bitcoin-cli qa/rpc-tests $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING)
+EXTRA_DIST = $(DIST_SHARE) $(DIST_CONTRIB) $(DIST_DOCS) \
+	$(WINDOWS_PACKAGING) $(LINUX_PACKAGING) $(OSX_PACKAGING) \
+	$(BIN_CHECKS) test/functional test/util/bitcoin-util-test.py \
+	test/util/data/bitcoin-util-test.json \
+	test/util/data/blanktxv1.hex test/util/data/blanktxv1.json \
+	test/util/data/tt-delin1-out.hex \
+	test/util/data/tt-delin1-out.json \
+	test/util/data/tt-delout1-out.hex \
+	test/util/data/tt-delout1-out.json \
+	test/util/data/tt-locktime317000-out.hex \
+	test/util/data/tt-locktime317000-out.json \
+	test/util/data/tx394b54bb.hex test/util/data/txcreate1.hex \
+	test/util/data/txcreate1.json test/util/data/txcreate2.hex \
+	test/util/data/txcreate2.json \
+	test/util/data/txcreatescript1.hex \
+	test/util/data/txcreatescript1.json \
+	test/util/data/txcreatesign.hex \
+	test/util/data/txcreatesign.json test/util/rpcauth-test.py
 CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
+DISTCHECK_CONFIGURE_FLAGS = --enable-man
 all: all-recursive
 
 .SUFFIXES:
@@ -579,18 +702,18 @@ $(top_srcdir)/src/config/hanacryptobank-config.h.in:  $(am__configure_deps)
 
 distclean-hdr:
 	-rm -f src/config/hanacryptobank-config.h src/config/stamp-h1
+libbitcoinconsensus.pc: $(top_builddir)/config.status $(srcdir)/libbitcoinconsensus.pc.in
+	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/setup.nsi: $(top_builddir)/config.status $(top_srcdir)/share/setup.nsi.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 share/qt/Info.plist: $(top_builddir)/config.status $(top_srcdir)/share/qt/Info.plist.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-src/test/buildenv.py: $(top_builddir)/config.status $(top_srcdir)/src/test/buildenv.py.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-qa/pull-tester/run-bitcoind-for-test.sh: $(top_builddir)/config.status $(top_srcdir)/qa/pull-tester/run-bitcoind-for-test.sh.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-qa/pull-tester/tests-config.sh: $(top_builddir)/config.status $(top_srcdir)/qa/pull-tester/tests-config.sh.in
+test/config.ini: $(top_builddir)/config.status $(top_srcdir)/test/config.ini.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 contrib/devtools/split-debug.sh: $(top_builddir)/config.status $(top_srcdir)/contrib/devtools/split-debug.sh.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
+#doc/Doxyfile: $(top_builddir)/config.status $(top_srcdir)/doc/Doxyfile.in
+#	cd $(top_builddir) && $(SHELL) ./config.status $@
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -600,6 +723,27 @@ clean-libtool:
 
 distclean-libtool:
 	-rm -f libtool config.lt
+install-pkgconfigDATA: $(pkgconfig_DATA)
+	@$(NORMAL_INSTALL)
+	@list='$(pkgconfig_DATA)'; test -n "$(pkgconfigdir)" || list=; \
+	if test -n "$$list"; then \
+	  echo " $(MKDIR_P) '$(DESTDIR)$(pkgconfigdir)'"; \
+	  $(MKDIR_P) "$(DESTDIR)$(pkgconfigdir)" || exit 1; \
+	fi; \
+	for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  echo "$$d$$p"; \
+	done | $(am__base_list) | \
+	while read files; do \
+	  echo " $(INSTALL_DATA) $$files '$(DESTDIR)$(pkgconfigdir)'"; \
+	  $(INSTALL_DATA) $$files "$(DESTDIR)$(pkgconfigdir)" || exit $$?; \
+	done
+
+uninstall-pkgconfigDATA:
+	@$(NORMAL_UNINSTALL)
+	@list='$(pkgconfig_DATA)'; test -n "$(pkgconfigdir)" || list=; \
+	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
+	dir='$(DESTDIR)$(pkgconfigdir)'; $(am__uninstall_files_from_dir)
 
 # This directory's subdirectories are mostly independent; you can cd
 # into them and run 'make' without going through this Makefile.
@@ -840,7 +984,6 @@ distcheck: dist
 	test -d $(distdir)/_build || exit 0; \
 	dc_install_base=`$(am__cd) $(distdir)/_inst && pwd | sed -e 's,^[^:\\/]:[\\/],/,'` \
 	  && dc_destdir="$${TMPDIR-/tmp}/am-dc-$$$$/" \
-	  && $(MAKE) $(AM_MAKEFLAGS) distcheck-hook \
 	  && am__cwd=`pwd` \
 	  && $(am__cd) $(distdir)/_build/sub \
 	  && ../../configure \
@@ -890,11 +1033,23 @@ distuninstallcheck:
 	        fi ; \
 	        $(distuninstallcheck_listfiles) ; \
 	        exit 1; } >&2
+distcleancheck: distclean
+	@if test '$(srcdir)' = . ; then \
+	  echo "ERROR: distcleancheck can only run from a VPATH build" ; \
+	  exit 1 ; \
+	fi
+	@test `$(distcleancheck_listfiles) | wc -l` -eq 0 \
+	  || { echo "ERROR: files left in build directory after distclean:" ; \
+	       $(distcleancheck_listfiles) ; \
+	       exit 1; } >&2
 check-am: all-am
 check: check-recursive
-all-am: Makefile $(SCRIPTS)
+all-am: Makefile $(SCRIPTS) $(DATA)
 installdirs: installdirs-recursive
 installdirs-am:
+	for dir in "$(DESTDIR)$(pkgconfigdir)"; do \
+	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
+	done
 install: install-recursive
 install-exec: install-exec-recursive
 install-data: install-data-recursive
@@ -948,7 +1103,7 @@ info: info-recursive
 
 info-am:
 
-install-data-am:
+install-data-am: install-pkgconfigDATA
 
 install-dvi: install-dvi-recursive
 
@@ -994,7 +1149,7 @@ ps: ps-recursive
 
 ps-am:
 
-uninstall-am:
+uninstall-am: uninstall-pkgconfigDATA
 
 .MAKE: $(am__recursive_targets) install-am install-strip
 
@@ -1009,29 +1164,21 @@ uninstall-am:
 	install-data install-data-am install-dvi install-dvi-am \
 	install-exec install-exec-am install-html install-html-am \
 	install-info install-info-am install-man install-pdf \
-	install-pdf-am install-ps install-ps-am install-strip \
-	installcheck installcheck-am installdirs installdirs-am \
-	maintainer-clean maintainer-clean-generic mostlyclean \
-	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	tags tags-am uninstall uninstall-am
+	install-pdf-am install-pkgconfigDATA install-ps install-ps-am \
+	install-strip installcheck installcheck-am installdirs \
+	installdirs-am maintainer-clean maintainer-clean-generic \
+	mostlyclean mostlyclean-generic mostlyclean-libtool pdf pdf-am \
+	ps ps-am tags tags-am uninstall uninstall-am \
+	uninstall-pkgconfigDATA
 
 .PRECIOUS: Makefile
 
 .PHONY: deploy FORCE
+
 export PYTHONPATH
 
 dist-hook:
-	-$(MAKE) -C $(top_distdir)/src/leveldb clean
-	-$(MAKE) -C $(top_distdir)/src/secp256k1 distclean
 	-$(GIT) archive --format=tar HEAD -- src/clientversion.cpp | $(AMTAR) -C $(top_distdir) -xf -
-
-distcheck-hook:
-	$(MKDIR_P) $(top_distdir)/_build/src/leveldb
-	cp -rf $(top_srcdir)/src/leveldb/* $(top_distdir)/_build/src/leveldb/
-	-$(MAKE) -C $(top_distdir)/_build/src/leveldb clean
-
-distcleancheck:
-	@:
 
 $(BITCOIN_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
@@ -1058,9 +1205,9 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/HANACRYPTOBANK-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/HanaCryptoBank-Qt: all-recursive
 	$(MKDIR_P) $(@D)
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(BITCOIN_QT_BIN) $@
 
 $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	$(MKDIR_P) $(@D)
@@ -1085,7 +1232,7 @@ $(APP_DIST_DIR)/Applications:
 	@rm -f $@
 	@cd $(@D); $(LN_S) /Applications $(@F)
 
-$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/HANACRYPTOBANK-Qt
+$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/HanaCryptoBank-Qt
 
 $(OSX_DMG): $(APP_DIST_EXTRAS)
 	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1099,7 +1246,7 @@ $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE): $(OSX_BACKGROUND_IMAGE_DPIF
 $(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/HANACRYPTOBANK-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/HanaCryptoBank-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 deploydir: $(APP_DIST_EXTRAS)
@@ -1121,56 +1268,60 @@ $(BITCOIN_CLI_BIN): FORCE
 #	$(LCOV) -c -i -d $(abs_builddir)/src -o $@
 
 #baseline_filtered.info: baseline.info
-#	$(LCOV) -r $< "/usr/include/*" -o $@
+#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-#leveldb_baseline.info: baseline_filtered.info
-#	$(LCOV) -c -i -d $(abs_builddir)/src/leveldb -b $(abs_builddir)/src/leveldb -o $@
-
-#leveldb_baseline_filtered.info: leveldb_baseline.info
-#	$(LCOV) -r $< "/usr/include/*" -o $@
-
-#baseline_filtered_combined.info: leveldb_baseline_filtered.info baseline_filtered.info
-#	$(LCOV) -a leveldb_baseline_filtered.info -a baseline_filtered.info -o $@
-
-#test_hanacryptobank.info: baseline_filtered_combined.info
+#test_hanacryptobank.info: baseline_filtered.info
 #	$(MAKE) -C src/ check
-#	$(LCOV) -c -d $(abs_builddir)/src -t test_hanacryptobank -o $@
-#	$(LCOV) -z -d $(abs_builddir)/src
-#	$(LCOV) -z -d $(abs_builddir)/src/leveldb
+#	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_hanacryptobank -o $@
+#	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
 #test_hanacryptobank_filtered.info: test_hanacryptobank.info
-#	$(LCOV) -r $< "/usr/include/*" -o $@
+#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-#block_test.info: test_hanacryptobank_filtered.info
-#	$(MKDIR_P) qa/tmp
-#	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
-#	$(LCOV) -c -d $(abs_builddir)/src --t BitcoinJBlockTest -o $@
-#	$(LCOV) -z -d $(abs_builddir)/src
-#	$(LCOV) -z -d $(abs_builddir)/src/leveldb
+#functional_test.info: test_hanacryptobank_filtered.info
+#	-@TIMEOUT=15 test/functional/test_runner.py $(EXTENDED_FUNCTIONAL_TESTS)
+#	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src --t functional-tests -o $@
+#	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
-#block_test_filtered.info: block_test.info
-#	$(LCOV) -r $< "/usr/include/*" -o $@
+#functional_test_filtered.info: functional_test.info
+#	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
+#	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-#test_hanacryptobank_coverage.info: baseline_filtered_combined.info test_hanacryptobank_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_hanacryptobank_filtered.info -o $@
+#test_hanacryptobank_coverage.info: baseline_filtered.info test_hanacryptobank_filtered.info
+#	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_hanacryptobank_filtered.info -o $@
 
-#total_coverage.info:  baseline_filtered_combined.info test_hanacryptobank_filtered.info block_test_filtered.info
-#	$(LCOV) -a baseline_filtered.info -a leveldb_baseline_filtered.info -a test_hanacryptobank_filtered.info -a block_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+#total_coverage.info: test_hanacryptobank_filtered.info functional_test_filtered.info
+#	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_hanacryptobank_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
 #test_hanacryptobank.coverage/.dirstamp:  test_hanacryptobank_coverage.info
-#	$(GENHTML) -s $< -o $(@D)
+#	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 #	@touch $@
 
 #total.coverage/.dirstamp: total_coverage.info
-#	$(GENHTML) -s $< -o $(@D)
+#	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 #	@touch $@
 
 #cov: test_hanacryptobank.coverage/.dirstamp total.coverage/.dirstamp
 
 .INTERMEDIATE: $(COVERAGE_INFO)
 
-clean-local:
-	rm -rf test_hanacryptobank.coverage/ total.coverage/ $(OSX_APP)
+doc/doxygen/.stamp: doc/Doxyfile FORCE
+	$(MKDIR_P) $(@D)
+	$(DOXYGEN) $^
+	$(AM_V_at) touch $@
+
+#docs: doc/doxygen/.stamp
+docs:
+	@echo "error: doxygen not found"
+
+clean-docs:
+	rm -rf doc/doxygen
+
+clean-local: clean-docs
+	rm -rf coverage_percent.txt test_hanacryptobank.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
+	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache share/rpcauth/__pycache__
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

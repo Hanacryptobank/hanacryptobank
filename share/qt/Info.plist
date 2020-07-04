@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
   <key>LSMinimumSystemVersion</key>
-  <string>10.8.0</string>
+  <string>10.10.0</string>
 
   <key>LSArchitecturePriority</key>
   <array>
@@ -17,19 +17,25 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>3.0.0, Copyright © 2009-2019 The Bitcoin Core developers, 2014-2019 The Dash Core developers, 2015-2019 The HanaCryptoBank Core developers</string>
+  <string>1.0.0.0, Copyright © 2009-2020 The Bitcoin Core developers, 2014-2020 The Dash Core developers, 2015-2020 The HanaCryptoBank Core developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>3.0.0</string>
+  <string>1.0.0</string>
 
   <key>CFBundleVersion</key>
-  <string>3.0.0</string>
+  <string>1.0.0</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>
 
   <key>CFBundleExecutable</key>
   <string>HanaCryptoBank-Qt</string>
+
+  <key>CFBundleName</key>
+  <string>HanaCryptoBank-Qt</string>
+
+  <key>LSHasLocalizedDisplayName</key>
+  <true/>
 
   <key>CFBundleIdentifier</key>
   <string>io.hanacryptobank.HanaCryptoBank-Qt</string>
@@ -92,6 +98,9 @@
     <string>True</string>
 
   <key>LSAppNapIsDisabled</key>
+    <string>True</string>
+
+  <key>NSRequiresAquaSystemAppearance</key>
     <string>True</string>
 
   <key>LSApplicationCategoryType</key>

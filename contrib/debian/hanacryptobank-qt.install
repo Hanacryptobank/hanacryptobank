@@ -1,0 +1,6 @@
+usr/local/bin/hanacryptobank-qt usr/bin
+share/pixmaps/hanacryptobank32.xpm usr/share/pixmaps
+share/pixmaps/hanacryptobank16.xpm usr/share/pixmaps
+share/pixmaps/hanacryptobank128.png usr/share/pixmaps
+debian/hanacryptobank-qt.desktop usr/share/applications
+debian/hanacryptobank-qt.protocol usr/share/kde4/services/

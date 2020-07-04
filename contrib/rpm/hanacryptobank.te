@@ -1,0 +1,81 @@
+policy_module(hanacryptobank, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type hanacryptobank_t;
+type hanacryptobank_exec_t;
+init_daemon_domain(hanacryptobank_t, hanacryptobank_exec_t)
+
+permissive hanacryptobank_t;
+
+type hanacryptobank_initrc_exec_t;
+init_script_file(hanacryptobank_initrc_exec_t)
+
+type hanacryptobank_conf_t;
+files_type(hanacryptobank_conf_t)
+
+type hanacryptobank_var_lib_t;
+files_type(hanacryptobank_var_lib_t)
+
+type hanacryptobank_var_run_t;
+files_type(hanacryptobank_var_run_t)
+
+type hanacryptobank_port_t;
+corenet_port(hanacryptobank_port_t)
+
+########################################
+#
+# hanacryptobank local policy
+#
+allow hanacryptobank_t self:process { fork };
+
+allow hanacryptobank_t self:fifo_file rw_fifo_file_perms;
+allow hanacryptobank_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(hanacryptobank_t, hanacryptobank_conf_t, hanacryptobank_conf_t)
+manage_files_pattern(hanacryptobank_t, hanacryptobank_conf_t, hanacryptobank_conf_t)
+
+manage_dirs_pattern(hanacryptobank_t, hanacryptobank_var_lib_t, hanacryptobank_var_lib_t)
+manage_files_pattern(hanacryptobank_t, hanacryptobank_var_lib_t, hanacryptobank_var_lib_t)
+files_var_lib_filetrans(hanacryptobank_t, hanacryptobank_var_lib_t, { dir file })
+
+manage_dirs_pattern(hanacryptobank_t, hanacryptobank_var_run_t, hanacryptobank_var_run_t)
+manage_files_pattern(hanacryptobank_t, hanacryptobank_var_run_t, hanacryptobank_var_run_t)
+
+sysnet_dns_name_resolve(hanacryptobank_t)
+corenet_all_recvfrom_unlabeled(hanacryptobank_t)
+
+allow hanacryptobank_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(hanacryptobank_t)
+corenet_tcp_sendrecv_generic_node(hanacryptobank_t)
+corenet_tcp_sendrecv_all_ports(hanacryptobank_t)
+corenet_tcp_bind_generic_node(hanacryptobank_t)
+
+gen_require(`
+    type hanacryptobank_port_t;
+')
+allow hanacryptobank_t hanacryptobank_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type hanacryptobank_port_t;
+')
+allow hanacryptobank_t hanacryptobank_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(hanacryptobank_t)
+
+files_read_etc_files(hanacryptobank_t)
+
+miscfiles_read_localization(hanacryptobank_t)
+
+sysnet_dns_name_resolve(hanacryptobank_t)
+
+allow hanacryptobank_t hanacryptobank_exec_t:file execute_no_trans;
+allow hanacryptobank_t self:process setsched;
+corecmd_exec_ls(hanacryptobank_t)
+corenet_tcp_connect_http_port(hanacryptobank_t)
+dev_read_urand(hanacryptobank_t)
+fs_getattr_xattr_fs(hanacryptobank_t)
+kernel_read_system_state(hanacryptobank_t)

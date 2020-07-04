@@ -9,13 +9,13 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 1
+#define CLIENT_VERSION_BUILD 0
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 3
+#define CLIENT_VERSION_MAJOR 1
 
 /* Minor version */
 #define CLIENT_VERSION_MINOR 0
@@ -24,7 +24,16 @@
 #define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2019
+#define COPYRIGHT_YEAR 2020
+
+/* Define this symbol to build code that uses AVX2 intrinsics */
+#define ENABLE_AVX2 1
+
+/* Define this symbol to build code that uses SHA-NI intrinsics */
+#define ENABLE_SHANI 1
+
+/* Define this symbol to build code that uses SSE4.1 intrinsics */
+#define ENABLE_SSE41 1
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
@@ -56,11 +65,18 @@
 /* define if the Boost::Unit_Test_Framework library is available */
 #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 
+/* Define to 1 if you have the <byteswap.h> header file. */
+/* #undef HAVE_BYTESWAP_H */
+
 /* Define this symbol if the consensus lib has been built */
 /* #undef HAVE_CONSENSUS_LIB */
 
 /* define if the compiler supports basic C++11 syntax */
 #define HAVE_CXX11 1
+
+/* Define to 1 if you have the declaration of `be16toh', and to 0 if you
+   don't. */
+#define HAVE_DECL_BE16TOH 0
 
 /* Define to 1 if you have the declaration of `be32toh', and to 0 if you
    don't. */
@@ -70,6 +86,26 @@
    don't. */
 #define HAVE_DECL_BE64TOH 0
 
+/* Define to 1 if you have the declaration of `bswap_16', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_16 0
+
+/* Define to 1 if you have the declaration of `bswap_32', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_32 0
+
+/* Define to 1 if you have the declaration of `bswap_64', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_64 0
+
+/* Define to 1 if you have the declaration of `daemon', and to 0 if you don't.
+   */
+#define HAVE_DECL_DAEMON 0
+
+/* Define to 1 if you have the declaration of `htobe16', and to 0 if you
+   don't. */
+#define HAVE_DECL_HTOBE16 0
+
 /* Define to 1 if you have the declaration of `htobe32', and to 0 if you
    don't. */
 #define HAVE_DECL_HTOBE32 0
@@ -78,6 +114,10 @@
    don't. */
 #define HAVE_DECL_HTOBE64 0
 
+/* Define to 1 if you have the declaration of `htole16', and to 0 if you
+   don't. */
+#define HAVE_DECL_HTOLE16 0
+
 /* Define to 1 if you have the declaration of `htole32', and to 0 if you
    don't. */
 #define HAVE_DECL_HTOLE32 0
@@ -85,6 +125,10 @@
 /* Define to 1 if you have the declaration of `htole64', and to 0 if you
    don't. */
 #define HAVE_DECL_HTOLE64 0
+
+/* Define to 1 if you have the declaration of `le16toh', and to 0 if you
+   don't. */
+#define HAVE_DECL_LE16TOH 0
 
 /* Define to 1 if you have the declaration of `le32toh', and to 0 if you
    don't. */
@@ -102,6 +146,18 @@
    don't. */
 #define HAVE_DECL_STRNLEN 1
 
+/* Define to 1 if you have the declaration of `__builtin_clz', and to 0 if you
+   don't. */
+#define HAVE_DECL___BUILTIN_CLZ 1
+
+/* Define to 1 if you have the declaration of `__builtin_clzl', and to 0 if
+   you don't. */
+#define HAVE_DECL___BUILTIN_CLZL 1
+
+/* Define to 1 if you have the declaration of `__builtin_clzll', and to 0 if
+   you don't. */
+#define HAVE_DECL___BUILTIN_CLZLL 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 /* #undef HAVE_DLFCN_H */
 
@@ -117,11 +173,12 @@
 /* Define to 1 if the system has the `visibility' function attribute */
 #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
 
-/* Define this symbol if you have getaddrinfo_a */
-/* #undef HAVE_GETADDRINFO_A */
+/* Define this symbol if the BSD getentropy system call is available */
+/* #undef HAVE_GETENTROPY */
 
-/* Define this symbol if you have inet_pton */
-/* #undef HAVE_INET_PTON */
+/* Define this symbol if the BSD getentropy system call is available with
+   sys/random.h */
+/* #undef HAVE_GETENTROPY_RAND */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -138,11 +195,11 @@
 /* Define to 1 if you have the `crypt32' library (-lcrypt32). */
 #define HAVE_LIBCRYPT32 1
 
-/* Define to 1 if you have the `crypto' library (-lcrypto). */
-#define HAVE_LIBCRYPTO 1
-
 /* Define to 1 if you have the `gdi32' library (-lgdi32). */
 #define HAVE_LIBGDI32 1
+
+/* Define this symbol if libgmp is installed */
+#define HAVE_LIBGMP 1
 
 /* Define to 1 if you have the `imm32' library (-limm32). */
 #define HAVE_LIBIMM32 1
@@ -167,6 +224,9 @@
 
 /* Define to 1 if you have the `rpcrt4' library (-lrpcrt4). */
 #define HAVE_LIBRPCRT4 1
+
+/* Define to 1 if you have the `rt' library (-lrt). */
+/* #undef HAVE_LIBRT */
 
 /* Define to 1 if you have the `shell32' library (-lshell32). */
 #define HAVE_LIBSHELL32 1
@@ -195,6 +255,12 @@
 /* Define to 1 if you have the `z ' library (-lz ). */
 #define HAVE_LIBZ_ 1
 
+/* Define this symbol if you have malloc_info */
+/* #undef HAVE_MALLOC_INFO */
+
+/* Define this symbol if you have mallopt with M_ARENA_MAX */
+/* #undef HAVE_MALLOPT_ARENA_MAX */
+
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
 
@@ -210,6 +276,9 @@
 /* Define to 1 if you have the <miniupnpc/upnperrors.h> header file. */
 #define HAVE_MINIUPNPC_UPNPERRORS_H 1
 
+/* Define this symbol if you have MSG_DONTWAIT */
+/* #undef HAVE_MSG_DONTWAIT */
+
 /* Define this symbol if you have MSG_NOSIGNAL */
 /* #undef HAVE_MSG_NOSIGNAL */
 
@@ -218,9 +287,6 @@
 
 /* Have PTHREAD_PRIO_INHERIT. */
 #define HAVE_PTHREAD_PRIO_INHERIT 1
-
-/* Define to 1 to enable trading dialog */
-#define HAVE_QT5 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -240,6 +306,15 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
+/* Define this symbol if the BSD sysctl(KERN_ARND) is available */
+/* #undef HAVE_SYSCTL_ARND */
+
+/* Define to 1 if you have the <sys/endian.h> header file. */
+/* #undef HAVE_SYS_ENDIAN_H */
+
+/* Define this symbol if the Linux getrandom system call is available */
+/* #undef HAVE_SYS_GETRANDOM */
+
 /* Define to 1 if you have the <sys/prctl.h> header file. */
 /* #undef HAVE_SYS_PRCTL_H */
 
@@ -251,6 +326,9 @@
 
 /* Define to 1 if you have the <sys/types.h> header file. */
 #define HAVE_SYS_TYPES_H 1
+
+/* Define if thread_local is supported. */
+#define HAVE_THREAD_LOCAL 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
@@ -268,22 +346,22 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.hanacryptobank.org"
+#define PACKAGE_BUGREPORT "https://github.com/hanacryptobank-project/hanacryptobank/issues"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "HanaCryptoBank Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "HanaCryptoBank Core 3.0.0"
+#define PACKAGE_STRING "HanaCryptoBank Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "hanacryptobank"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL ""
+#define PACKAGE_URL "https://hanacryptobank.org/"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "3.0.0"
+#define PACKAGE_VERSION "1.0.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -291,6 +369,9 @@
 
 /* Define this symbol if the qt platform is cocoa */
 /* #undef QT_QPA_PLATFORM_COCOA */
+
+/* Define this symbol if the minimal qt platform exists */
+#define QT_QPA_PLATFORM_MINIMAL 1
 
 /* Define this symbol if the qt platform is windows */
 #define QT_QPA_PLATFORM_WINDOWS 1
@@ -307,11 +388,23 @@
 /* Define to 1 if strerror_r returns char *. */
 /* #undef STRERROR_R_CHAR_P */
 
+/* Define this symbol to build in assembly routines */
+#define USE_ASM 1
+
+/* Define this symbol if coverage is enabled */
+/* #undef USE_COVERAGE */
+
 /* Define if dbus support should be compiled in */
 /* #undef USE_DBUS */
 
-/* Define if QR support should be compiled in */
-#define USE_QRCODE 1
+/* Define this symbol to use the gmp implementation */
+#define USE_NUM_GMP 1
+
+/* Define this symbol to use openssl implementation */
+/* #undef USE_NUM_OPENSSL */
+
+/* Define if QTCHARTS support should be compiled in */
+#define USE_QTCHARTS 1
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */

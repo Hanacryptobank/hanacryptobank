@@ -1,5 +1,73 @@
 <TS language="nl" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>Mijn Adres</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>Contactgegevens wijzigen</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Stel een label in voor het geselecteerde adres</translation>
+    </message>
+    <message>
+        <source>Enter a name for the address (e.g Exchange)</source>
+        <translation>Voeg een naam toe bij het behorende adres</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Bewerk label voor het geselecteerde adres:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -43,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Kies het adres om naar te versturen</translation>
+        <translation>Kies het adres om munten naar toe te sturen</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Kies het adres om op te ontvangen</translation>
+        <translation>Kies het adres om munten op te ontvangen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -63,11 +131,11 @@
     </message>
     <message>
         <source>These are your HanaCryptoBank addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw HanaCryptoBankadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <translation>Dit zijn uw HanaCryptoBank adressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden van geld.</translation>
     </message>
     <message>
         <source>These are your HanaCryptoBank addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw HanaCryptoBankadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <translation>Dit zijn uw HanaCryptoBank adressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -95,7 +163,22 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Een fout is opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
+        <translation>Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Probeer het nogmaals.</translation>
+    </message>
+</context>
+<context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
     </message>
 </context>
 <context>
@@ -109,35 +192,134 @@
         <translation>Adres</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(geen label)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Zenden</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>NB</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Contactpersoon</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Voeg adres toe</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Contacten</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>U kunt een nieuwe toevoegen in het optiemenu aan de zijkant.</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Nog geen contacten</translation>
+    </message>
+    <message>
+        <source>e.g. John Doe</source>
+        <translation>bv. Jan Jansen</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Ongeldig contactadres</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Kan uw eigen adres niet als contact opslaan</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Adres al opgeslagen, label: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nieuw contact opgeslagen</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Fout bij het opslaan van contact</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Contact bewerkt</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>Bewerken van contact mislukt</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>Verwijder contact</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>U staat op het punt het contact te verwijderen:
+
+%1
+
+Weet U het zeker?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Contact verwijderd</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Fout bij het verwijderen van een contact</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adres gekopieerd</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Wachtwoorddialoog</translation>
+        <translation>Wachtwoordzin dialoog</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Voer wachtwoord in</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Nieuw wachtwoord</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Herhaal nieuw wachtwoord</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Dient om de triviale sendmoney uit te schakelen wanneer het OS account in gevaar is gebracht. Geeft geen echte veiligheid.</translation>
-    </message>
-    <message>
-        <source>For anonymization and staking only</source>
-        <translation>Alleen voor anonimisering en staking</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -150,6 +332,12 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Deze operatie vereist uw portemonneewachtwoord om de portemonnee te openen.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Portemonnee ontgrendelen
+voor bewijs van Inzet</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -169,15 +357,23 @@
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Voer het oude en nieuwe wachtwoord voor uw portemonnee in.</translation>
+        <translation>Voer de oude en nieuwe wachtwoordzin in voor uw portemonnee.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>HanaCryptoBank will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your RUPs from being stolen by malware infecting your computer.</source>
-        <translation>HanaCryptoBank zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw RUPs stelen.</translation>
+        <source>ENCRYPT</source>
+        <translation>Versleutelen</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your HCBs from being stolen by malware infecting your computer.</source>
+        <translation>HanaCryptoBank zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen tegen malware infecties op uw computer die uw HCB's kunnen stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -193,11 +389,15 @@
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>BELANGRIJK: Elke eerder gemaakte backup van uw portemonneebestand dient te worden vervangen door het nieuw gegenereerde, versleutelde portemonneebestand. Om veiligheidsredenen zullen eerdere backups van het niet-versleutelde portemonneebestand onbruikbaar worden zodra u uw nieuwe, versleutelde, portemonnee begint te gebruiken.</translation>
+        <translation>BELANGRIJK: Elke eerder gemaakte backup van uw portemonneebestand dient te worden vervangen door het nieuwe gegenereerde, versleutelde portemonneebestand. Om veiligheidsredenen zullen eerdere backups van het niet-versleutelde portemonneebestand onbruikbaar worden zodra u uw nieuwe, versleutelde, portemonnee begint te gebruiken.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
         <translation>Portemonneeversleuteling mislukt</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -205,7 +405,7 @@
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>De opgegeven wachtwoorden komen niet overeen.</translation>
+        <translation>De opgegeven wachtwoordzinnen komen niet overeen.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -213,15 +413,15 @@
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Het opgegeven wachtwoord voor de portemonnee-ontsleuteling is niet correct.</translation>
+        <translation>De opgegeven wachtwoordzin voor de portemonnee ontsleuteling is niet correct.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Portemonnee-ontsleuteling mislukt</translation>
+        <translation>Portemonnee ontsleuteling mislukt</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Portemonneewachtwoord is met succes gewijzigd.</translation>
+        <translation>Portemonnee wachtwoordzin is met succes gewijzigd.</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -229,597 +429,14 @@
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>BanTableModel</name>
     <message>
-        <source>BIP 38 Tool</source>
-        <translation>BIP 38 Tool</translation>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 Versleuteling</translation>
-    </message>
-    <message>
-        <source>Enter a HanaCryptoBank Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een HanaCryptoBank adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adres:</translation>
-    </message>
-    <message>
-        <source>The HanaCryptoBank address to sign the message with</source>
-        <translation>Het HanaCryptoBank adres om het bericht met te ondertekenen</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Wachtwoord:</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Versleutelde sleutel:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this HanaCryptoBank address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het HanaCryptoBank adres bezit</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Versleutel &amp;Sleutel</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Maak alle ondertekenvelden leeg</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 ontsleuteling</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
-    </message>
-    <message>
-        <source>The HanaCryptoBank address the message was signed with</source>
-        <translation>Het HanaCryptoBank adres waarmee het bericht was ondertekend</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified HanaCryptoBank address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde HanaCryptoBank adres</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Ontsleutelen Sleutel</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Ontsleutelde sleutel:</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Adres Importeren</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Klik "Ontsleutelen Sleutel" om de sleutel te berekenen</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>Het ingevoerde wachtwoord is ongeldig.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Toegestaan: 0-9,a-z,A-Z</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Het ingevoerde adres is ongeldig.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Controleer het adres en probeer het opnieuw.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Ontsleutelen mislukt.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Controleer de sleutel en het wachtwoord en probeer het opnieuw.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Gegevens ongeldig.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Probeer het opnieuw.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Wacht tot de sleutel is geïmporteerd</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Sleutel al aanwezig in portemonnee</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Fout bij het toevoegen van de sleutel</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>De geheime sleutel is toegevoegd aan de portemonnee</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>Portemonnee</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Overzicht</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Toon algemeen overzicht van de portemonnee</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Verzenden</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Ontvangen</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transacties</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Blader door transactiegescheidenis</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Sluiten</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Programma afsluiten</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Over &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Toon informatie over Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opties...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Tonen / Verbergen</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Toon of verberg het hoofdvenster</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>Versleutel portemonnee</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Backup Portemonnee...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Backup portemonnee naar een andere locatie</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Wijzig Wachtwoord...</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Wijzig het wachtwoord voor uw portemonneversleuteling</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Open portemonnee...</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Open portemonnee</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Sluit portemonnee</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Bericht &amp;Ondertekenen...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>Bericht &amp;Verifiëren... </translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Toon diagnostische informatie</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Open debugging console</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Netwerk Monitor</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Toon netwerk monitor</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Peers lijst</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Toon informatie van peers</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Portemonnee &amp;Repareren </translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Toon portemonnee reparatie opties</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Open configuratie bestand</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Toon Automatische &amp;Backups</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Toon automatisch aangemaakte portemonnee backups</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Verzendadressen...</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Toon de lijst van verzendadressen en labels</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Ontvangstadressen...</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Toon de lijst van ontvangstadressen en labels</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Opdrachtregelopties</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n blok van transactiegeschiedenis verwerkt.</numerusform><numerusform>%n blokken van transactiegeschiedenis verwerkt.</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Synchroniseren aanvullende gegevens: %p%</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Bestand</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Instellingen</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Gereedschap</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Tabblad werkbalk</translation>
-    </message>
-    <message>
-        <source>HanaCryptoBank Core</source>
-        <translation>HanaCryptoBank Kern</translation>
-    </message>
-    <message>
-        <source>Send coins to a HanaCryptoBank address</source>
-        <translation>Verstuur munten naar een HanaCryptoBank adres</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and hanacryptobank: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en HanaCryptoBank: URI's)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Privacy</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zHCB and Obfuscation</source>
-        <translation>Privacy Actie voor zHCB en verduistering</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Bekijk masternodes</translation>
-    </message>
-    <message>
-        <source>&amp;About HanaCryptoBank Core</source>
-        <translation>&amp;Over HanaCryptoBank Kern</translation>
-    </message>
-    <message>
-        <source>Show information about HanaCryptoBank Core</source>
-        <translation>Toon informatie over HanaCryptoBank Kern</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for HanaCryptoBank</source>
-        <translation>Wijzig HanaCryptoBank configuratie opties</translation>
-    </message>
-    <message>
-        <source>Sign messages with your HanaCryptoBank addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw HanaCryptoBank adressen om te bewijzen dat u deze adressen bezit</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified HanaCryptoBank addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde HanaCryptoBank adressen</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 tool</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Versleutelen en ontsleutelen door middel van een wachtwoord/wachtzin</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>MultiSend intellingen</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Open Portemonnee &amp;Configuratiebestand</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Open &amp;Masternode Configuratiebestand</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Open Masternode configuratiebestand</translation>
-    </message>
-    <message>
-        <source>Open a HanaCryptoBank: URI or payment request</source>
-        <translation>Open een HanaCryptoBank: URI of betaalverzoek</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Blockchain verkenner</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Block verkenner venster</translation>
-    </message>
-    <message>
-        <source>Show the HanaCryptoBank Core help message to get a list with possible HanaCryptoBank command-line options</source>
-        <translation>Toon het HanaCryptoBank Core help bericht om een ​​lijst te krijgen met mogelijke HanaCryptoBank command line opties</translation>
-    </message>
-    <message>
-        <source>HanaCryptoBank Core client</source>
-        <translation>HanaCryptoBank Core client</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to HanaCryptoBank network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het HanaCryptoBank netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het HanaCryptoBank netwerk</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Synchroniseren met het netwerk...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Blocks aan het importeren vanaf schijf...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Blocks opnieuw aan het indexeren op de schijf...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Geen block bron beschikbaar</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Bijgewerkt</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dag</numerusform><numerusform>%n dagen</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n week</numerusform><numerusform>%n weken</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 en%2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n jaar</numerusform><numerusform>%n jaren</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 achter</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Aan het bijwerken...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Het laatst ontvangen block was %1 geleden gegenereerd.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transacties hierna zijn nog niet zichtbaar.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Waarschuwing</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informatie</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Verzend transactie</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Inkomende transactie</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Verzend MultiSend transactie</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Datum: %1
-Hoeveelheid: %2
-Type: %3
-Adres: %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>Staking is actief
-Multisend: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Actief</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Niet actief</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Staking is niet actief
-MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;geopend&lt;/b&gt;alleen voor anonimiteit en staking </translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Portemonnee is &lt;b&gt;geëncrypteerd &lt;/b&gt;en momentel &lt;b&gt; vergrendeld&lt;/b&gt;</translation>
+        <source>Banned Until</source>
+        <translation>Verboden tot</translation>
     </message>
 </context>
 <context>
@@ -850,7 +467,34 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (hanacryptobank.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (hanacryptobank.conf).</translation>
+        <translation>Niet alle transacties zullen worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (hanacryptobank.conf).</translation>
+    </message>
+</context>
+<context>
+    <name>CSRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Savings</source>
+        <translation>Besparingen</translation>
+    </message>
+    <message>
+        <source>0,00 HCB</source>
+        <translation>0,00 HCB</translation>
+    </message>
+    <message>
+        <source>address</source>
+        <translation>adres</translation>
+    </message>
+    <message>
+        <source>Not Staking</source>
+        <translation>Niet aan het Staken</translation>
+    </message>
+    <message>
+        <source>Own delegation</source>
+        <translation>Eigen delegatie</translation>
     </message>
 </context>
 <context>
@@ -875,16 +519,8 @@ MultiSend: %1</translation>
         <translation>Bytes:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
-    </message>
-    <message>
         <source>Fee:</source>
-        <translation>Kost:</translation>
+        <translation>Fee:</translation>
     </message>
     <message>
         <source>Coin Selection</source>
@@ -892,23 +528,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Dust:</source>
-        <translation>Stof:</translation>
-    </message>
-    <message>
-        <source>After Fee:</source>
-        <translation>Na de kost:</translation>
+        <translation>Dust:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>Wijzig:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>(on)selecteer alles</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>Schakel lock state</translation>
+        <translation>Wisselgeld:</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -916,15 +540,39 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>List mode</source>
-        <translation>Lijstmodus</translation>
+        <translation>Lijst modus</translation>
     </message>
     <message>
         <source>(1 locked)</source>
-        <translation>(1 opgesloten)</translation>
+        <translation>(1 locked)</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>0.00 HCB</source>
+        <translation>0.00 HCB</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Selecteer alles</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Schakel lockstatus in</translation>
     </message>
     <message>
         <source>Received with label</source>
@@ -933,6 +581,14 @@ MultiSend: %1</translation>
     <message>
         <source>Received with address</source>
         <translation>Ontvangen met adres</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Na kosten</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
         <source>Date</source>
@@ -947,10 +603,6 @@ MultiSend: %1</translation>
         <translation>Bevestigd</translation>
     </message>
     <message>
-        <source>Priority</source>
-        <translation>Prioriteit</translation>
-    </message>
-    <message>
         <source>Copy address</source>
         <translation>Kopieer adres</translation>
     </message>
@@ -960,11 +612,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <translation>Kopieer bedrag</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
+        <translation>Kopieer transactie ID</translation>
     </message>
     <message>
         <source>Lock unspent</source>
@@ -976,15 +628,15 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
+        <translation>Kopieer kwantiteit</translation>
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
+        <translation>Kopieer fee</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
+        <translation>Kopieer na fee</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -1003,8 +655,12 @@ MultiSend: %1</translation>
         <translation>Kopieer wisselgeld</translation>
     </message>
     <message>
+        <source>Unselect all</source>
+        <translation>Deselecteer alles</translation>
+    </message>
+    <message>
         <source>Please switch to "List mode" to use this function.</source>
-        <translation>Ga alsjeblieft over naar "Lijst modus" om deze functie te gebruiken.</translation>
+        <translation>Schakel alsjeblieft over naar "Lijst modus" om deze functie te gebruiken.</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1021,10 +677,6 @@ MultiSend: %1</translation>
     <message>
         <source>medium-high</source>
         <translation>medium-hoog</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Kan variëren van +/-%1 duff(s) per invoer.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1047,6 +699,10 @@ MultiSend: %1</translation>
         <translation>laagst</translation>
     </message>
     <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 vergrendeld)</translation>
+    </message>
+    <message>
         <source>none</source>
         <translation>geen</translation>
     </message>
@@ -1064,7 +720,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Dit betekent dat een honorarium van minstens %1 per kB vereist is.</translation>
+        <translation>Dit betekent dat een fee van minstens %1 per kB vereist is.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
@@ -1072,7 +728,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
-        <translation>Transacties met hogere prioriteit zullen waarschijnlijk in een blok opgenomen worden.</translation>
+        <translation>Transacties met hogere prioriteit zullen waarschijnlijk eerder in een blok opgenomen worden.</translation>
     </message>
     <message>
         <source>This label turns red, if the priority is smaller than "medium".</source>
@@ -1081,6 +737,10 @@ MultiSend: %1</translation>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
         <translation>Dit label wordt rood, als een ontvanger een hoeveelheid kleiner dan %1 ontvangt.</translation>
+    </message>
+    <message>
+        <source>Can vary +/- %1 upiv per input.</source>
+        <translation>Kan +/-%1 upiv per invoer variëren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1096,6 +756,531 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>CoinControlPivWidget</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>HCB:</source>
+        <translation>HCB:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Fee:</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Bevestigingen</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Selectievakje</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Dust:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wisselgeld:</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Na kosten</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Tietel</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>List of delegated balance by address</source>
+        <translation>Lijst van gedelegeerde balans gesorteerd op adres</translation>
+    </message>
+    <message>
+        <source>No balance delegated</source>
+        <translation>Geen balans gedelegeerd</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Cold Staking</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>Staker</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>Delegatie</translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>Delegeer</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Alles wissen</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>Gedelegeerde balanshistoriek</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>Nog geen delegaties</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>Totaal Staking: %1</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>Fout bij laden delegaties: %1</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Geen beschikbare contacten, je kan naar het contactscherm gaan en daar enkele toevoegen!</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>Cold staking is uitgeschakeld</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Ongeldige invoer</translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>Ongeldig eigenaarsadres</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>ALERT!</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>Aan het delegeren naar een extern eigenaarsadres!
+
+De gedelegeerde munten zullen NIET besteedbaar zijn vanuit deze portemonnee.
+Het uitbesteden van deze munten zal gedaan kunnen worden vanuit de portemonnee of
+toestel welke het eigenaarsadres bevat.
+
+Wil je verdergaan?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>Stakingadres reageert op deze portemonnee, wijzig het in een externe node</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Kan geen transactie aanmaken.</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>Gedelegeerde Munten</translation>
+    </message>
+    <message>
+        <source>You don't have any HCB to select.</source>
+        <translation>Je hebt geen HCB om te selecteren</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI gekopieerd naar klembord</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Adres gekopieerd naar klembord</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Bewerk</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>Stake</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>Blacklist</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Label wijzigen</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>Kopieer eigenaarsadres</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adres gekopieerd</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>Label Cold Adres wijzigen</translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>Veilige lijst mislukt, controleer de logs</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>staking!</translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>Zwarte lijst mislukt, controleer de logs</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>staking staat op de zwarte lijst</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>Eigenaarsadres gekopieerd</translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>Label eigenaarsadres wijzigen</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Adreslabel opgeslagen</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Fout bij bewaren adreslabel</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Transacties</translation>
+    </message>
+    <message>
+        <source>You can see here the history of your account</source>
+        <translation>U kunt hier de geschiedenis van uw account bekijken</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Waarschuwing</translation>
+    </message>
+    <message>
+        <source>No transactions</source>
+        <translation>Geen transacties</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Staking Beloningen</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Staking statistieken</translation>
+    </message>
+    <message>
+        <source>HCB</source>
+        <translation>HCB</translation>
+    </message>
+    <message>
+        <source>zHCB</source>
+        <translation>zHCB</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Sorteervolgorde</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Dagen</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Maanden</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>Jaren</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filter volgens</translation>
+    </message>
+    <message>
+        <source>LabelText</source>
+        <translation>LabelText</translation>
+    </message>
+    <message>
+        <source>You can view your account's history</source>
+        <translation>U kunt de geschiedenis van uw account bekijken</translation>
+    </message>
+    <message>
+        <source>Amount of HCB and zHCB staked.</source>
+        <translation>Hoeveelheid aan gestaked HCB en zHCB.</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ontvangen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Verstuurd</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Minted</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>MN beloning</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Naar jezelf</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Cold stakes</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Hot stakes</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Gedelegeerd</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Delegaties</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Wacht tot de portemonnee volledig gesynchroniseerd is om uw juiste saldo te zien</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Nog geen transacties</translation>
+    </message>
+    <message>
+        <source>How to get HCB or zHCB</source>
+        <translation>Hoe HCB of zHCB verkrijgen</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>U kunt de stakingactiviteit controleren in de statusbalk rechtsboven in de portemonnee.
+Het zal automatisch starten zodra de portemonnee voldoende bevestigingen heeft op ongebruikte saldo's en de portemonnee gesynchroniseerd is.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>Je hebt geen staking beloningen</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Geen grafiekbibliotheek</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Grafiek laden...</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Fout bij laden van grafiek, ongeldige toonoptie</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>Fout bij laden van grafiek, ongeldige gegevens</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Fout bij laden grafiek: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>Text Label</source>
+        <translation>Text Label</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+</context>
+<context>
+    <name>DenomGenerationDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
+        <translation>Hiermee wordt uw portemonnee volledig ontgrendeld, zodat iedereen die er toegang toe heeft, deze kan uitgeven totdat de portemonnee weer wordt gesloten of vergrendeld.</translation>
+    </message>
+    <message>
+        <source>5000</source>
+        <translation>5000</translation>
+    </message>
+    <message>
+        <source>100</source>
+        <translation>100</translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>1000</source>
+        <translation>1000</translation>
+    </message>
+    <message>
+        <source>50</source>
+        <translation>50</translation>
+    </message>
+    <message>
+        <source>500</source>
+        <translation>500</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Selecteer Alles</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+</context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -1107,7 +1292,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
-        <translation>Het label dat geassocieerd wordt met deze adreslijstinvoer</translation>
+        <translation>Het label dat geassocieerd is met deze adreslijst invoer</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -1115,7 +1300,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Het adres geassocieerd met deze adreslijst vermelding. Dit kan alleen worden gewijzigd voor het verzenden van adressen.</translation>
+        <translation>Het adres geassocieerd met deze adreslijst invoer. Dit kan alleen worden gewijzigd voor verzend adressen.</translation>
     </message>
     <message>
         <source>New receiving address</source>
@@ -1123,7 +1308,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>New sending address</source>
-        <translation>Nieuw verzendadres</translation>
+        <translation>Nieuw verzend adres</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
@@ -1131,7 +1316,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Edit sending address</source>
-        <translation>Wijzig verzendadres</translation>
+        <translation>Wijzig verzend adres</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid HanaCryptoBank address.</source>
@@ -1151,10 +1336,17 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+</context>
+<context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>Er wordt een nieuwe data map gemaakt.</translation>
+        <translation>Een nieuwe data directory zal worden aangemaakt.</translation>
     </message>
     <message>
         <source>name</source>
@@ -1162,7 +1354,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Map bestaat alreeds. Voeg %1 toe als je van plan bent om hier een nieuwe map te creëren.</translation>
+        <translation>Map bestaat reeds. Voeg %1 toe als je van plan bent om hier een nieuwe map te creëren.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
@@ -1174,6 +1366,49 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>GOVERNANCE</source>
+        <translation>BESTUUR</translation>
+    </message>
+    <message>
+        <source>Update Proposals</source>
+        <translation>Voorstellen Bijwerken</translation>
+    </message>
+    <message>
+        <source>Next super block:</source>
+        <translation>Volgende superblok:</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Blocks to next super block:</source>
+        <translation>Blokken tot de volgende superblok:</translation>
+    </message>
+    <message>
+        <source>Days to budget payout (estimate):</source>
+        <translation>Dagen tot budgetuitbetaling (schatting):</translation>
+    </message>
+    <message>
+        <source>Allotted budget:</source>
+        <translation>Toegewezen budget:</translation>
+    </message>
+    <message>
+        <source>Budget left:</source>
+        <translation>Resterend budget:</translation>
+    </message>
+    <message>
+        <source>Masternodes count:</source>
+        <translation>Masternodes aantal:</translation>
+    </message>
+</context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1181,7 +1416,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>HanaCryptoBank Kern</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1208,6 +1443,14 @@ MultiSend: %1</translation>
         <translation>UI Opties:</translation>
     </message>
     <message>
+        <source>Choose data directory on startup (default: %u)</source>
+        <translation>Kies data directory bij opstarten (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Show splash screen on startup (default: %u)</source>
+        <translation>Toon splash scherm bij opstarten (standaard: %u)</translation>
+    </message>
+    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Stel taal in, bijvoorbeeld "de_DE" (standaard: systeem locale)</translation>
     </message>
@@ -1219,6 +1462,10 @@ MultiSend: %1</translation>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Stel SSL root certificaten in voor betalingsverzoek (standaard: -systeem-)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1228,27 +1475,35 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to HanaCryptoBank Core.</source>
-        <translation>Welkom bij HanaCryptoBank Core</translation>
+        <translation>Welkom bij HanaCryptoBank Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where HanaCryptoBank Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar HanaCryptoBank Core zijn gegevens opslaat.</translation>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar HanaCryptoBank Core zijn data opslaat.</translation>
     </message>
     <message>
         <source>HanaCryptoBank Core will download and store a copy of the HanaCryptoBank block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>HanaCryptoBank Core zal een kopie van de HanaCryptoBank blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <translation>HanaCryptoBank Core zal een kopie van de HanaCryptoBank blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee zal ook in deze map worden opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Gebruik een aangepaste data directory:</translation>
+        <source>Use a custom data directory</source>
+        <translation>Gebruik een aangepaste gegevenslocatie</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>HanaCryptoBank Kern</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1268,311 +1523,356 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Mijn Masternodes</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Opmerking: De status van uw masternodes in de lokale portemonnee kan mogelijk iets afwijken. &lt;br /&gt;Wacht altijd op de portemonnee om additionele data te synchroniseren en verifieer dit vanuit een andere node &lt;br /&gt;mocht de node nu aan het draaien zijn maar je ziet nog steeds 'MISSING' in het veld 'Status'.</translation>
+        <source>Loading</source>
+        <translation>Aan het laden</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>Alias</translation>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>Portemonnee Ontgrendelen</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>Portemonnee Vergrendelen</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Alleen Staking</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>user_masternode</source>
+        <translation>user_masternode</translation>
+    </message>
+    <message>
+        <source>Address: 88.26.164.88:51474</source>
+        <translation>Adres: 88.26.164.88:51474</translation>
+    </message>
+    <message>
+        <source>Jan. 19, 2019</source>
+        <translation>Jan. 19, 2019</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>Intro</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Naam</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Adres</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Protocol</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a HanaCryptoBank Masternode you must dedicate 10.000 HCB (the unit of HanaCryptoBank) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Om een HanaCryptoBank Masternode te maken moet u 10.000 HCB (de eenheid van HanaCryptoBank) aan het netwerk wijden (deze munten zijn echter nog steeds van u en zullen nooit uw bezit verlaten). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;U kunt de node op elk gewenst moment deactiveren en de munten ontgrendelen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Status</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Zorg ervoor dat je deze hoeveelheid munten hebt.</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Actief</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 HCB will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Een transactie van 10,000 HCB zal gemaakt worden&lt;/p&gt;&lt;p&gt;naar een nieuw leeg adres in uw portemonnee.&lt;/p&gt;&lt;p&gt;Het adres is gelabeld onder de masternode's naam.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Laatst gezien (UTC)</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>Adres van de node dat altijd online moet zijn met het eigenlijke masternode.</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Pubkey</translation>
+        <source>Enter IP address</source>
+        <translation>Voer IP-adres in</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>S&amp;tart alias</translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>&amp;all starten</translation>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Start &amp;ontbrekende</translation>
+        <source>e.g user_masternode</source>
+        <translation>e.g user_masternode</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>&amp;Status bijwerken</translation>
+        <source>NEXT</source>
+        <translation>VOLGENDE</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>Status wordt automatisch bijgewerkt in (sec):</translation>
+        <source>BACK</source>
+        <translation>TERUG</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>address label cannot be empty</source>
+        <translation>Adreslabel kan niet leeg zijn</translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Start alias</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP of poort kan niet leeg zijn</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Bevestig start masternode</translation>
+        <source>Invalid port number</source>
+        <translation>Ongeldige poortnummer</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>Weet je zeker dat je masternode %1 wilt starten?</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Invalide masternode.conf file</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Bevestig start alle masternodes</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fout opgelopen bij het parsen van het masternode.conf bestand</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Weet je zeker dat je ALLE masternodes wilt starten?</translation>
+        <source>Master node created!</source>
+        <translation>Masternode aangemaakt!</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>Commando is nu niet beschikbaar</translation>
-    </message>
-    <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>Je kunt dit commando niet gebruiken tot de masternode lijst is gesynchroniseerd</translation>
-    </message>
-    <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Bevestig start ontbrekende masternodes</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Weet je zeker dat je alle ONTBREKENDE masternodes wilt starten?</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf bestand bestaat niet</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Geef volledige cijfers in 1-100</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Enter % to Give (1-100)</source>
-        <translation>Voer % in om te geven (1-100)</translation>
+        <source>N/A</source>
+        <translation>NB</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Vul het verzendadres in</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HanaCryptoBank addresses after it matures.
-To Add: enter percentage to give and HanaCryptoBank address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch 100% van uw inzet of masternode-beloning automatisch te verzenden naar een lijst van andere HanaCryptoBank adressen nadat het volwassen is. 
-Toevoegen: voer percentage in om te geven en HanaCryptoBank adres om toe te voegen aan de MultiSend vector.
-Verwijderen: Voer adres in om te verwijderen en druk op delete.
-MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Volledige nodes die node-operators stimuleren om de belangrijkste consensusfuncties uit te voeren.
+en stemmen over het treasury systeem met een periodieke beloning.</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Aan MultiSend Vector toevoegen</translation>
+        <source>Create Masternode Controller</source>
+        <translation>Creëer Masternode Controller</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Toevoegen</translation>
+        <source>No active Masternode yet</source>
+        <translation>Geen actieve Masternode</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Deactiveer MultiSend</translation>
-    </message>
-    <message>
-        <source>Deactivate</source>
-        <translation>Deactiveren</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Kies een adres uit het adresgids</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Stakingspercentage om te verzenden</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Percentage:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Adres om een ​​deel van inzet te verzenden naar</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adres:</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Verwijder adres van MultiSend Vector</translation>
+        <source>Start</source>
+        <translation>Start</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Wissen</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Activeer MultiSend</translation>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Activeren</translation>
+        <source>Start Masternode</source>
+        <translation>Start Masternode</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Bekijk MultiSend Vector</translation>
-    </message>
-    <message>
-        <source>View MultiSend</source>
-        <translation>Bekijk MultiSend</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>Verstuur voor inzetten</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Verstuur voor Masternode beloningen</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>Het ingevoerde adres:
+        <translation>Weet u zeker dat u masternode %1 wilt starten?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>is ongeldig.
-Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
+        <source>Cannot start masternode, the collateral transaction has not been accepted by the network.
+Please wait few more minutes.</source>
+        <translation>Kan de masternode niet starten, de collaterale transactie is niet geaccepteerd door het netwerk.
+Gelieve nog enkele minuten te wachten.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Remote Masternode Data</source>
+        <translation>Remote Masternodegegevens</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the hanacryptobank.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>De totale hoeveelheid van je MultiSend vector is meer dan 100% van je inzet beloning</translation>
+        <translation>U staat op het punt om de vereiste gegevens te exporteren om een Masternode uit te voeren.
+op een externe server aan uw klembord.
+
+
+U hoeft alleen de gegevens in het hanacryptobank.conf bestand te plakken
+van uw externe server en start deze vervolgens de Masternode met
+deze controller portemonnee (selecteer de Masternode in de lijst en druk op "start").</translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Vul alsjeblieft 1 - 100 voor procent in.</translation>
+        <source>Masternode exported!, check your clipboard</source>
+        <translation>Masternode geëxporteerd, controleer uw klembord</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vector
-</translation>
+        <source>Delete Masternode</source>
+        <translation>Verwijder Masternode</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Verwijderd</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Je staat op het punt om volgende Masternode te verwijderen:
+%1
+
+Weet je het zeker?</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Kan het adres niet lokaliseren
-</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Invalide masternode.conf file</translation>
+    </message>
+    <message>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fout opgelopen bij het parsen van het masternode.conf bestand</translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf bestand bestaat niet</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 HCB required.</source>
+        <translation>Niet genoeg balans om een masternode te creëren, 10,000 HCB vereist.</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Error in het aanmaken van de masternode</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configureer verduistering</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Basis Privacy</translation>
+        <source>Public Key:</source>
+        <translation>Publieke Sleutel:</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Hoge Privacy</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>Maximum Privacy</translation>
+        <source>Address: </source>
+        <translation>Adres:</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>Selecteer de privacy level.</translation>
+        <source>127.0.0.2:43223</source>
+        <translation>127.0.0.2:43223</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 HCB</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 HCB</translation>
+        <source>Collaterall tx id:</source>
+        <translation>Collaterale tx id:</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 HCB</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 HCB</translation>
+        <source>Output index:</source>
+        <translation>Outputindex:</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Gebruik 16 aparte masternodes</translation>
+        <source>1 Inputs</source>
+        <translation>1 Invoer</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 HCB to anonymize 10000 HCB</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 HCB om 10000 HCB te anonimiseren</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 HCB to anonymize 10000 HCB</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 HCB om 10000 HCB te anonimiseren</translation>
+        <source>MISSING</source>
+        <translation>ONTBREKEND</translation>
+    </message>
+    </context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
+        <source>Savings</source>
+        <translation>Besparingen</translation>
     </message>
     <message>
-        <source>0.1 HCB per 10000 HCB you anonymize.</source>
-        <translation>je anonimiseert 0,1 HCB per 10000 HCB.</translation>
+        <source>Jan. 19, 2019</source>
+        <translation>Jan. 19, 2019</translation>
     </message>
     <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Verduistering configuratie</translation>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HanaCryptoBank te openen.</translation>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HanaCryptoBank te openen.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening HanaCryptoBank's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van HanaCryptoBank te openen.</translation>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1586,8 +1886,16 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Open betalingsverzoek van URL of bestand</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1596,6 +1904,29 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
     <message>
         <source>Select payment request file to open</source>
         <translation>Selecteer betalingsverzoek bestand dat geopend moet worden</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>Bestand niet gevonden</translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>Ingelezen data te groot</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "hanacryptobank" prefix</source>
+        <translation>Ongeldige URI, begint niet met de "hanacryptobank" prefix</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
 </context>
 <context>
@@ -1662,7 +1993,7 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Of je de munteenheidsfuncties wilt tonen of niet.</translation>
+        <translation>Of je de muntcontrolefuncties wilt tonen of niet.</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1699,6 +2030,22 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>Map poort gebruikt &amp;UPnP</translation>
     </message>
     <message>
+        <source>Enable automatic minting of HCB units to zHCB</source>
+        <translation>Schakel automatisch slaan van HCB-eenheden in op zHCB</translation>
+    </message>
+    <message>
+        <source>Enable zHCB Automint</source>
+        <translation>Schakel zHCB Automint in</translation>
+    </message>
+    <message>
+        <source>Enable automatic zHCB minting from specific addresses</source>
+        <translation>Automatische zHCB munting inschakelen vanuit specifiek adres</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Automint Adressen Inschakelen</translation>
+    </message>
+    <message>
         <source>Percentage of incoming HCB which get automatically converted to zHCB via Zerocoin Protocol (min: 10%)</source>
         <translation>Percentage inkomende HCB die automatisch wordt omgezet naar zHCB via Zerocoin Protocol (min: 10%)</translation>
     </message>
@@ -1713,6 +2060,10 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     <message>
         <source>Preferred Automint zHCB Denomination</source>
         <translation>Gewenste Automint zHCB denominatie</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Inzet splitdrempel:</translation>
     </message>
     <message>
         <source>Connect to the HanaCryptoBank network through a SOCKS5 proxy.</source>
@@ -1767,8 +2118,8 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>Gebruiksinterface thema:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>Toon &amp;Unit in volgende hoeveelheden:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Eenheid om hoeveelheid in te weergeven:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1777,6 +2128,18 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     <message>
         <source>Decimal digits</source>
         <translation>Decimale cijfers</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Verberg lege saldi</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Verberg orphan stakes in transactielijsten</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Verberg orphan stakes</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1792,7 +2155,7 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Reset alle client opties naar standaardinstellingen.</translation>
+        <translation>Reset alle client instellingen naar standaardinstellingen.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
@@ -1807,8 +2170,8 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <translation>&amp;Annuleren</translation>
     </message>
     <message>
-        <source>I don't care</source>
-        <translation>Het maakt me niet uit</translation>
+        <source>Any</source>
+        <translation>een</translation>
     </message>
     <message>
         <source>default</source>
@@ -1838,104 +2201,99 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
         <source>The supplied proxy address is invalid.</source>
         <translation>Het opgegeven proxyadres is ongeldig.</translation>
     </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>De meegeleverde proxy-poort is ongeldig.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>De geleverde proxy-instellingen zijn ongeldig.</translation>
+    </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>HanaCryptoBankGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Formulier</translation>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
-        <source>HCB Balances</source>
-        <translation>HCB Saldi</translation>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Beschikbaar:</translation>
+        <source>Node</source>
+        <translation>Node</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Uw huidige bestedingsruimte</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Tonen / Verbergen</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>In afwachting:</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Toon of verberg het hoofdvenster</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Totaal aantal transacties die nog niet zijn bevestigd en nog niet meetellen in het uitgeefbare saldo</translation>
+        <source>E&amp;xit</source>
+        <translation>S&amp;luiten</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Immatuur:</translation>
+        <source>Quit application</source>
+        <translation>Programma afsluiten</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
+        <source>HanaCryptoBank Core client</source>
+        <translation>HanaCryptoBank Core client</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HanaCryptoBank network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het HanaCryptoBank netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Onbevestigde transacties naar watch-only adressen</translation>
+        <source>Warning</source>
+        <translation>Waarschuwing</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staked of masternode beloningen in watch-only adressen die nog niet volwassen zijn</translation>
+        <source>Information</source>
+        <translation>Informatie</translation>
     </message>
     <message>
-        <source>Total:</source>
-        <translation>Totaal:</translation>
+        <source>System Message</source>
+        <translation>Systeembericht</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>Jouw huidige balanstotaal</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Verzonden MultiSend transactie</translation>
     </message>
     <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Huidig ​​totaal saldo in watch-only adressen</translation>
+        <source>Sent transaction</source>
+        <translation>Verzend transactie</translation>
     </message>
     <message>
-        <source>Watch-only:</source>
-        <translation>Watch-only:</translation>
+        <source>Incoming transaction</source>
+        <translation>Inkomende transactie</translation>
     </message>
     <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Je huidige saldo in watch-only adressen</translation>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>Datum: %1
+Hoeveelheid: %2
+Type: %3
+Adres: %4
+</translation>
     </message>
     <message>
-        <source>Spendable:</source>
-        <translation>Uitgeefbaar:</translation>
+        <source>A fatal error occurred. HanaCryptoBank can no longer continue safely and will quit.</source>
+        <translation>Een kritieke fout is opgelopen. HanaCryptoBank kan niet langer veilig uitgevoerd worden en zal afsluiten.</translation>
     </message>
+</context>
+<context>
+    <name>PWidget</name>
     <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>Gecombineerde Saldi (inclusief onvolwassen munten)</translation>
-    </message>
-    <message>
-        <source>HCB:</source>
-        <translation>HCB:</translation>
-    </message>
-    <message>
-        <source>zHCB:</source>
-        <translation>zHCB:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>Zerocoin saldo</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Recente transacties</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
+        <source>Wallet locked, you need to unlock it to perform this action</source>
+        <translation>Portemonnee vergrendeld, je moet deze ontgrendelen om deze actie te kunnen uitvoeren</translation>
     </message>
 </context>
 <context>
@@ -2045,472 +2403,196 @@ https://www.transifex.com/hanacryptobank-project/hanacryptobank-project-translat
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
+    <name>PrivacyWidget</name>
     <message>
-        <source>HCB which were anonymized via Zerocin Protocol</source>
-        <translation>HCB die via het Zerocin Protocol geanonimiseerd werden</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Zerocoin HCB (zHCB)</source>
-        <translation>Zerocoin HCB (zHCB)</translation>
+        <source>Title</source>
+        <translation>Tietel</translation>
     </message>
     <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Acties:</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the HanaCryptoBank network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het HanaCryptoBank netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Vul de hoeveleheid in om Phr te converteren naar zPhr</translation>
+        <source>N/A</source>
+        <translation>NB</translation>
     </message>
     <message>
-        <source>Mint Zerocoin</source>
-        <translation>Mint Zerocoin</translation>
+        <source>Privacy</source>
+        <translation>Privacy</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>Convert</source>
+        <translation>Converteren</translation>
     </message>
     <message>
-        <source>zHCB</source>
-        <translation>zHCB</translation>
+        <source>Mint</source>
+        <translation>Munt</translation>
     </message>
     <message>
-        <source>Available for Minting:</source>
-        <translation>Beschikbaar voor minting:</translation>
+        <source>Minting zHCB anonymizes your HCB by removing any
+transaction history, making transactions untraceable </source>
+        <translation>Munten van zHCB anonimiseert uw HCB door het verwijderen van eender welke
+transactiegeschiedenis, waardoor transacties niet meer te traceren zijn</translation>
     </message>
     <message>
-        <source>0.000 000 00 HCB</source>
-        <translation>0.000 000 00 HCB</translation>
+        <source>Mint new zHCB or convert back to HCB</source>
+        <translation>Munt nieuwe zHCB of converteer deze terug in HCB</translation>
     </message>
     <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Zerocoin Wallet DB opnieuw instellen. Verwijdert transacties die het niet in de blockchain hebben gered.</translation>
+        <source>No transactions yet</source>
+        <translation>Nog geen transacties</translation>
     </message>
     <message>
-        <source>Reset</source>
-        <translation>Resetten</translation>
+        <source>Mint zHCB</source>
+        <translation>Munt zHCB</translation>
     </message>
     <message>
-        <source>Coin Control...</source>
-        <translation>Munt controle...</translation>
+        <source>Enter amount of HCB to mint into zHCB</source>
+        <translation>Vul de hoeveelheid HCB in die u omslaan in zHCB</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
+        <source>Convert back to HCB</source>
+        <translation>Converteer terug naar HCB</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <source>Enter amount of zHCB to convert back into HCB</source>
+        <translation>Voer de hoeveelheed zHCB in om terug te converteren naar HCB</translation>
     </message>
     <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Rescan de complete blockchain voor Zerocoin mints en hun meta-data.</translation>
+        <source>Zerocoin</source>
+        <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>ReScan</source>
-        <translation>ReScan</translation>
+        <source>zHCB is currently undergoing maintenance</source>
+        <translation>zHCB ondergaat momenteel onderhoud</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status en/of Berichten van de laatste mint actie.</translation>
+        <source>You need to unlock the wallet to be able to %1 zHCB</source>
+        <translation>Je moet de portemonnee ontgrendelen om in staat zijn om %1 zHCB</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
+        <source>convert</source>
+        <translation>converteer</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr geselecteerd:</translation>
+        <source>mint</source>
+        <translation>munt</translation>
     </message>
     <message>
-        <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
+        <source>Invalid value</source>
+        <translation>Ongeldige waarde</translation>
     </message>
     <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Zerocoin besteden. Zonder 'Betaal aan:' adres ontstaan betalingen aan jezelf.</translation>
+        <source>zHCB minted successfully</source>
+        <translation>zHCB munting succesvol</translation>
     </message>
     <message>
-        <source>Spend Zerocoin</source>
-        <translation>Besteed Zerocoin</translation>
+        <source>zHCB converted back to HCB</source>
+        <translation>zHCB terug geconverteerd naar HCB</translation>
     </message>
     <message>
-        <source>Available Balance:</source>
-        <translation>Beschikbaar saldo:</translation>
+        <source>You don't have any HCB to select.</source>
+        <translation>Je hebt geen HCB om te selecteren</translation>
     </message>
     <message>
-        <source>0 zHCB</source>
-        <translation>0 zHCB</translation>
+        <source>Rescan Mints</source>
+        <translation>Muntingen opnieuw scannen</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
+        <source>Your zerocoin mints are going to be scanned from the blockchain from scratch</source>
+        <translation>Uw zerocoin muntingen zullen van de blockchain vanaf nul worden gescanned</translation>
     </message>
     <message>
-        <source>Security Level:</source>
-        <translation>Beveiligings niveau:</translation>
+        <source>Your zerocoin spends are going to be scanned from the blockchain from scratch</source>
+        <translation>Uw zerocoin bestedingen zullen van de blockchain vanaf nul worden gescanned</translation>
     </message>
     <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
+        <source>Total %1</source>
+        <translation>Totaal %1</translation>
     </message>
+</context>
+<context>
+    <name>ProposalFrame</name>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
+        <source>Open proposal page in browser</source>
+        <translation>Voorstelpagina in browser openen</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het HanaCryptoBank adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <source> remaining payment(s).</source>
+        <translation>resterende betaling(en).</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <source>Yes:</source>
+        <translation>Voor:</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Abstain:</source>
+        <translation>Onthouden:</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <source>No:</source>
+        <translation>Tegen:</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Zet wisselgeld om naar Zerocoin (mogelijk extra kosten)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Indien aangevinkt, probeert de portemonnee het terugkerende wisselgeld te minimaliseren in plaats van het aantal uitgegeven denominaties te minimaliseren.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimaliseer wisselgeld</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Statistieken:</translation>
-    </message>
-    <message>
-        <source>Available Funds</source>
-        <translation>Beschikbare Fondsen</translation>
-    </message>
-    <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>Beschikbaar Zerocoin saldo:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Denominaties met waarde 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Denom. met waarde 1:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation> 0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Denominaties met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Denom. met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Denominaties met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Denom. met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Denominaties met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Denom. met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Denominaties met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Denom. met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Denominaties met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Denom. met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Denominaties met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Denom. met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Denominaties met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Denom. met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Opmerking: Deze verborgen objecten worden gebruikt voor communicatie tussen de 'Munt Controle' dialoog en de  parent objecten. We willen de bestaande Munt Controle niet veranderen/opnieuw implementeren, dus deze objecten moeten hier zijn, zelfs als we ze niet gebruiken. Nee, we houden ook niet van deze aanpak.</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Kost:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Stof:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nee</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>medium</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Bedrag na kosten:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Wijzig:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Mint status: Oké</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Zerocoin functionality is not enabled on the HanaCryptoBank network yet.</source>
-        <translation>Zerocoin functionaliteit is nog niet ingeschakeld op het HanaCryptoBank netwerk.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Bericht: voer een bedrag in &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Succesvol gemint</translation>
-    </message>
-    <message>
-        <source> zHCB in </source>
-        <translation> zHCB in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
+        <source>A proposal URL can be used for phishing, scams and computer viruses. Open this link only if you trust the following URL.
 </source>
-        <translation>sec. gebruikte denominaties:
+        <translation>Een voorstel-URL kan worden gebruikt voor phishing, oplichting en computervirussen. Open deze link alleen als u de volgende URL vertrouwt.
 </translation>
     </message>
     <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
-Wees alsjeblieft geduldig...</translation>
+        <source>Open link</source>
+        <translation>Link openen</translation>
     </message>
     <message>
-        <source>Duration: </source>
-        <translation>Duur:</translation>
+        <source>Copy link</source>
+        <translation>Link kopiëren</translation>
     </message>
     <message>
-        <source> sec.
-</source>
-        <translation> sec.
-</translation>
+        <source>Wallet Locked</source>
+        <translation>Portemonnee Vergrendeld</translation>
     </message>
     <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Starten van ResetSpentZerocoin: </translation>
+        <source>You must unlock your wallet to vote.</source>
+        <translation>Je moet uw portemonnee ontgrendelen om te stemmen.</translation>
     </message>
     <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
+        <source>Do you want to vote %1 on</source>
+        <translation>Wil je stemmen op %1</translation>
     </message>
     <message>
-        <source>Invalid HanaCryptoBank Address</source>
-        <translation>Ongeldig HanaCryptoBank addres</translation>
+        <source>using all your masternodes?</source>
+        <translation>al je masternodes gebruiken?</translation>
     </message>
     <message>
-        <source>Invalid Send Amount</source>
-        <translation>Ongeldig verzend bedrag</translation>
+        <source>Proposal Hash:</source>
+        <translation>Voorstel Hash:</translation>
     </message>
     <message>
-        <source>Confirm additional Fees</source>
-        <translation>Bevestig extra kosten</translation>
+        <source>Proposal URL:</source>
+        <translation>Voorstel URL:</translation>
     </message>
     <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Weet je zeker dat je wilt verzenden?&lt;br /&gt;&lt;br /&gt;</translation>
+        <source>Confirm Vote</source>
+        <translation>Stem bevestigen</translation>
     </message>
     <message>
-        <source> to address </source>
-        <translation>naar adres</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
-        <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>met beveiligingsniveau</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation>Zerocoin besteden.
-Computationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je 
-hardware.
-Wees alsjeblieft geduldig...</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Bestede Zerocoin mislukt met status =</translation>
-    </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPhr besteed #: </translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>denominatie:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>serial: </translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Besteed is 1 of : </translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>Waarde uit:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>adres:</translation>
-    </message>
-    <message>
-        <source>zPhr Mint</source>
-        <translation>zPhr Mint</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Verzenden succesvol, retourcode:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid: </translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>kosten:</translation>
+        <source>Vote Results</source>
+        <translation>Stemresultaten</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Enter a HanaCryptoBank address (e.g. %1)</source>
-        <translation>Voer een HanaCryptoBank adres in (b.v. %1)</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2537,6 +2619,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>BLOOM</translation>
     </message>
     <message>
+        <source>ZK_BLOOM</source>
+        <translation>ZK_BLOOM</translation>
+    </message>
+    <message>
         <source>UNKNOWN</source>
         <translation>ONBEKEND</translation>
     </message>
@@ -2552,24 +2638,29 @@ Wees alsjeblieft geduldig...</translation>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Kopieer afbeelding</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Fout: De opgegeven gegevensmap "%1" bestaat niet.</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>QR code opslaan</translation>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Fout: Kan het configuratiebestand niet parsen: %1. Gebruik alleen sleutel=waarde syntaxis.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG Afbeelding(*.png)</translation>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Fout: Ongeldige combinatie van -regtest en -testnet.</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Fout bij het lezen van het masternode configuratiebestand: %1</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank Core didn't yet exit safely...</source>
+        <translation>HanaCryptoBank Core is nog niet veilig afgesloten...</translation>
     </message>
 </context>
 <context>
@@ -2623,10 +2714,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Debug logbestand</translation>
     </message>
     <message>
-        <source>Using OpenSSL version</source>
-        <translation>Gebruikt OpenSSL versie</translation>
-    </message>
-    <message>
         <source>Build date</source>
         <translation>Bouwdatum</translation>
     </message>
@@ -2653,6 +2740,14 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Number of Masternodes</source>
         <translation>Aantal Masternodes</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>Gegevenslocatie</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation>Laatste blokhash</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2687,8 +2782,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>&amp;Peers</translation>
     </message>
     <message>
+        <source>Banned peers</source>
+        <translation>Verboden leeftijdsgenoten</translation>
+    </message>
+    <message>
         <source>Select a peer to view detailed information.</source>
         <translation>Selecteer een peer om gedetailleerde informatie te bekijken.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>Whitelisted</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2705,14 +2808,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Services</source>
         <translation>Diensten</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>Start hoogte</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Sync hoogte</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2747,8 +2842,48 @@ Wees alsjeblieft geduldig...</translation>
         <translation>&amp;Portemonnee herstel</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Verwijder lokale Blockchain Mappen</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>Portemonnee in gebruik:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>Startblok</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>Gesynchroniseerde headers</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>Gesynchroniseerde blokken</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>De duur van een momenteel openstaande ping.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>Ping wacht</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Tijdverschuiving</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>Aangepast back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom zHCB Backup Path:</source>
+        <translation>Aangepast zHCB back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>Aangepaste back-up drempel:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2791,6 +2926,14 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Herstel blockchain index van huidige blk000??.dat bestanden.</translation>
     </message>
     <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
+    </message>
+    <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>De onderstaande knoppen zullen de portemonnee opnieuw opstarten met command line opties om de portemonnee te repareren, problemen op te lossen met corrupte blockchain bestanden of ontbrekende/verouderde transacties.</translation>
     </message>
@@ -2819,12 +2962,64 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Welkom bij de HanaCryptoBank RPC console.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik omhoog en omlaag pijlen om de geschiedenis te navigeren, en&lt;b&gt;Ctrl-L&lt;/b&gt;om scherm te wissen.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp; Koppel Node los</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>Ban Node voor</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;hour</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;day</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;week</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;year</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp; Veel succes</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Wil je verdergaan?</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Bevestig hersynchronisering van Blockchain</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Gebruik omhoog en omlaag pijltjestoetsen om door de geschiedenis te navigeren en %1 om het scherm te wissen.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Type &lt;b&gt;help &lt;/b&gt;voor een overzicht van beschikbare commando's.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>WAARSCHUWING: Er zijn oplichters actief geweest, die gebruikers vertellen dat ze hier commando's moeten typen waarmee ze de inhoud van hun portemonnee konden stelen. Gebruik deze console niet zonder de gevolgen van een commando volledig te begrijpen.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2843,6 +3038,10 @@ Wees alsjeblieft geduldig...</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(node id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -2859,154 +3058,118 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uitgaande</translation>
     </message>
     <message>
+        <source>Yes</source>
+        <translation>ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Nee</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Ongekend</translation>
     </message>
+</context>
+<context>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Fetching...</source>
-        <translation>Ophalen...</translation>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Hergebruik een van de eerder gebruikte ontvangstadressen.&lt;br&gt;Hergebruik van adressen heeft beveiligings- en privacyproblemen. &lt;br&gt;Gebruik dit niet tenzij u eerder een betalingsverzoek heeft aangemaakt.</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Hergebruik een bestaand ontvangstadres (niet aanbevolen)</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Bericht:</translation>
+        <source>No address</source>
+        <translation>Geen adres</translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
+        <source>Add Label</source>
+        <translation>Label Toevoegen</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the HanaCryptoBank network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het HanaCryptoBank netwerk.</translation>
+        <source>Generate Address</source>
+        <translation>Adres Genereren</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the HanaCryptoBank network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het HanaCryptoBank netwerk.</translation>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
     </message>
     <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Gebruik dit formulier om betalingen aan te vragen. Alle velden zijn&lt;b&gt;optioneel&lt;/b&gt;.</translation>
+        <source>Receive</source>
+        <translation>Ontvangen</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <source>Scan the QR code or copy the address to receive HCB.</source>
+        <translation>Scan de QR code of kopieer het adres om HCB te ontvangen.</translation>
     </message>
     <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Een optioneel bedrag om te vragen. Laat dit leeg of vul een nul in om geen specifiek bedrag te vragen.</translation>
+        <source>No address </source>
+        <translation>Geen adres</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>Geen beschikbaar adres, probeer de portemonnee te ontgrendelen</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Verzoek betaling</translation>
+        <source>Error generating address</source>
+        <translation>Genereren van adres misgelopen</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
+        <source>Edit Label</source>
+        <translation>Label wijzigen</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>Leegmaken</translation>
+        <source>Edit Address Label</source>
+        <translation>Bewerk Adreslabel</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation>Betalingsverzoeken geschiedenis</translation>
+        <source>Address label saved</source>
+        <translation>Adreslabel opgeslagen</translation>
     </message>
     <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Toon het geselecteerde verzoek (doet hetzelfde als dubbelklik op een item)</translation>
+        <source>Error storing address label</source>
+        <translation>Fout bij bewaren adreslabel</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Toon</translation>
+        <source>New address created</source>
+        <translation>Nieuw adres gecreëerd</translation>
     </message>
     <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Verwijder de geselecteerde vermeldingen uit de lijst</translation>
+        <source>Address copied</source>
+        <translation>Adres gekopieerd</translation>
     </message>
     <message>
-        <source>Remove</source>
-        <translation>Verwijder</translation>
+        <source>URI copied to clipboard</source>
+        <translation>URI gekopieerd naar klembord</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Kopiëer label</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Bericht kopiëren</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>QR Code</source>
-        <translation>QR Code</translation>
-    </message>
-    <message>
-        <source>Copy &amp;URI</source>
-        <translation>Kopieer &amp;URI</translation>
-    </message>
-    <message>
-        <source>Copy &amp;Address</source>
-        <translation>Kopieer &amp;Adres</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Verzoek betaling aan %1</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Betalingsinformatie</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Bericht</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulterende URI te lang geleden, probeer de tekst voor label/bericht te verminderen.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Fout bij het coderen van URI in QR-code.</translation>
+        <source>Address copied to clipboard</source>
+        <translation>Adres gekopieerd naar klembord</translation>
     </message>
 </context>
 <context>
@@ -3024,8 +3187,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bericht</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -3041,519 +3208,546 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Verzend Munten</translation>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
+        <source>New Request Payment</source>
+        <translation>Nieuw Betalingsverzoek</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
+        <source>Lorem ipsum dolor sit amet, consectur cling elit, sed do </source>
+        <translation>Lorem ipsum dolor sit amet, consectur cling elit, sed do </translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <source>HCB</source>
+        <translation>HCB</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>medium</translation>
+        <source>COPY ADDRESS</source>
+        <translation>KOPIEER ADRES</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Kost:</translation>
+        <source>COPY URL</source>
+        <translation>KOPIEER URL</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Stof:</translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>nee</translation>
+        <source>REQUEST</source>
+        <translation>VERZOEK</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Na de kost:</translation>
+        <source>Label</source>
+        <translation>Label</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Wijzig:</translation>
+        <source>Description (optional)</source>
+        <translation>Omschrijving (optioneel)</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
+        <source>GENERATE</source>
+        <translation>GENEREER</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>Split UTXO</translation>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation>Maak een adres aan om muntdelegaties te ontvangen en deze te kunnen staken.</translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation># outputs</translation>
+        <source>New Cold Staking Address</source>
+        <translation>Nieuw Cold Staking Adres</translation>
+    </message>
+    </context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO grootte:</translation>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
     </message>
     <message>
-        <source>0 HCB</source>
-        <translation>0 HCB</translation>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Transactiekosten: </translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>Kies...</translation>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>Klap kosten instellingen in</translation>
+        <source>Custom Change Address</source>
+        <translation>Aangepast wijzigingsadres</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Minimaliseer</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" HanaCryptoBank address</source>
+        <translation>De rest van de waarde die resulteert uit de ingangen minus de waarde van de uitgangen gaat naar het "wijzig" HanaCryptoBank-adres</translation>
+    </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>totaal tenminste</translation>
+        <source>Customize the transaction fee at your to your liking, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Pas de transactiekosten naar wens aan, afhankelijk van de kostenwaarde die uw transactie wel of niet in de blockchain zal opnemen.</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(lees de tooltip)</translation>
-    </message>
-    <message>
-        <source>Custom:</source>
-        <translation>Aangepast:</translation>
-    </message>
-    <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee nog niet geïnitialiseerd. Dit duurt meestal een paar blokken ...)</translation>
-    </message>
-    <message>
-        <source>Confirmation time:</source>
-        <translation>Bevestigingstijd:</translation>
-    </message>
-    <message>
-        <source>Open Coin Control...</source>
-        <translation>Open munt controle...</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uRUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uRUP's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uRUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uRUPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uRUPs in fee,&lt;br /&gt;while "total at least" pays 1000 uRUPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uRUPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uRUP's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uRUP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for HanaCryptoBank transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar HanaCryptoBank transacties dan het netwerk kan verwerken.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normaal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>snel</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
+        <source>Recomended</source>
         <translation>Aanbevolen</translation>
     </message>
     <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Zend als zero-fee transactie indien mogelijk</translation>
+        <source>0.00 KB</source>
+        <translation>0.00 KB</translation>
     </message>
     <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(bevestiging kan langer duren)</translation>
+        <source>Custom</source>
+        <translation>Aangepast</translation>
     </message>
     <message>
-        <source>Confirm the send action</source>
-        <translation>Bevestig de verzendactie</translation>
+        <source>Per kilobyte</source>
+        <translation>Per kilobyte</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>V&amp;erzonden</translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <source>Customize Fee</source>
+        <translation>Kost Aanpassen</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Verzend naar meerdere ontvangers tegelijk</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction will be included or not in the blockchain.</source>
+        <translation>Pas de transactiekosten aan, afhankelijk van de kostenwaarde die uw transactie wel of niet in de blockchain zal opnemen.</translation>
     </message>
     <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Voeg &amp;ontvanger toe</translation>
+        <source>Normal</source>
+        <translation>Normaal</translation>
     </message>
     <message>
-        <source>Anonymized HCB</source>
-        <translation>Geanonimiseerde HCB</translation>
+        <source>Slow</source>
+        <translation>Traag</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>Fast</source>
+        <translation>Snel</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>Balans:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopieer bytes</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopieer prioriteit</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopieer dust</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopieer wisselgeld</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Het split block tool werkt niet bij het verzenden naar externe adressen. Probeer het nog eens.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
-    </message>
-    <message>
-        <source>using</source>
-        <translation>gebruikt</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>anonieme financiën</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid HanaCryptoBank address</source>
-        <translation>Waarschuwing: Ongeldig HanaCryptoBank adres</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>elke beschikbare fonds (niet aanbevolen)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>en SwiftTX</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 naar %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Ben je zeker dat je wilt verzenden?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>worden toegevoegd als transactiekosten</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Totale hoeveelheid = &lt;b&gt;%1 &lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Een vergoeding %1 keer hoger dan %2 per kB wordt beschouwd als een zwaar hoge vergoeding.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Schatting om te beginnen met bevestiging in %n blok.</numerusform><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>gesplitst in %1 outputs met behulp van de UTXO splitter.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 van %2 vermeldingen weergegeven)</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Het te betalen bedrag moet groter zijn dan 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Het bedrag overschrijdt uw saldo.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Het totaal overschrijdt uw saldo wanneer de transactievergoeding %1 is inbegrepen.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Dubbel adres gevonden, kan alleen per keer per verzendoperatie naar elk adres versturen.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Transactie creatie mislukt!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, zoals als je een kopie van de wallet.dat en munten in de kopie waren besteed maar niet gemarkeerd zoals hier besteed.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren. Ontgrendelen geannuleerd.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Betaal alleen de minimumkost van %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Waarschuwing: Ongekend wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(geen label)</translation>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Dit is een normale betaling.</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to send the payment to</source>
-        <translation>Het HanaCryptoBank adres om de betaling naar te verzenden</translation>
+        <source>Enter address</source>
+        <translation>Voeg adres toe</translation>
+    </message>
+    </context>
+<context>
+    <name>SendWidget</name>
+    <message>
+        <source>Send</source>
+        <translation>Zenden</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <source>You can transfer public coins (HCB) or private coins (zHCB)</source>
+        <translation>Je kan publieke munten (HCB) of private munten (zHCB) overdragen</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Select coin type to spend</source>
+        <translation>Selecteer munttype om te spenderen</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <source>Amount</source>
+        <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Customize fee</source>
+        <translation>Kosten aanpassen</translation>
     </message>
     <message>
-        <source>Remove this entry</source>
-        <translation>Verwijder dit item</translation>
+        <source>Clear all</source>
+        <translation>Alles wissen</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <source>Add recipient</source>
+        <translation>Voeg bestemmeling toe</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
+        <source>Reset to default</source>
+        <translation>Terugzetten naar standaardinstelling</translation>
     </message>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
+        <source>Total to send</source>
+        <translation>Totaal te versturen</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation>Bericht:</translation>
+        <source>Send HCB</source>
+        <translation>HCB Versturen</translation>
     </message>
     <message>
-        <source>A message that was attached to the HanaCryptoBank: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the HanaCryptoBank network.</source>
-        <translation>Een bericht dat is gehecht aan de HanaCryptoBank: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het HanaCryptoBank netwerk.</translation>
+        <source>Send zHCB</source>
+        <translation>zHCB Versturen</translation>
     </message>
     <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Dit is een ongeverifieerde betalingsverzoek.</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>Totaal resterende van de geselecteerde UTXO</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Betaal aan:</translation>
+        <source>Total remaining</source>
+        <translation>Totaal resterende</translation>
     </message>
     <message>
-        <source>Memo:</source>
-        <translation>Memo:</translation>
+        <source>Customize Fee</source>
+        <translation>Kost Aanpassen</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>Dit is een geverifieerd betalingsverzoek.</translation>
+        <source>Maximum amount of outputs reached</source>
+        <translation>Maximum aantal uitvoeren bereikt</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation>Ongeldige invoer, vorige invoeren moeten geldig zijn voordat je een nieuwe kan toevoegen</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Ongeldige invoer</translation>
+    </message>
+    <message>
+        <source>No set recipients</source>
+        <translation>Geen ontvangers ingesteld</translation>
+    </message>
+    <message>
+        <source>Cannot send, wallet locked</source>
+        <translation>Kan niet verzenden, portemonnee vergrendeld</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Kan geen transactie aanmaken.</translation>
+    </message>
+    <message>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>WAARSCHUWING:
+Transactie besteedt een cold-stake delegatie om deze te vernietigen
+Deze munten zullen niet langer cold-staked zijn.</translation>
+    </message>
+    <message>
+        <source>Transaction sent</source>
+        <translation>Transactie verstuurd</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin</source>
+        <translation>Besteed Zerocoin</translation>
+    </message>
+    <message>
+        <source>zHCB is currently undergoing maintenance.</source>
+        <translation>zHCB wordt momenteel onderhouden.</translation>
+    </message>
+    <message>
+        <source>Coin control mint not found</source>
+        <translation>Muntcontrole munting niet gevonden</translation>
+    </message>
+    <message>
+        <source>Sending %1 to address %2
+</source>
+        <translation>Versturen van %1 naar adres %2
+</translation>
+    </message>
+    <message>
+        <source>Sending %1 to addresses:
+%2</source>
+        <translation>Versturen van %1 naar adressen:
+%2</translation>
+    </message>
+    <message>
+        <source>zHCB transaction sent!</source>
+        <translation>zHCB transactie verzonden!</translation>
+    </message>
+    <message>
+        <source>Version 1 zHCB require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zHCB vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+    </message>
+    <message>
+        <source>Too much inputs (</source>
+        <translation>Teveel invoer (</translation>
+    </message>
+    <message>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) vereist.
+Maximaal toegestaan:</translation>
+    </message>
+    <message>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te besteden bedrag verminderen.</translation>
+    </message>
+    <message>
+        <source>Address label update failed for address: %1</source>
+        <translation>Adreslabel bijwerken mislukt voor adres: %1</translation>
+    </message>
+    <message>
+        <source>Invalid change address</source>
+        <translation>Ongeldig wisseladres</translation>
+    </message>
+    <message>
+        <source>Invalid URI</source>
+        <translation>Ongeldige URI</translation>
+    </message>
+    <message>
+        <source>Invalid address in URI</source>
+        <translation>Ongeldig adres in URI</translation>
+    </message>
+    <message>
+        <source>Custom Fee %1</source>
+        <translation>Aangepaste Kost %1</translation>
+    </message>
+    <message>
+        <source>You don't have any HCB to select.</source>
+        <translation>Je hebt geen HCB om te selecteren</translation>
+    </message>
+    <message>
+        <source>You don't have any zHCB in your balance to select.</source>
+        <translation>Je hebt geen zHCB in je balans om te selecteren.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Geen beschikbare contacten, je kan naar het contactscherm gaan en daar enkele toevoegen!</translation>
+    </message>
+    <message>
+        <source>Save contact</source>
+        <translation>Contact opslaan</translation>
+    </message>
+    <message>
+        <source>Address field is empty</source>
+        <translation>Adresveld is leeg</translation>
+    </message>
+    <message>
+        <source>Invalid address</source>
+        <translation>Ongeldig adres</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Kan uw eigen adres niet als contact opslaan</translation>
+    </message>
+    <message>
+        <source>Update Contact</source>
+        <translation>Contact bijwerken</translation>
+    </message>
+    <message>
+        <source>Create New Contact</source>
+        <translation>Creëer Nieuw Contact</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Nieuw contact opgeslagen</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Fout bij het opslaan van contact</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>HanaCryptoBank Core is shutting down...</source>
-        <translation>HanaCryptoBank Core is aan het afsluiten...</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Backup Wallet </source>
+        <translation>Wallet Back-uppen</translation>
+    </message>
+    <message>
+        <source>Change Wallet Passphrase</source>
+        <translation>Wijzig Portemonnee Wachtwoord</translation>
+    </message>
+    <message>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds.</source>
+        <translation>Dit zal de gehele portemonneegegevens decrypteren en zal opnieuw encrypteren met een nieuwe wachtwoordzin.
+Vergeet deze niet op te schrijven en veilig te bewaren, anders verlies je mogelijks de toegang tot uw geld.</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>Waar</translation>
+    </message>
+    <message>
+        <source>Backup</source>
+        <translation>Back-up</translation>
+    </message>
+    <message>
+        <source>Change Passphrase</source>
+        <translation>Wijzig Wachtwoord</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Backup portemonnee</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Portemonneegegevens (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Back-up aangemaakt</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Aanmaak back-up mislukt</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>Selecteer eerst een map om de back-up te exporteren.</translation>
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBitToolWidget</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Handtekeningen - Onderteken / Verifieer een Bericht</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Onderteken Bericht</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address to sign the message with</source>
-        <translation>Het HanaCryptoBank adres om het bericht met te ondertekenen</translation>
+        <source>Decrypt Address Result</source>
+        <translation>Decrypteer Adresresultaat</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
+        <source>Import Address</source>
+        <translation>Adres Importeren</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Clear</source>
+        <translation>Leegmaken</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
+        <source>BIP38 Tool</source>
+        <translation>BIP38 Tool</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Encrypt</source>
+        <translation>Encrypteer</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Voer hier het bericht in dat u wilt ondertekenen</translation>
+        <source>Decrypt</source>
+        <translation>Decrypteer</translation>
     </message>
     <message>
-        <source>Signature</source>
-        <translation>Handtekening</translation>
+        <source>Encrypted key</source>
+        <translation>Geëncrypteerde sleutel</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
+        <source>Enter a encrypted key</source>
+        <translation>Voer een geëncrypteerde sleutel in</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this HanaCryptoBank address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het HanaCryptoBank adres bezit</translation>
+        <source>Passphrase</source>
+        <translation>Wachtwoord</translation>
     </message>
     <message>
-        <source>The HanaCryptoBank address the message was signed with</source>
-        <translation>Het HanaCryptoBank adres waarmee het bericht was ondertekend</translation>
+        <source>Enter a passphrase </source>
+        <translation>Voer wachtwoord in</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified HanaCryptoBank address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde HanaCryptoBank adres</translation>
+        <source>Decrypted address result</source>
+        <translation>Gedecrypteerd Adresresultaat</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
-        <translation>Onderteken &amp;Bericht</translation>
+        <source>Decrypted Address</source>
+        <translation>Gedecrypteerd Adres</translation>
     </message>
     <message>
-        <source>Reset all sign message fields</source>
-        <translation>Maak alle ondertekenvelden leeg</translation>
+        <source>DECRYPT KEY</source>
+        <translation>DECRYPTEER SLEUTEL</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
+        <source>Enter address</source>
+        <translation>Voeg adres toe</translation>
     </message>
     <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verifieer Bericht</translation>
+        <source>Enter passphrase</source>
+        <translation>Voer wachtwoordzin in</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Voer het ondertekening adres in, verifieer het bericht (zorg ervoor dat je line breaks, spaties, tabs, enz.) en onderteken hieronder om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je door een man-in-de-middle aanval wordt getroffen.</translation>
+        <source>Encrypted Key</source>
+        <translation>Geëncrypteerde sleutel</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifeer &amp;Message</translation>
+        <source>ENCRYPT</source>
+        <translation>Versleutelen</translation>
     </message>
     <message>
-        <source>Reset all verify message fields</source>
-        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
+        <source>CLEAR ALL</source>
+        <translation>WIS ALLES</translation>
     </message>
     <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
+        <source>CLEAR</source>
+        <translation>WIS</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>De ingevoerde wachtwoordzin is ongeldig.</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Toegestaan: 0-9,a-z,A-Z</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3569,11 +3763,899 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
+        <translation>Portemonnee ontsleuteling is geannuleerd.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+        <translation>Privé sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>Adres geëncrypteerd.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Geen beschikbare adressen, je kan naar het ontvangstscherm gaan en daar enkele toevoegen!</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Ontsleutelen mislukt.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Controleer de sleutel en de wachtwoordzin en probeer het opnieuw.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Gegevens ongeldig.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Probeer het opnieuw.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Wacht tot de sleutel is geïmporteerd</translation>
+    </message>
+    <message>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation>Kan adres niet importen, sleutel alreeds in de portemonnee</translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>Fout bij toevoegen van sleutel aan de portemonnee</translation>
+    </message>
+    <message>
+        <source>Successfully added pivate key to the wallet</source>
+        <translation>Geheime sleutel succesvol toegevoegd aan de portemonnee</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Console</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>Console invoer</translation>
+    </message>
+    <message>
+        <source>Command Line Options </source>
+        <translation>Command Line Opties</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>Open debugbestand</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>Kan het debugbestand niet openen.
+Controleer of u een vooraf bepaalde teksteditor hebt geïnstalleerd.</translation>
+    </message>
+    <message>
+        <source>Welcome to the HanaCryptoBank RPC console.</source>
+        <translation>Welkom bij de HanaCryptoBank RPC console.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Gebruik omhoog en omlaag pijltjestoetsen om door de geschiedenis te navigeren en %1 om het scherm te wissen.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Type &lt;b&gt;help &lt;/b&gt;voor een overzicht van beschikbare commando's.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>WAARSCHUWING: Er zijn oplichters actief geweest, die gebruikers vertellen dat ze hier commando's moeten typen waarmee ze de inhoud van hun portemonnee konden stelen. Gebruik deze console niet zonder de gevolgen van een commando volledig te begrijpen.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Terugzetten naar standaardinstelling</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Wijzigingen ongedaan maken</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Display</translation>
+    </message>
+    <message>
+        <source>Customize the display view options</source>
+        <translation>Pas de weergaveopties aan</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Taal</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>Eenheid om bedrag te tonen</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Decimale cijfers</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>Derde partij transactie URLs</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Verberg lege saldi</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standaard</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Opties succesvol gereset</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>1) What is HanaCryptoBank?</source>
+        <translation>1) Wat is HanaCryptoBank?</translation>
+    </message>
+    <message>
+        <source>2) Why are my HCB unspendable?</source>
+        <translation>2) Waarom is mijn HCB niet besteedbaar?</translation>
+    </message>
+    <message>
+        <source>3) HanaCryptoBank privacy? What is Zerocoin (zHCB)?</source>
+        <translation>3) HanaCryptoBank privacy? Wat is Zerocoin (zHCB)?</translation>
+    </message>
+    <message>
+        <source>4) Why are my zHCB unspendable?</source>
+        <translation>4) Waarom is mijn zHCB niet besteedbaar?</translation>
+    </message>
+    <message>
+        <source>5) Why did my wallet convert the balance
+    into zHCB automatically?</source>
+        <translation>5) Waarom heeft mijn portemonnee mijn balans
+    automatisch naar zHCB geconverteerd?</translation>
+    </message>
+    <message>
+        <source>6) How do I receive HCB/zHCB?</source>
+        <translation>6) Hoe ontvang ik HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>7) How do I stake HCB/zHCB?</source>
+        <translation>7) Hoe stake ik HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>8) Where I should go if I need support?</source>
+        <translation>8) Waar moet ik heen gaan als ik ondersteuning nodig heb?</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>What is HanaCryptoBank?</source>
+        <translation>Wat is HanaCryptoBank?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  HanaCryptoBank incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zHCB) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of HanaCryptoBank to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank is een vorm van digitaal online geld dat gebruik maakt van blockchain technologie.
+                           die gemakkelijk wereldwijd kan worden overgebracht, onmiddellijk en met bijna
+                           geen kosten.  HanaCryptoBank omvat marktleidende beveiliging &amp;
+                           privacy en is ook de eerste PoS (Proof of Stake) Cryptovaluta
+                           om ZeroCoin (zHCB) en Zerocoin staking te implementeren.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           HanaCryptoBank gebruikt een Proof of Stake (PoS) consensussysteemalgoritme,
+                           waardoor alle eigenaren van HanaCryptoBank kunnen deelnemen aan het verdienen van blokbeloningen
+                           en tegelijkertijd het netwerk te beveiligen met volledige node portemonnees, en ook om
+                           Masternodes uit te voeren en om voorstellen op te stellen en daarover te stemmen.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>Why are my HCB unspendable?</source>
+        <translation>Waarom is mijn HCB niet besteedbaar?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Newly received HanaCryptoBank requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Your HanaCryptoBank wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Nieuw ontvangen HanaCryptoBank vereist 6 bevestigingen op het netwerk
+                           om in aanmerking te komen voor uitgaven die ongeveer 6 minuten in beslag kunnen nemen.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Uw HanaCryptoBank portemonnee moet ook volledig gesynchroniseerd zijn
+                           om de balans te zien en uit te geven op het netwerk.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank privacy? What is Zerocoin (zHCB)?</source>
+        <translation>HanaCryptoBank privacy? Wat is Zerocoin (zHCB)?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB is an optional privacy-centric method of coin mixing on the
+                           HanaCryptoBank blockchain. Basically all your transactions cannot be tracked
+                           on to any block explorer. You can read more about the technicals in the
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt;
+                           "HanaCryptoBank Zerocoin (zHCB) Technical Paper"&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB is een optionele privacy-gerichte methode om munten te mengen op de
+                           HanaCryptoBank blockchain. In principe kunnen al uw transacties niet worden gevolgd
+                           op enige block explorer. U kunt meer lezen over de technische gegevens in de
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt;
+                           "HanaCryptoBank Zerocoin (zHCB) Technische Paper"&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Why are my zHCB unspendable?</source>
+        <translation>Waarom is mijn zHCB niet besteedbaar?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           After minting, zHCB will require 20 confirmations as well as 1
+                           additional mint of the same denomination on the network to
+                           become eligible for spending.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Na het muntenheeft zHCB 20 bevestigingen nodig, evenals 1
+                          extra munt van dezelfde denominatie op het netwerk om
+                           in aanmerking komen voor uitgaven.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>Why did my wallet convert the balance into zHCB automatically?</source>
+        <translation>Waarom heeft mijn portemonnee mijn balans automatisch naar zHCB geconverteerd?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           By default the HanaCryptoBank wallet will convert 10% of your entire HCB
+                           balance to zHCB to assist the network. If you do not wish to
+                           stake zHCB or take advantage of the privacy benefit it brings,
+                           you can disable the automatic minting in your HanaCryptoBank wallet by
+                           going to Settings-&gt;Options and deselecting “Enable zHCB Automint”.
+                           If you are not making use of the HanaCryptoBank-QT or GUI you can simply open
+                           your hanacryptobank.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
+                           marks and restart your wallet to disable automint.&lt;/p&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           You can read more about zHCB in the
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt; "HanaCryptoBank Zerocoin (zHCB) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zHCB, please read the "How do I stake"
+                           section of the FAQ below.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Standaard zal de HanaCryptoBank portemonnee 10% van uw gehele HCB-balans omzetten
+                          naar zHCB om het netwerk te helpen. Als u niet wenst om
+                           zHCB te staken of voordeel te halen uit het privacyvoordeel dat dit oplevert,
+                           kan je deze automatische omzetting uitschakelen in je HanaCryptoBank portemonnee door
+                           naar Instellingen &gt; Opties te gaan en dan “Schakel zHCB Automuntering in” te deselecteren.
+                           Als je geen gebruik maakt van de HanaCryptoBank-QT of GUI kan je simpelweg
+                           je hanacryptobank.conf bestand openen en er &lt;i&gt;"enablezeromint=0" aan toevoegen&lt;/i&gt; Zonder de aanhaling
+                           en je portemonnee herstarten om automuntering uit te schakelen.&lt;/p&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Je kan meer lezen over zHCB in de
+                           &lt;a style='color: #b088ff' href='https://HanaCryptoBank.org/zpiv/'&gt; "HanaCryptoBank Zerocoin (zHCB) Technische Paper"&lt;/a&gt;.
+                           Als u uw zHCB wilt behouden en staken, lees dan de "Hoe stake ik"
+                           sectie in onderstaande FAQ.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <source>How do I receive HCB/zHCB?</source>
+        <translation>Hoe ontvang ik HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB can be spent and sent to any HanaCryptoBank address. The receiver will
+                           receive standard HanaCryptoBank but the origin of the HanaCryptoBank is anonymized by the zHCB Protocol.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           If you want more zHCB you will need to mint your balance in the “Privacy” tab.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           zHCB kan worden uitgegeven en verzonden naar elk HanaCryptoBank-adres. De ontvanger zal
+                           gewone HanaCryptoBank ontvangen, maar de oorsprong van de HanaCryptoBank is geanonimiseerd door het zHCB-protocol
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Als u meer zHCB wilt, moet u uw balans op mint zetten in de "Privacy" tab.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>7</source>
+        <translation>7</translation>
+    </message>
+    <message>
+        <source>How do I stake HCB/zHCB?</source>
+        <translation>Hoe stakz ik HCB/zHCB?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Wat is een Masternode?</translation>
+    </message>
+    <message>
+        <source>8</source>
+        <translation>8</translation>
+    </message>
+    <message>
+        <source>9</source>
+        <translation>9</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           A masternode is a computer running a full node HanaCryptoBank core wallet with a
+                           requirement of 10,000 HCB secured collateral to provide extra services
+                           to the network and in return, receive a portion of the block reward
+                           regularly.  These services include:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
+                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
+                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           For providing such services, masternodes are also paid a certain portion
+                           of reward for each block. This can serve as a passive income to the
+                           masternode owners minus their running cost.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Masternode Perks:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Participate in HanaCryptoBank Governance&lt;/li&gt;
+                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
+                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
+                           &lt;li&gt;Help secure the HanaCryptoBank network&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Requirements:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;10,000 HCB per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
+                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
+                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Een masternode is een computer met een volledige node HanaCryptoBank core portemonnee met een
+                           vereiste van 10.000 HCB onderpand om extra diensten te kunnen verlenen
+                           aan het netwerk en in ruil daarvoor ontvangt u regelmatig een deel van de blokbeloning.
+                           Deze diensten omvatten::
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Directe transacties (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;Een gedecentralizeerd bestuur (Stemming Voorstel)&lt;/li&gt;
+                           &lt;li&gt;Een gedecentralizeerd budgeteringssysteem (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validatie van transacties binnen elk blok&lt;/li&gt;
+                           &lt;li&gt;Fungeert als een extra volledige node in het netwerk&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Voor het verlenen van dergelijke diensten wordt ook een bepaald deel van de masternodes betaald
+                            van beloning voor elk blok. Dit kan dienen als een passief inkomen voor de
+                           masternode eigenaars minus hun exploitatiekosten.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Masternode Voordelen:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Deelnemen in het HanaCryptoBank Bestuur&lt;/li&gt;
+                           &lt;li&gt;Verdien Masternode Beloningen&lt;/li&gt;
+                           &lt;li&gt;Commodity-optie voor toekomstige verkoop&lt;/li&gt;
+                           &lt;li&gt;Helpt bij het beveiligen van het HanaCryptoBank netwerk&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Vereisten:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;10,000 HCB per Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Moet in een kernportemonnee worden opgeborgen&lt;/li&gt;
+                           &lt;li&gt;Vereist een vast IP-adres
+                           &lt;li&gt;Masternode portemonnee moet online blijven&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </translation>
+    </message>
+    <message>
+        <source>10</source>
+        <translation>10</translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>Frequently Asked Questions</translation>
+    </message>
+    <message>
+        <source>You can read more here</source>
+        <translation>Je kan er hier meer over lezen</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Sluit</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>Netwerkmonitor</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informatie</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Algemeen</translation>
+    </message>
+    <message>
+        <source>Client Version: </source>
+        <translation>Client Versie:</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Datadir: </source>
+        <translation>Datadir: </translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Naam:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>Blockchain</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>Geheugenpool</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Hoofd</translation>
+    </message>
+    <message>
+        <source>Wallet Conf</source>
+        <translation>Portemonnee Conf</translation>
+    </message>
+    <message>
+        <source>Backups</source>
+        <translation>Back-ups</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Geen informatie</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>Kan de back-upmap niet openen</translation>
+    </message>
+    <message>
+        <source>Unable to open hanacryptobank.conf with default application</source>
+        <translation>Kan hanacryptobank.conf niet openen met de standaard applicatie</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>In:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Uit:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>Venster</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>De opties van het toepassingsvenster aanpassen</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Selectievakje</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Terugzetten naar standaardinstelling</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Wijzigingen ongedaan maken</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Hoofd</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>Grootte van database cache</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>Aantal van script verificatiethreads</translation>
+    </message>
+    <message>
+        <source>Start HanaCryptoBank on system login</source>
+        <translation>Start HanaCryptoBank bij systeemlogin</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Minimaliseer naar het vak in plaats van de taakbalk</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>Minimaliseer bij sluiten</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>Reset Opties</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>U staat op het punt om de opties van de app terug te zetten naar de standaardwaarden.
+
+Weet u het zeker?
+</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Opties succesvol gereset</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>Nieuwe ontvanger voor multisend</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>Percentage</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>NB</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Selectievakje</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other HanaCryptoBank addresses after it matures.</source>
+        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere HanaCryptoBank-adressen sturen nadat deze volwaardig zijn geworden.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Actief</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Uitschakelen</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>Nog geen actieve ontvanger</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>Verstuur stakes</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>Verstuurd masternode beloningen</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>VOEG BESTEMMELING TOE</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>WIS ALLES</translation>
+    </message>
+    <message>
+        <source>Clear succeed</source>
+        <translation>Wissen geslaagd</translation>
+    </message>
+    <message>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation>Alles wissen mislukt, kon geen adres terugvinden in het portemonnee bestand</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>Het ingevoerde adres: %1 is ongeldig.
+Controleer het adres en probeer opnieuw.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>Ongeldig percentage, voer waarden in van 1 tot 100.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>De totale hoeveelheid van je MultiSend vector is meer dan 100% van je inzet beloning</translation>
+    </message>
+    <message>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation>Opslaan van MultiSend mislukt, foutgelopen bij opslaan van eigenschappen naar de database.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>Kon MultiSend niet activeren, geen beschikbare ontvangers</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation>MultiSend kan niet geactiveerd worden
+Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternode te sturen.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend geactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend geactiveerd</translation>
+    </message>
+    <message>
+        <source>First multiSend address invalid</source>
+        <translation>Eerste MultiSend-adres ongeldig</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend gedeactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend gedeactiveerd</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Leegmaken</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Onderteken/Verifiëer Bericht</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>Onderteken</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>Verifiëer</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>Selecteer mode</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Bericht</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Voeg adres toe</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Handtekening</translation>
+    </message>
+    <message>
+        <source>SIGN</source>
+        <translation>SIGNEER</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>WIS ALLES</translation>
+    </message>
+    <message>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
+    </message>
+    <message>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation>Voer het ondertekening adres in, verifieer het bericht (zorg ervoor dat je line breaks, spaties, tabs, enz.) en onderteken hieronder om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je door een man-in-de-middle aanval wordt getroffen.</translation>
+    </message>
+    <message>
+        <source>VERIFY</source>
+        <translation>VERIFIËER</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>Het ingevoerde adres is ongeldig.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Controleer het adres en probeer het opnieuw.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Portemonnee ontsleuteling is geannuleerd.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Privé sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
     </message>
     <message>
         <source>Message signing failed.</source>
@@ -3603,12 +4685,366 @@ Wees alsjeblieft geduldig...</translation>
         <source>Message verified.</source>
         <translation>Bericht geverifieerd.</translation>
     </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Geen beschikbare adressen, je kan naar het ontvangstscherm gaan en daar enkele toevoegen!</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Selectievakje</translation>
+    </message>
+    <message>
+        <source>RadioButton</source>
+        <translation>RadioButton</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Terugzetten naar standaardinstelling</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Wijzigingen ongedaan maken</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>Pas de interne portemonnee-opties aan</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Inzet splitdrempel:</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>Besteed onbevestigde wijziging</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>Pas de nodenetwerkopties aan</translation>
+    </message>
+    <message>
+        <source>Proxy IP:</source>
+        <translation>Proxy IP:</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>Proxy IP invoeren</translation>
+    </message>
+    <message>
+        <source>Port:</source>
+        <translation>Poort:</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>Wijs poort toe met behulp van UPnP</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Sta inkomende connecties toe</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>Connecteer via SOCKS5 proxy (standaardproxy):</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>Opslaan</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Opties succesvol gereset</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Portemonnee Herstel</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions.</source>
+        <translation>De knoppen hieronder herstarten de portemonnee met commandoregelopties om deze portemonnee te repareren, problemen met corrupte blockchain bestanden of ontbrekende/verouderde transacties op te lossen.</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Poog om privé sleutels terug te halen uit een corrupte wallet.dat.</translation>
+    </message>
+    <message>
+        <source>Rescan the blockchain for missing wallet transactions.</source>
+        <translation>Scan de blockchain opnieuw voor ontbrekende portemonneetransacties.</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner).</source>
+        <translation>Herstel transacties uit de blockchain (keep-meta-data, bijvoorbeeld van de rekeninghouder).</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Herstel transacties van blockchain (laat meta-data vallen).</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>Upgrade de portemonnee naar het laatste formaat bij het opstarten. (Opmerking: dit is GEEN update van de portemonnee zelf).</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000???.dat files.</source>
+        <translation>Bouw de blockchain index opnieuw vanuit huidige blk000???.dat bestanden.</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Red portemonnee</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>Blockchainbestand opnieuw scannen</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Herstel transacties 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Herstel transacties 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Upgrade portemonnee format</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Herbouw index</translation>
+    </message>
+    <message>
+        <source>Delete local blockchain </source>
+        <translation>Verwijder lokale blockchain</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Wil je verdergaan?</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Bevestig hersynchronisering van Blockchain</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>Portemonnee Data</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Portemonnee</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>Multisend</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Gereedschap</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Onderteken/Verifiëer Bericht</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>BIP38 Tool</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Opties</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Hoofd</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Display</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debug</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informatie</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Console</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Portemonnee Herstellen</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Help</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>Veelgestelde vragen</translation>
+    </message>
+    <message>
+        <source>About HanaCryptoBank</source>
+        <translation>Over HanaCryptoBank</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Instellingen</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Bevestig reset instellingen</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Client herstart vereist om wijzigingen te activeren.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Client wordt uitgeschakeld, wil je doorgaan?</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>Herstart nodig</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>Je portemonnee moet opnieuw opgestart worden om de wijzigingen toe te passen.
+</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>Nu herstarten</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>Later herstarten</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>Opties zullen toegepast worden bij de volgende herstart van de portemonnee</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>Opties bewaard</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>Opties opslaan mislukt</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>Niet-opgeslagen wijzigingen negeren</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>U staat op het punt al uw niet-opgeslagen opties te verwijderen.
+
+Weet je zeker dat?
+</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>HanaCryptoBank Core is shutting down...</source>
+        <translation>HanaCryptoBank Core is aan het afsluiten...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>Contact Bewaard</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>Laden...</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank Core</source>
+        <translation>HanaCryptoBank Core</translation>
+    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>HanaCryptoBank Core</source>
-        <translation>HanaCryptoBank Kern</translation>
+        <translation>HanaCryptoBank Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3632,6 +5068,128 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Bewerk</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Wissen</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>Laatste</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>480.0685 HCB</source>
+        <translation>480.0685 HCB</translation>
+    </message>
+    <message>
+        <source>1,000 zHCB</source>
+        <translation>1,000 zHCB</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>Beschikbaar</translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>In afwachting</translation>
+    </message>
+    <message>
+        <source>6.943 HCB</source>
+        <translation>6.943 HCB</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>Onverwerkt</translation>
+    </message>
+    <message>
+        <source>10 HCB</source>
+        <translation>10 HCB</translation>
+    </message>
+    <message>
+        <source>60 zHCB</source>
+        <translation>60 zHCB</translation>
+    </message>
+    <message>
+        <source>10 zHCB</source>
+        <translation>10 zHCB</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>Portemonnee Ongrendeld voor staking</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>Genereren van adres misgelopen</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>Adres Gekopieerd</translation>
+    </message>
+    <message>
+        <source>Automint enabled</source>
+        <translation>Automunt ingeschakeld</translation>
+    </message>
+    <message>
+        <source>Automint disabled</source>
+        <translation>Automunt uitgeschakeld</translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>Staking actief</translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>Staking niet actief</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation><numerusform>%n actieve verbinding</numerusform><numerusform>%n actieve verbindingen</numerusform></translation>
+    </message>
+    <message>
+        <source>Synchronized</source>
+        <translation>Gesynchroniseerd</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n uur</numerusform><numerusform>%n uren</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n dag</numerusform><numerusform>%n dagen</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n week</numerusform><numerusform>%n weken</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 en %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n jaar</numerusform><numerusform>%n jaren</numerusform></translation>
+    </message>
+    </context>
+<context>
     <name>TrafficGraphWidget</name>
     <message>
         <source>KB/s</source>
@@ -3642,7 +5200,7 @@ Wees alsjeblieft geduldig...</translation>
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n blok extra</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+        <translation><numerusform>Open voor nog %n blok</numerusform><numerusform>Open voor nog %n blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3651,18 +5209,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>conflicted</source>
         <translation>conflicteert</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (geverifieerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/bevestigd (geverifieerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmaties (geverifieerd via swifttx)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3677,19 +5223,35 @@ Wees alsjeblieft geduldig...</translation>
         <translation>%1 bevestigingen</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bevestigd (SwiftTX verificatie in uitvoering - %2 van %3 handtekeningen)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (gecontroleerd via SwiftX)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 bevestigingen (SwiftTX verificatie in uitvoering - %2 van %3 handtekeningen)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/bevestigd (gecontroleerd via swifttx)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 bevestigingen (gecontroleerd via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bevestigd (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 bevestigingen (SwiftTX controle in uitvoering -%2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
     </message>
     <message>
@@ -3702,7 +5264,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, uitgezonden via %n node</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
+        <translation><numerusform>, broadcast via %n node</numerusform><numerusform>, broadcast via %n nodes</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3746,7 +5308,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>matureit in %n blok meer</numerusform><numerusform>maturiteit in %n meer blokken</numerusform></translation>
+        <translation><numerusform>Volgroeid in %n blok</numerusform><numerusform>volgroeid in %n blokken</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3793,10 +5355,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Winkelier</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in "niet geaccepteerd" en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>Debug informatie</translation>
     </message>
@@ -3810,7 +5368,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Hoeveelheid</translation>
+        <translation>Bedrag</translation>
     </message>
     <message>
         <source>true</source>
@@ -3819,17 +5377,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>false</source>
         <translation>onwaar</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Transactiedetails</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Dit venster laat een gedetailleerde beschrijving van de transactie zien</translation>
     </message>
 </context>
 <context>
@@ -3848,7 +5395,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n blok extra</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+        <translation><numerusform>Open voor nog %n blok</numerusform><numerusform>Open voor nog %n blokken</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3899,6 +5446,22 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verkregen via verduistering</translation>
     </message>
     <message>
+        <source>HCB Stake</source>
+        <translation>HCB Stake</translation>
+    </message>
+    <message>
+        <source>zHCB Stake</source>
+        <translation>zHCB Stake</translation>
+    </message>
+    <message>
+        <source>HCB Cold Stake</source>
+        <translation>HCB Cold Stake</translation>
+    </message>
+    <message>
+        <source>Stake delegation</source>
+        <translation>Stake delegatie</translation>
+    </message>
+    <message>
         <source>Obfuscation Denominate</source>
         <translation>Verduistering denominatie</translation>
     </message>
@@ -3915,6 +5478,26 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduistering creëert denominaties</translation>
     </message>
     <message>
+        <source>Converted HCB to zHCB</source>
+        <translation>Geconverteerde HCB naar zHCB</translation>
+    </message>
+    <message>
+        <source>Spent zHCB</source>
+        <translation>Bestede zHCB</translation>
+    </message>
+    <message>
+        <source>Received HCB from zHCB</source>
+        <translation>Ontvangen HCB van zHCB</translation>
+    </message>
+    <message>
+        <source>Minted Change as zHCB from zHCB Spend</source>
+        <translation>Gemint wisselgeld als zHCB van bestede zHCB</translation>
+    </message>
+    <message>
+        <source>Converted zHCB to HCB</source>
+        <translation>Geconverteerde zHCB naar HCB</translation>
+    </message>
+    <message>
         <source>Sent to</source>
         <translation>Verzenden naar</translation>
     </message>
@@ -3927,10 +5510,6 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Betaling naar jezelf</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Mined</translation>
     </message>
@@ -3939,32 +5518,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verduisterd</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Geconverteerde Phr naar zPhr</translation>
-    </message>
-    <message>
-        <source>Spent zPhr</source>
-        <translation>Uitgegeven zPhr</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Minted wisselgeld als zPhr van uitgegeven zPhr</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Geconverteerde zPhr naar Phr</translation>
-    </message>
-    <message>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPhr Accumulator</translation>
+        <source>Anonymous</source>
+        <translation>Anoniem</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Geen informatie</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -3996,212 +5559,149 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>Alle</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Vandaag</translation>
+        <source>Transaction Details</source>
+        <translation>Transactie details</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>Deze week</translation>
+        <source>ID:</source>
+        <translation>ID:</translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>Deze maand</translation>
+        <source>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</source>
+        <translation>492526e7fa3c810b35016...40a5df85ee227ab00b1156994</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>Afgelopen maand</translation>
+        <source>Sending to: </source>
+        <translation>Versturen naar:</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>Dit jaar</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
     </message>
     <message>
-        <source>Range...</source>
-        <translation>Omvang...</translation>
+        <source>Total amount</source>
+        <translation>Totale hoeveelheid</translation>
     </message>
     <message>
-        <source>Most Common</source>
-        <translation>Meest voorkomend</translation>
+        <source>2 HCB</source>
+        <translation>2 HCB</translation>
     </message>
     <message>
-        <source>Received with</source>
-        <translation>Ontvangen met</translation>
+        <source>Coin inputs:</source>
+        <translation>Munt invoeren:</translation>
     </message>
     <message>
-        <source>Sent to</source>
-        <translation>Verzenden naar</translation>
+        <source>1 Inputs</source>
+        <translation>1 Invoer</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Verduisterd</translation>
+        <source>Previous Transaction</source>
+        <translation>Vorige Transactie</translation>
     </message>
     <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verduistering maakt zijdelingse inputs</translation>
+        <source>Output Index</source>
+        <translation>Outputindex</translation>
     </message>
     <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Verduistering creëert denominaties</translation>
+        <source>Fee:</source>
+        <translation>Fee:</translation>
     </message>
     <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Verduistering denominatie</translation>
+        <source>0.0001 HCB</source>
+        <translation>0.0001 HCB</translation>
     </message>
     <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Verduistering zijdelingse betaling</translation>
+        <source>Change address:</source>
+        <translation>Wijzig adres:</translation>
     </message>
     <message>
-        <source>To yourself</source>
-        <translation>Naar jezelf</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
+        <source>Confirmations:</source>
+        <translation>Bevestigingen:</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
+        <source>12</source>
+        <translation>12</translation>
     </message>
     <message>
-        <source>Masternode Reward</source>
-        <translation>Masternode beloning</translation>
+        <source>Size:</source>
+        <translation>Grootte:</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
+        <source>2 kB</source>
+        <translation>2 kB</translation>
     </message>
     <message>
-        <source>Zerocoin Mint</source>
-        <translation>Zerocoin Mint</translation>
+        <source>Date:</source>
+        <translation>Datum:</translation>
     </message>
     <message>
-        <source>Zerocoin Spend</source>
-        <translation>Zerocoin uitgegeven</translation>
+        <source>May 25, 2017</source>
+        <translation>25 Mei, 2017</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin uitgegeven, wisselgeld in zPhr</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Zerocoin uitgegeven aan jezelf</translation>
+        <source>Spendable</source>
+        <translation>Uitgeefbaar</translation>
     </message>
     <message>
-        <source>Other</source>
-        <translation>Andere</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Enter address or label to search</source>
-        <translation>Adres of label invullen om te zoeken</translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>Min amount</source>
-        <translation>Minimale hoeveelheid</translation>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
     <message>
-        <source>Copy address</source>
-        <translation>Kopieer adres</translation>
+        <source>Confirm Your Transaction</source>
+        <translation>Bevestig Uw Transactie</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Kopiëer label</translation>
+        <source>SEND</source>
+        <translation>STUREN</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
+        <source>ID copied</source>
+        <translation>ID gekopieerd</translation>
     </message>
     <message>
-        <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Label wijzigen</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Bekijk transactiedetails</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Exporteer Transactiegeschiedenis</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Kommagescheiden bestand (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Bevestigd</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Watch-only</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Export Mislukt</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Er is een fout opgetreden om de transactiegeschiedenis te bewaren naar %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation>Exporteren succesvol</translation>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>De transactiegeschiedenis is succesvol bewaard in %1.</translation>
-    </message>
-    <message>
-        <source>Range:</source>
-        <translation>Bereik:</translation>
-    </message>
-    <message>
-        <source>to</source>
-        <translation>naar</translation>
+        <source>Unknown</source>
+        <translation>Ongekend</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Eenheid om bedragen te laten zien. Klik om een andere eenheid te selecteren.</translation>
+        <source>Form</source>
+        <translation>Formulier</translation>
     </message>
-</context>
-<context>
-    <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Er is geen portemonnee ingeladen.</translation>
+        <source>Received from Bob</source>
+        <translation>Ontvangen van Bob</translation>
+    </message>
+    <message>
+        <source>18/05/18</source>
+        <translation>18/05/18</translation>
+    </message>
+    <message>
+        <source>+0.000585 HCB</source>
+        <translation>+0.000585 HCB</translation>
     </message>
 </context>
 <context>
@@ -4211,78 +5711,147 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 HCB.</source>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 HCB.</source>
         <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 HCB.</translation>
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WalletPasswordDialog</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exporteer de data in de huidige tab naar een bestand</translation>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Geselecteerde hoeveelheid:</translation>
+        <source>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</source>
+        <translation>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Backup portemonnee</translation>
+        <source>CANCEL</source>
+        <translation>Annuleren</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Portemonneegegevens (*.dat)</translation>
-    </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Backup mislukt</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Er is een fout opgetreden om de portemonnee data op te slaan naar %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Backup Succesvol</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>De portemonneegegevens zijn succesvol opgeslagen op %1.</translation>
+        <source>OK</source>
+        <translation>Akkoord</translation>
     </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Selecteer zPhr om te spenderen</translation>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>Hoeveelheid</translation>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Taal</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation>Welkom</translation>
+    </message>
+    <message>
+        <source>Privacy</source>
+        <translation>Privacy</translation>
+    </message>
+    <message>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
+    </message>
+    <message>
+        <source>Select your language</source>
+        <translation>Selecteer uw taal</translation>
+    </message>
+    <message>
+        <source>Welcome to
+HanaCryptoBank Core Wallet</source>
+        <translation>Welkom bij
+HanaCryptoBank Core Portemonnee</translation>
+    </message>
+    <message>
+        <source>HanaCryptoBank is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>HanaCryptoBank is 's werelds meest innovatieve Proof of Stake blockchain gebaseerde technologie. Ontwikkeld door een team van zeer ervaren ontwikkelaars en cryptografen.</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - HanaCryptoBank believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoals ons manifest zegt: Privacy is een niet-onderhandelbaar fundamenteel mensenrecht; het geeft gebruikers de vrijheid om hun gegevens te delen wanneer en met wie ze maar willen - HanaCryptoBank gelooft in soevereiniteit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>The masternode network is HanaCryptoBank's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Het masternode netwerk is HanaCryptoBank's tweedelaagse netwerk bovenop de blockchain die onze DAO in staat stelt om gedecentraliseerd bestuur, treasury te leveren</translation>
+    </message>
+    <message>
+        <source>How HanaCryptoBank respects your privacy?</source>
+        <translation>Hoe respecteert HanaCryptoBank uw privacy?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Wat is een Masternode?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standaard</translation>
+    </message>
+</context>
+<context>
+    <name>ZPivControlDialog</name>
+    <message>
+        <source>Select zHCB to Spend</source>
+        <translation>Selecteer zHCB om te besteden</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Munt Controle</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
+    </message>
+    <message>
+        <source>zPiv</source>
+        <translation>zPiv</translation>
+    </message>
+    <message>
+        <source>0.00 </source>
+        <translation>0.00 </translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>Is Uitgeefbaar</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
-    </message>
-    <message>
         <source>Select/Deselect All</source>
         <translation>Selecteer/Deselecteer Alles</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>Is Uitgeefbaar</translation>
+        <source>Select zHCB Denominations to Spend</source>
+        <translation>Selecteer zHCB Denominaties om te Besteden</translation>
     </message>
 </context>
 <context>
-    <name>hanacryptobank-network</name>
+    <name>hanacryptobank-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -4290,10 +5859,6 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>Sta JSON-RPC connecties toe van de opgegeven bron. Geldig voor&lt;ip&gt;zijn een enkel IP (bijvoorbeeld 1.2.3.4), een netwerk/netmask (bijvoorbeeld 1.2.3.4/255.255.255.0) of een netwerk/CIDR (bijvoorbeeld 1.2.3.4/24). Deze optie kan meerdere keren worden opgegeven</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Er is een fout opgetreden tijdens het instellen van het RPC adres %s poort %u voor het luisteren: %s</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4332,20 +5897,36 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verwijder alle portemonnee transacties en herstel alleen die delen van de blockchain via -rescan bij opstarten</translation>
     </message>
     <message>
-        <source>Disable all HanaCryptoBank specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle HanaCryptoBank specifieke functionaliteit uit (Masternodes, Verduistering, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Verwijder alle bestede Zerocoin en mints die zijn geregistreerd in de blockchain database en her-indexeer ze (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Gedistribueerd onder de MIT software licentie, zie het bijgevoegde bestand COPYING of &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Activeer de spork administratie functionaliteit met de juiste private sleutel.</translation>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Schakel automatische Zerocoin munting vanuit specifieke adressen in (0-1, standaard %u) </translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Schakel swifttx in, laat bevestigingen zien voor gesloten transacties (bool, standaard: %s)</translation>
+        <source>Enable automatic wallet backups triggered after each zHCB minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee back-ups in geactiveerd na elke geminte zHCB (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation>Activeer cold staking functionaliteit (0-1, standaard: %u). Uitgeschakeld als staking=0</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for HCB inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor HCB inputs (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zHCB inputs (0-1, default: %u)</source>
+        <translation>In- of uitschakelen staking functionaliteit voor zHCB inputs (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Activeer de spork administratie functionaliteit met de juiste private sleutel.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4354,6 +5935,10 @@ Wees alsjeblieft geduldig...</translation>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Fout: het luisteren naar inkomende verbindingen is mislukt (luister terug fout %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Fout: de transactie is groter dan de maximaal toegestane transactiegrootte!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -4384,16 +5969,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Leeg database activiteit uit geheugen pool naar schijf log elke keer&lt;n&gt;megabytes (default: %u)</translation>
     </message>
     <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Gevonden onbevestigde gedenomineerde outputs, wachten tot ze bevestigd zijn om verder te gaan.</translation>
-    </message>
-    <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Als paytxfee niet is ingesteld, sluit voldoende kosten in, zodat transacties beginnen te confirmeren binnen gemiddeld n blokken (standaard: %u)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation>In deze modus controleert -genproclimit hoeveel blokken er onmiddellijk worden gegenereerd.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Onvoldoende of onvoldoende bevestigd geld, u moet mogelijk een paar minuten wachten en het opnieuw proberen.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
@@ -4412,8 +5997,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Onderhoud een volledige transactie index, gebruikt door de getrawtransaction rpc call (standaard: %u)</translation>
     </message>
     <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>Maximale gemiddelde grootte van een index in het spamfilter van het blok (standaard: %u)</translation>
+    </message>
+    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Maximale gegevensgrootte in data carrier transacties die we relayen en minen (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Maximale grootte van de lijst met indexen in de spamfilter van het blok (standaard: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
@@ -4468,36 +6061,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Ondersteun filteren van blokken en transactie met bloom filters (standaard: %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX vereist inputs met tenminste 6 bevestigingen, je dient wellicht een paar minuten te wachten en probeer het opnieuw.</translation>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>De blokdatabase bevat een blok dat uit de toekomst lijkt te komen. Dit kan te wijten zijn aan het feit dat de datum en tijd van uw computer verkeerd zijn ingesteld. Bouw de blokdatabase alleen opnieuw op als u er zeker van bent dat de datum en tijd van uw computer correct zijn ingesteld.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use hanacryptobankd, or the -server option to hanacryptobank-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=hanacryptobankrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
-</source>
-        <translation>Om hanacryptobankd of de -server optie om hanacryptobank-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
-%s
-Het is aan te raden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=hanacryptobankrpc
-rpcpassword=%s
-(je hoeft dit wachtwoord niet te onthouden)
-De gebruikersnaam en het wachtwoord MOETEN NIET hetzelfde zijn.
-Als het bestand niet bestaat, creëer het dan met owner-readable-only bestandsrechten.
-Het is ook aan te raden om alertnotify in te stellen, zodat je van problemen op de hoogte wordt gebracht;
-bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.com
-</translation>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>De totale lengte van de netwerkversie (%i) overschrijdt de maximale lengte (%i). Verminder het aantal of de grootte van uacommentaren.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. HanaCryptoBank Core is probably already running.</source>
@@ -4526,6 +6099,10 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
+    </message>
+    <message>
+        <source>Warning: Peers are being disconnected due time differences. Please check that your computer's date and time are correct! If your clock is wrong HanaCryptoBank Core will not work properly.</source>
+        <translation>Waarschuwing: Peers zijn afgesloten als gevolg van tijdsverschillen. Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt HanaCryptoBank Core niet goed.</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong HanaCryptoBank Core will not work properly.</source>
@@ -4560,8 +6137,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(3310 could be used only on mainnet)</source>
-        <translation>(3310 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(17070 could be used only on mainnet)</source>
+        <translation>(17070 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4572,8 +6149,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 3310 for mainnet)</source>
-        <translation>(moet 3310 voor mainnet zijn)</translation>
+        <source>(must be 17070 for mainnet)</source>
+        <translation>(moet 17070 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4588,24 +6165,24 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Accepteer publieke REST verzoeken (standaard: %u)</translation>
     </message>
     <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Acceptabele ciphers (standaard: %s)</translation>
-    </message>
-    <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Voeg een node toe om verbinding mee te maken en probeer de verbinding open te houden</translation>
+    </message>
+    <message>
+        <source>Adding Wrapped Serials supply...</source>
+        <translation>Toevoegen van Wrapped Serialvoorraad...</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>DNS lookups toestaan voor -addnode, -seednode en -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Heeft die input al.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Vraag altijd naar peer adressen via DNS lookup (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Voeg opmerking toe aan de user agent string</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -4624,18 +6201,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Calculeren van ontbrekende accumulators...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Kan niet denomineren: er zijn geen compatibele inputs over.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Kan geen willekeurige Masternode vinden.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Kan niet mixen terwijl synchronisatie wordt uitgevoerd.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Kan de portemonnee niet downgraden</translation>
     </message>
@@ -4652,12 +6217,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Kan -whitebind adres niet oplossen: '%s'</translation>
     </message>
     <message>
-        <source>Cannot write default address</source>
-        <translation>Kan standaard adres niet schrijven</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Terugbetaling niet geldig.</translation>
+        <source>CoinSpend: failed check</source>
+        <translation>CoinSpend: controle mislukt</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -4692,16 +6253,20 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Corrupte block database gedetecteerd</translation>
     </message>
     <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Kan -rpcbind value %s niet parsen als een netwerk adres</translation>
-    </message>
-    <message>
         <source>Could not parse masternode.conf</source>
         <translation>Kan masternode.conf niet parsen</translation>
     </message>
     <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Kon de accumulator witness niet genereren</translation>
+    </message>
+    <message>
         <source>Debugging/Testing options:</source>
         <translation>Debugging/Test opties:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Verwijder blockchain mappen en hersynchroniseer alles opnieuw</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
@@ -4732,16 +6297,16 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Zet automatische Zerocoin minting aan (0-1, standaard: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Activeer publicatie raw transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Schakel de client in als masternode (0-1, standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>De entries zijn vol.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Fout bij verbinden met Masternode.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4776,8 +6341,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Error tijdens het lezen van de database, aan het afsluiten.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Fout bij het herstellen van de publieke sleutel.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Fout bij het schrijven van zerocoinDB naar schijf</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4786,10 +6351,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor details</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Fout: Kan de huidige gedenomineerde inputs niet selecteren</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -4804,12 +6365,16 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Fout: Portemonnee vergrendeld, niet in staat om transactie te creëren!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fout: U heeft al entries in afwachting in de verduistering pool</translation>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Kon het controlepunt van de accumulator niet berekenen</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Niet gelukt om te luisteren op een poort. Gebruik -listen=0 als je dit wilt.</translation>
+    </message>
+    <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Kan host: poortreeks niet parseren</translation>
     </message>
     <message>
         <source>Failed to read block</source>
@@ -4820,20 +6385,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Fee (in HCB/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
-        <source>Finalizing transaction.</source>
-        <translation>Transactie aan het voltooien.</translation>
-    </message>
-    <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Forceer safe mode (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Genoeg gebruikers gevonden, aan het ondertekenen (%s aan het wachten)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Genoeg gebruikers gevonden, aan het ondertekenen ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -4860,14 +6413,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Inclusief IP adressen in debug output (standaard: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Modus is niet compatibel.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Versie is niet compatibel.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Het genesis block kan niet worden gevonden of is incorrect. Klopt datadir voor het netwerk?</translation>
     </message>
@@ -4880,10 +6425,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Initialisatie saniteitscontrole mislukt. HanaCryptoBank Core wordt afgesloten.</translation>
     </message>
     <message>
-        <source>Input is not valid.</source>
-        <translation>Ongeldige invoer.</translation>
-    </message>
-    <message>
         <source>Insufficient funds</source>
         <translation>Onvoldoende saldo.</translation>
     </message>
@@ -4894,10 +6435,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Ongeldig -onion adres of hostnaam: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Ongeldig -proxy adres of hostnaam: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -4940,12 +6477,44 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Ongeldige poort gedetecteerd in masternode.conf</translation>
     </message>
     <message>
-        <source>Invalid private key.</source>
-        <translation>Ongeldige privésleutel.</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Ongeldige script gedetecteerd.</translation>
+        <source>Recalculating HCB supply...</source>
+        <translation>Hercalculatie van HCB aanbod...</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZHCB...</source>
+        <translation>Herberekenen van gemunte ZHCB....</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZHCB...</source>
+        <translation>Herberekenen van bestede ZHCB....</translation>
+    </message>
+    <message>
+        <source>Reindex the HCB and zHCB money supply statistics</source>
+        <translation>Indexeer de HCB- en zHCB-geldvoorraadstatistieken opnieuw</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Her-indexeren Zerocoin database...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Her-indexeren Zerocoin database mislukt</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Geselecteerde munt waarde is minder dan het betalingsdoel</translation>
+    </message>
+    <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Ondersteuning van het zerocoin light node protocol (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftTX opties:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4968,6 +6537,14 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
 </translation>
     </message>
     <message>
+        <source>Disable all HanaCryptoBank specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke HanaCryptoBank functionaliteit uit (Masternodes, Zerocoin, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Schakel SwiftX in, toon bevestigingen voor vergrendelde transacties (bool, standaard: %s)</translation>
+    </message>
+    <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Fout: De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, bijvoorbeeld als je een kopie van wallet.dat gebruikt en munten in de kopie waren besteed maar hier niet als zodanig gemarkeerd.</translation>
     </message>
@@ -4980,8 +6557,32 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Fout: Niet ondersteund argument -checklevel gevonden. Checklevel moet niveau 4 zijn.</translation>
     </message>
     <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Voer het commando uit als het beste blok verandert en de grootte ervan voorbij is (%s in cmd wordt vervangen door blokhash, %d met de blokgrootte)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Het is niet gelukt om muntstukken te vinden onder de aangehouden munten met minder dan max. Aantal uitgaven</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In zeldzame gevallen overschrijdt een besteding met 7 munten uw maximaal toegestane transactiegrootte. Probeer het opnieuw met 6 of minder munten</translation>
+    </message>
+    <message>
         <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
         <translation>Voorkeur denominatie voor automatisch minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 voor geen voorkeur. standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zHCB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke automatische zHCB back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand. Indien backuppath ook is ingesteld zullen 4 back-ups gedaan worden.</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specificeer aangepast back-up pad om een kopie van elke portemonnee back-up toe te voegen. Indien ingesteld als dir zal elke back-up een bestand genereren met een tijdstempel. Indien ingesteld als file zal elke back-up herschreven worden naar dat bestand.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX vereist invoer van tenminste 6 bevestigingen, je dient wellicht een paar minuten te wachten en het opnieuw proberen.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -4990,6 +6591,14 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation>Poging om blockchain corruptie herstel te forceren</translation>
+    </message>
+    <message>
+        <source>Cannot create public spend input</source>
+        <translation>Kon geen publiek besteedadres aanmaken</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Accumulator witness controleert niet</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -5004,20 +6613,12 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Activeer publicatie hash blok in &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie hash transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation>Activeer publicatie has transactie in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
         <translation>Activeer publicatie raw block in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Activeer publicatie raw transactie (vergrendeld via SwiftTX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -5028,20 +6629,40 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Activeer staking functionaliteit (0-1, standaard: %u)</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fout: Er is een fatale interne fout opgetreden, zie debug.log voor meer informatie</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Fout: geen geldige utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Het is niet gelukt om mint te maken</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Niet gelukt om Zerocoins in wallet.dat te vinden.</translation>
+    </message>
+    <message>
+        <source>Failed to parse public spend</source>
+        <translation>Parsen van publieke uitgaven mislukt</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Het is niet gelukt om een zerocoin te selecteren</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Mislukt om zerocoinDB te legen.</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Het serienummer van het muntstuk kan niet in de portemonnee worden geschreven</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Houd maximaal &lt;n&gt;niet te verbinden transacties in het geheugen (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Laatste verduistering was te recent.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Laatste succesvolle verduistering actie was te recent.</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>Minder dan 3 mints toegevoegd, niet in staat om uitgave te creëren</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5065,7 +6686,7 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     </message>
     <message>
         <source>Loading block index...</source>
-        <translation>Block index laden...</translation>
+        <translation>Blockindex laden...</translation>
     </message>
     <message>
         <source>Loading budget cache...</source>
@@ -5092,12 +6713,16 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Portemonnee aan het laden...</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Vergrendeling is al uitgevoerd.</translation>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Locatie van de auth cookie (standaard: data dir)</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Masternodes vergrendelen van masternode configuratiebestand (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -5108,14 +6733,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Masternode opties:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternode wachtrij zit vol.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maximaal per connectie ontvangst buffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
     </message>
@@ -5124,68 +6741,28 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Maximaal per connectie verstuur buffer, &lt;n&gt;*1000 bytes (standaard: %u)</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Ontbrekende invoer transactie informatie ontbreekt.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Bezig met mixen...</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation>Mint heeft de blockchain niet gehaald</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Moet een poort opgeven met -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>Geen Masternodes gedetecteerd.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Geen compatibele Masternode gevonden.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Geen fondsen gedetecteerd die denominatie nodig hebben.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Geen passende denominaties gevonden voor mixing.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Node relay opties:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Niet standaard publieke sleutel gedetecteerd.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Niet compatibel met bestaande transacties.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Niet genoeg bestandsbeschrijvingen beschikbaar.</translation>
     </message>
     <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Niet in de Masternode lijst.</translation>
-    </message>
-    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>Aantal automatische portemonnee backups (standaard: 10)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Verduistering is inactief.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Verduistering verzoek compleet:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Verduistering verzoek incompleet:</translation>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Aantal aangepaste locatie back-ups om te behouden (standaard: %d)</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5204,8 +6781,28 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Wachtwoord voor JSON-RPC connecties</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>Percentage automatisch geminte Zerocoin (10-100, standaard: %u)</translation>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Kan geen transactie terugvinden die munting %s bevat</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>Kan geen transactie terugvinden die munting, txHash %s bevat</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Gebruik block-spamfilter (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): ongeldig -proxy-adres of hostnaam: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Voorbereiden van hersynchronisatie...</translation>
+    </message>
+    <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>Bestemmings- of wisseladres nodig omdat wissel niet exact is</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -5216,16 +6813,12 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Print versie en verlaat</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL opties: (zie de Bitcoin Wiki voor SSL setup instructies)</translation>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin niet gevonden in mint tx</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>RPC server opties:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC ondersteuning voor HTTP aanhoudende verbindingen (standaard: %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -5242,6 +6835,10 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation>Ontvang en laat P2P netwerkmeldingen zien (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Herindexeer de verzameldatabase</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -5280,18 +6877,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Zend transacties als zero fee transacties indien mogelijk (standaard: %u)</translation>
     </message>
     <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Server certificaat bestand (standaard: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Server privé sleutel (default: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sessie niet voltooid!</translation>
-    </message>
-    <message>
         <source>Session timed out.</source>
         <translation>Sessie verlopen.</translation>
     </message>
@@ -5316,6 +6901,10 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Stel minimale block grootte in bytes in (default: %u)</translation>
     </message>
     <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Stel de Maximale reorg diepte in (standaard: %u)</translation>
+    </message>
+    <message>
         <source>Set the masternode private key</source>
         <translation>Stel de masternode privé sleutel in</translation>
     </message>
@@ -5334,10 +6923,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Krimp debug.log bestand bij client startup (standaard: 1 wanneer geen -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Ondertekenen mislukt.</translation>
     </message>
     <message>
         <source>Signing timed out.</source>
@@ -5376,6 +6961,10 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Specificeer je eigen publieke addres</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>Besteed geldig</translation>
+    </message>
+    <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation>Onbevestigd wisselgeld besteden bij het verzenden van transacties (standaard: %u)</translation>
     </message>
@@ -5386,22 +6975,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>Stop na het importeren van blokken van schijf (standaard: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Ingediende volgende vermeldingen in masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Ingediend naar masternode, wachten op meer inzendingen (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Ingediend naar masternode, wachten in de wachtrij %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX opties:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -5432,6 +7005,18 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Synchroniseren sporks...</translation>
     </message>
     <message>
+        <source>Syncing zHCB wallet...</source>
+        <translation>Synchroniseren zHCB portemonnee...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>De muntuitgaven zijn gebruikt</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>De transactie heeft niet geverifieerd</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>Dit help bericht</translation>
     </message>
@@ -5444,12 +7029,12 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Dit is bedoeld voor regressie test tools en app ontwikkeling.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dit is geen Masternode.</translation>
-    </message>
-    <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Drempel voor het verbreken van misdragende peers (standaard: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Te veel uitgaven nodig</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -5460,24 +7045,20 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Tor controle poort om te gebruiken als onion listening geactiveerd is (standaard: %s)</translation>
     </message>
     <message>
+        <source>Transaction Created</source>
+        <translation>Transactie gemaakt</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Transactie startte met Mint</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>Transactie bedrag te klein</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
         <translation>Transactie bedragen moeten positief zijn</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transactie is succesvol gemaakt.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transactiekosten zijn te hoog.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transactie is niet geldig.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -5488,32 +7069,32 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Transactie te groot</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Verzending van de definitieve transactie.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Probeer een reeds bestaand serienummer nog een keer uit te geven, probeer het opnieuw.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Niet mogelijk te binden aan %s op deze computer (bind stuurt fout %s terug)</translation>
     </message>
     <message>
+        <source>Unable to generate initial key</source>
+        <translation>Niet mogelijke om de initiële sleutel te genereren.</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Kan sporkbericht niet tekenen, verkeerde sleutel?</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>Kan HTTP-server niet starten. Zie foutopsporingslog voor details.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Onbekend netwerk gespecificeerd in -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Onbekende staat: id = %u</translation>
-    </message>
-    <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Upgrade portemonnee naar nieuwste formaat</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Gebruik OpenSSL (https) voor JSON-RPC verbindingen</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5524,16 +7105,24 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Gebruik UPnP om de luisterpoort te mappen (standaard: 1 bij het luisteren)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Gebruik een aangepaste max chain reorganisatie diepte (standaard: %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>Gebruik het test netwerk</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>User Agent opmerking (%s) bevat onveilige karakters.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Gebruikersnaam voor JSON-RPC verbindingen</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Waarde meer dan verduistering pool maximaal toestaat.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zHCB</source>
+        <translation>Waarde is minder dan de kleinst beschikbare denominatie (=1) van zHCB</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5546,10 +7135,6 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
     <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Portemonnee %s verblijft buiten de data directory %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart HanaCryptoBank Core to complete</source>
@@ -5580,20 +7165,12 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Waarschuwing: Niet ondersteunde argument -debugnet genegeerd, gebruik -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Zal het opnieuw proberen...</translation>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Je hebt niet genoeg Zerocoins in je portemonnee</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Je moet de database herbouwen met -reindex om -txindex te wijzigen</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Je gegevens zijn succesvol toegevoegd.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Je transactie is geaccepteerd in de pool!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5608,16 +7185,31 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "HanaCryptoBank Alert" admin@foo.
         <translation>Zerocoin opties:</translation>
     </message>
     <message>
-        <source>failed to validate zerocoin</source>
-        <translation>mislukt om zerocoin te valideren</translation>
-    </message>
-    <message>
         <source>on startup</source>
         <translation>tijdens het opstarten</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupt, redding mislukt</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Zenden</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Druk Knop</translation>
     </message>
 </context>
 </TS>

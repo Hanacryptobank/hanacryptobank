@@ -117,7 +117,7 @@
        xlink:href="#linearGradient4357"
        id="radialGradient4440"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.5712985,0.01074232,-0.01353758,1.9801676,-4.5655476,-0.68353310)"
+       gradientTransform="matrix(1.5712985,0.01074232,-0.01353758,1.9801676,-4.5655476,-0.68355868)"
        cx="8.1975746"
        cy="-0.080271922"
        fx="8.1975746"
@@ -217,7 +217,7 @@
        d="M 1.0968082,4.6340519 A 7.7781744,7.7781744 0 0 1 8.0707322,0.35531099 L 8.0433397,8.1334372 z"
        transform="matrix(0.91562931,0,0,0.91562931,0.64737218,0.56658541)"
        sodipodi:start="3.6082438"
-       sodipodi:end="4.7133107" />
+       sodipodi:end="4.7159107" />
   </g>
   <g
      inkscape:groupmode="layer"

@@ -1,16 +1,15 @@
-Name "HanaCryptoBank Core (32-bit)"
+Name "HanaCryptoBank Core (64-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 3.0.0
 !define COMPANY "HanaCryptoBank Core project"
 !define URL https://www.hanacryptobank.org
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/server18/hcb/share/pixmaps/bitcoin.ico"
+!define MUI_ICON "/home/server18/hcb/share/pixmaps/hanacryptobank.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "/home/server18/hcb/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -28,7 +27,7 @@ SetCompressor /SOLID lzma
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "32" == "64"
+!if "64" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +47,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/server18/hcb/hanacryptobank-${VERSION}-win32-setup.exe
-!if "32" == "64"
+OutFile /home/server18/hcb/hanacryptobank-1.0.0-win64-setup.exe
+!if "64" == "64"
 InstallDir $PROGRAMFILES64\HanaCryptoBank
 !else
 InstallDir $PROGRAMFILES\HanaCryptoBank
@@ -58,12 +57,12 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.1
+VIProductVersion 1.0.0.0
 VIAddVersionKey ProductName "HanaCryptoBank Core"
-VIAddVersionKey ProductVersion "${VERSION}"
+VIAddVersionKey ProductVersion "1.0.0"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
-VIAddVersionKey FileVersion "${VERSION}"
+VIAddVersionKey FileVersion "1.0.0"
 VIAddVersionKey FileDescription ""
 VIAddVersionKey LegalCopyright ""
 InstallDirRegKey HKCU "${REGKEY}" Path
@@ -92,11 +91,11 @@ Section -post SEC0001
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\hanacryptobank-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\HanaCryptoBank Core (testnet, 32-bit).lnk" "$INSTDIR\hanacryptobank-qt.exe" "-testnet" "$INSTDIR\hanacryptobank-qt.exe" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\HanaCryptoBank Core (testnet, 64-bit).lnk" "$INSTDIR\hanacryptobank-qt.exe" "-testnet" "$INSTDIR\hanacryptobank-qt.exe" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
-    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
+    WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "1.0.0"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" Publisher "${COMPANY}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" URLInfoAbout "${URL}"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayIcon $INSTDIR\uninstall.exe
@@ -136,7 +135,7 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\HanaCryptoBank Core (testnet, 32-bit).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\HanaCryptoBank Core (testnet, 64-bit).lnk"
     Delete /REBOOTOK "$SMSTARTUP\HanaCryptoBank.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
@@ -158,7 +157,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "32" == "64"
+!if "64" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64
